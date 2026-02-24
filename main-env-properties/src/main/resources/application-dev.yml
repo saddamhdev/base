@@ -1,0 +1,130 @@
+spring:
+  application:
+    name: main-service
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8094
+  servlet:
+    context-path: /api
+
+# =================================
+# Microservice URLs Configuration
+# =================================
+services:
+  clients:
+    user-service:
+      name: user-service
+      bean-name: userServiceClient
+      url: http://localhost:8102
+      connect-timeout: 5000
+      read-timeout: 10000
+    auth-service:
+      name: auth-service
+      bean-name: authServiceClient
+      url: http://localhost:8096
+      connect-timeout: 5000
+      read-timeout: 10000
+    account-service:
+      name: account-service
+      bean-name: accountServiceClient
+      url: http://localhost:8095
+      connect-timeout: 5000
+      read-timeout: 10000
+    transaction-service:
+      name: transaction-service
+      bean-name: transactionServiceClient
+      url: http://localhost:8101
+      connect-timeout: 5000
+      read-timeout: 10000
+    notification-service:
+      name: notification-service
+      bean-name: notificationServiceClient
+      url: http://localhost:8100
+      connect-timeout: 5000
+      read-timeout: 10000
+    audit-service:
+      name: audit-service
+      bean-name: auditServiceClient
+      url: http://localhost:8099
+      connect-timeout: 5000
+      read-timeout: 10000
+    kafka-service:
+      name: kafka-service
+      bean-name: kafkaServiceClient
+      url: http://localhost:8097
+      connect-timeout: 5000
+      read-timeout: 10000
+    rabbitmq-service:
+      name: rabbitmq-service
+      bean-name: rabbitmqServiceClient
+      url: http://localhost:8098
+      connect-timeout: 5000
+      read-timeout: 10000
+
+# Environment: Development
+logging:
+  level:
+    root: INFO
+    snvn: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+  file:
+    name: logs/${spring.application.name}.log
+
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 30
+      total-size-cap: 2GB
+
+  pattern:
+    console: >
+      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
+       "level":"%level",
+       "service":"${spring.application.name}",
+       "thread":"%thread",
+       "traceId":"%X{traceId:-}",
+       "spanId":"%X{spanId:-}",
+       "correlationId":"%X{correlationId:-}",
+       "jobId":"%X{jobId:-}",
+       "logger":"%logger{36}",
+       "message":"%msg",
+       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
+
+    file: >
+      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
+       "level":"%level",
+       "service":"${spring.application.name}",
+       "thread":"%thread",
+       "traceId":"%X{traceId:-}",
+       "spanId":"%X{spanId:-}",
+       "correlationId":"%X{correlationId:-}",
+       "jobId":"%X{jobId:-}",
+       "logger":"%logger{36}",
+       "message":"%msg",
+       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+

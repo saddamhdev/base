@@ -1,0 +1,24 @@
+{"timestamp":"2026-02-24T04:46:22.702",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h23s944ms40µs900ns).",
+ "exception":""}
+
+{"timestamp":"2026-02-24T11:46:54.219",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h36s609ms367µs).",
+ "exception":""}
+

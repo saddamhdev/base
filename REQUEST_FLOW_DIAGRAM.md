@@ -1,0 +1,635 @@
+# Request Flow Diagrams
+
+## 1. High-Level Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         CLIENT LAYER                            │
+│  (Web App, Mobile App, Desktop App, Third-party Services)      │
+└────────────────────────────┬────────────────────────────────────┘
+                             │
+                             │ HTTP/HTTPS Requests
+                             ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    GATEWAY LAYER (Port 8080)                    │
+│                     Spring Cloud Gateway                        │
+│  ┌───────────────────────────────────────────────────────────┐ │
+│  │  - Request Routing                                        │ │
+│  │  - Load Balancing                                         │ │
+│  │  - Authentication/Authorization                           │ │
+│  │  - Rate Limiting                                          │ │
+│  │  - Request/Response Transformation                        │ │
+│  └───────────────────────────────────────────────────────────┘ │
+└────────────────────────────┬────────────────────────────────────┘
+                             │
+                             │ Routes all /api/** requests
+                             ↓
+┌─────────────────────────────────────────────────────────────────┐
+│              AGGREGATOR LAYER (Port 3081/8081)                  │
+│                      main-service (BFF)                         │
+│  ┌───────────────────────────────────────────────────────────┐ │
+│  │  - Aggregate data from multiple services                  │ │
+│  │  - Orchestrate business logic                             │ │
+│  │  - Transform and combine responses                        │ │
+│  │  - Reduce client-server round trips                       │ │
+│  └───────────────────────────────────────────────────────────┘ │
+└──┬────┬────┬────────┬──────────┬──────────┬─────────┬─────────┬┘
+   │    │    │        │          │          │         │         │
+   ↓    ↓    ↓        ↓          ↓          ↓         ↓         ↓
+┌──────┐┌──────┐┌──────────┐┌──────────┐┌──────────┐┌────────┐┌────────┐
+│user- ││auth- ││account-  ││trans-    ││notifi-   ││audit-  ││rabbit- │
+│service│service││service   ││action-   ││cation-   ││service ││mq-     │
+│(8089)││(8083)││(8082)    ││service   ││service   ││(8086)  ││service │
+│      ││      ││          ││(8088)    ││(8087)    ││        ││(8085)  │
+├──────┤├──────┤├──────────┤├──────────┤├──────────┤├────────┤├────────┤
+│User  ││Auth  ││Account   ││Trans-    ││Email/SMS ││Audit   ││Message │
+│CRUD  ││JWT   ││Mgmt      ││action    ││Push      ││Logging ││Queue   │
+│      ││Login ││Balance   ││History   ││Alerts    ││Tracking││Events  │
+├──────┤├──────┤├──────────┤├──────────┤├──────────┤├────────┤├────────┤
+│userdb││authdb││accountdb ││trans-db  ││notif-db  ││audit-db││rabbitmq│
+└──┬───┘└──┬───┘└────┬─────┘└────┬─────┘└────┬─────┘└───┬────┘└───┬────┘
+   │       │         │           │           │          │         │
+   └───────┴─────────┴───────────┴───────────┴──────────┴─────────┘
+                                 │
+                                 ↓
+                    ┌─────────────────────────────┐
+                    │    Event-Driven Layer       │
+                    ├─────────────────────────────┤
+                    │  Apache Kafka (Port 9092)   │
+                    │  RabbitMQ (Port 5672)       │
+                    │  Event Bus & Message Queue  │
+                    └─────────────────────────────┘
+```
+
+---
+
+## 2. Detailed Request Flow - User Login
+
+```
+┌────────┐
+│ Client │
+└───┬────┘
+    │
+    │ 1. POST /api/auth/login
+    │    { username, password }
+    ↓
+┌────────────────┐
+│    Gateway     │
+│   Port 8080    │
+└───┬────────────┘
+    │
+    │ 2. Route to main-service
+    │    POST http://localhost:3081/api/auth/login
+    ↓
+┌────────────────┐
+│  main-service  │
+│   Port 3081    │
+└───┬────────────┘
+    │
+    │ 3. Forward to auth-service
+    │    POST http://localhost:8083/auth/login
+    ↓
+┌────────────────┐
+│  auth-service  │
+│   Port 8083    │
+├────────────────┤
+│ 4. Validate    │
+│    credentials │
+│ 5. Generate    │
+│    JWT token   │
+│ 6. Save session│
+│    to authdb   │
+└───┬────────────┘
+    │
+    │ 7. Return JWT token
+    │    { token, refreshToken, expiresIn }
+    ↓
+┌────────────────┐
+│  main-service  │
+│   Port 3081    │
+├────────────────┤
+│ 8. Optionally  │
+│    enrich      │
+│    response    │
+└───┬────────────┘
+    │
+    │ 9. Return to Gateway
+    ↓
+┌────────────────┐
+│    Gateway     │
+│   Port 8080    │
+└───┬────────────┘
+    │
+    │ 10. Return to Client
+    ↓
+┌────────┐
+│ Client │
+│ Stores │
+│  JWT   │
+└────────┘
+```
+
+---
+
+## 3. Detailed Request Flow - Get User Profile with Accounts
+
+```
+┌────────┐
+│ Client │
+└───┬────┘
+    │
+    │ 1. GET /api/user/profile/123
+    │    Authorization: Bearer <JWT>
+    ↓
+┌────────────────────────┐
+│       Gateway          │
+│      Port 8080         │
+└───┬────────────────────┘
+    │
+    │ 2. Route to main-service
+    │    GET http://localhost:3081/api/user/profile/123
+    ↓
+┌────────────────────────┐
+│     main-service       │
+│      Port 3081         │
+└───┬────────────────────┘
+    │
+    │ 3. Parallel Calls (Aggregation)
+    ├──────────────────┬──────────────────┐
+    ↓                  ↓                  ↓
+┌──────────┐    ┌──────────┐    ┌──────────┐
+│  auth-   │    │  user-   │    │ account- │
+│ service  │    │ service  │    │ service  │
+│ (8083)   │    │ (8089)   │    │ (8082)   │
+├──────────┤    ├──────────┤    ├──────────┤
+│Validate  │    │Get user  │    │Get user  │
+│JWT token │    │profile   │    │accounts  │
+│          │    │data      │    │& balance │
+└────┬─────┘    └────┬─────┘    └────┬─────┘
+     │               │               │
+     │ Valid         │ User Data     │ Account Data
+     └───────────────┴───────────────┘
+                     │
+                     ↓
+            ┌────────────────────────┐
+            │     main-service       │
+            │      Port 3081         │
+            ├────────────────────────┤
+            │ 4. Aggregate Results:  │
+            │    {                   │
+            │      user: {...},      │
+            │      accounts: [...],  │
+            │      totalBalance: X   │
+            │    }                   │
+            └────────┬───────────────┘
+                     │
+                     │ 5. Return aggregated data
+                     ↓
+            ┌────────────────────────┐
+            │       Gateway          │
+            │      Port 8080         │
+            └────────┬───────────────┘
+                     │
+                     │ 6. Return to Client
+                     ↓
+                ┌────────┐
+                │ Client │
+                │Receives│
+                │complete│
+                │ data   │
+                └────────┘
+```
+
+---
+
+## 4. Complex Transaction Flow - Money Transfer (All Services)
+
+```
+┌────────┐
+│ Client │
+└───┬────┘
+    │
+    │ 1. POST /api/transactions/transfer
+    │    { fromAccount: 1, toAccount: 2, amount: 1000 }
+    │    Authorization: Bearer <JWT>
+    ↓
+┌────────────────────────┐
+│       Gateway          │
+│      Port 8080         │
+└───┬────────────────────┘
+    │
+    │ 2. Route to main-service
+    ↓
+┌────────────────────────────────────────────────────────────┐
+│                    main-service (Port 3081)                │
+│                    Transaction Orchestrator                │
+└───┬────────────────────────────────────────────────────────┘
+    │
+    │ 3. Orchestrate Multi-Service Transaction
+    │
+    ├─── Step 3a: Validate Authentication ───────────┐
+    │                                                 ↓
+    │                                          ┌──────────────┐
+    │                                          │auth-service  │
+    │                                          │   (8083)     │
+    │                                          │ Validate JWT │
+    │                                          └──────┬───────┘
+    │                                                 │ Valid ✓
+    │                                                 ↓
+    ├─── Step 3b: Get User Details ──────────────────┤
+    │                                                 ↓
+    │                                          ┌──────────────┐
+    │                                          │user-service  │
+    │                                          │   (8089)     │
+    │                                          │ Get user info│
+    │                                          └──────┬───────┘
+    │                                                 │ User data ✓
+    │                                                 ↓
+    ├─── Step 3c: Validate Accounts ─────────────────┤
+    │                                                 ↓
+    │                                          ┌──────────────┐
+    │                                          │account-      │
+    │                                          │service(8082) │
+    │                                          │Check balance │
+    │                                          │& ownership   │
+    │                                          └──────┬───────┘
+    │                                                 │ Valid ✓
+    │                                                 ↓
+    ├─── Step 3d: Process Transaction ───────────────┤
+    │                                                 ↓
+    │                                          ┌──────────────┐
+    │                                          │transaction-  │
+    │                                          │service(8088) │
+    │                                          │Create txn    │
+    │                                          │Debit/Credit  │
+    │                                          └──────┬───────┘
+    │                                                 │ Success ✓
+    │                                                 ↓
+    ├─── Step 3e: Update Account Balances ───────────┤
+    │                                                 ↓
+    │                                          ┌──────────────┐
+    │                                          │account-      │
+    │                                          │service(8082) │
+    │                                          │Update balance│
+    │                                          └──────┬───────┘
+    │                                                 │ Updated ✓
+    │                                                 ↓
+    ├─── Step 3f: Send to Kafka ─────────────────────┤
+    │                                                 ↓
+    │                                          ┌──────────────┐
+    │                                          │kafka-service │
+    │                                          │   (8084)     │
+    │                                          │Publish event │
+    │                                          └──────┬───────┘
+    │                                                 │
+    │    ┌────────────────────────────────────────────┼─────────┐
+    │    │                                            │         │
+    │    ↓                                            ↓         ↓
+    │ ┌──────────────┐                        ┌──────────┐ ┌──────────┐
+    │ │notification- │                        │audit-    │ │rabbitmq- │
+    │ │service(8087) │                        │service   │ │service   │
+    │ │Send alert to │                        │(8086)    │ │(8085)    │
+    │ │user: "Transfer│                       │Log txn   │ │Queue msg │
+    │ │successful"   │                        │details   │ │for async │
+    │ └──────────────┘                        └──────────┘ └──────────┘
+    │
+    │ 4. Return aggregated response
+    ↓
+┌────────────────────────────────────────────────────────────┐
+│                    main-service                            │
+│  {                                                         │
+│    "transactionId": "TXN-12345",                          │
+│    "status": "SUCCESS",                                   │
+│    "fromAccount": { id: 1, newBalance: 4000 },            │
+│    "toAccount": { id: 2, newBalance: 11000 },             │
+│    "amount": 1000,                                        │
+│    "timestamp": "2026-02-20T10:30:00Z",                   │
+│    "auditId": "AUD-67890",                                │
+│    "notificationSent": true                               │
+│  }                                                         │
+└───┬────────────────────────────────────────────────────────┘
+    │
+    │ 5. Return to Gateway
+    ↓
+┌────────────────────────┐
+│       Gateway          │
+│      Port 8080         │
+└───┬────────────────────┘
+    │
+    │ 6. Return to Client
+    ↓
+┌────────┐
+│ Client │
+│ Success│
+└────────┘
+
+Async Events (happening in parallel):
+┌──────────────────────────────────────────────────────────┐
+│ • audit-service logs complete transaction trail          │
+│ • notification-service sends email/SMS to both users     │
+│ • rabbitmq-service queues messages for batch processing  │
+│ • All events available for replay/debugging              │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 5. Service Communication Matrix
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                  Service Dependencies                           │
+├─────────────────┬───────────────────────────────────────────────┤
+│ main-service    │ → user-service (8089)                         │
+│ (Aggregator)    │ → auth-service (8083)                         │
+│                 │ → account-service (8082)                      │
+│                 │ → transaction-service (8088)                  │
+│                 │ → notification-service (8087)                 │
+│                 │ → audit-service (8086)                        │
+│                 │ → kafka-service (8084)                        │
+│                 │ → rabbitmq-service (8085)                     │
+├─────────────────┼───────────────────────────────────────────────┤
+│ gateway-service │ → main-service (3081/8081)                    │
+│                 │ → config-service (8888)                       │
+├─────────────────┼───────────────────────────────────────────────┤
+│ user-service    │ → Kafka (9092) - Publish user events         │
+│                 │ → audit-service (8086) - Log actions          │
+├─────────────────┼───────────────────────────────────────────────┤
+│ auth-service    │ → Kafka (9092) - Publish auth events         │
+│                 │ → audit-service (8086) - Log auth attempts    │
+├─────────────────┼───────────────────────────────────────────────┤
+│ account-service │ → Kafka (9092) - Publish account events      │
+│                 │ → transaction-service (8088) - Record txns    │
+│                 │ → audit-service (8086) - Log changes          │
+├─────────────────┼───────────────────────────────────────────────┤
+│ transaction-    │ → Kafka (9092) - Publish transaction events  │
+│ service         │ → notification-service (8087) - Send alerts   │
+│                 │ → audit-service (8086) - Log transactions     │
+├─────────────────┼───────────────────────────────────────────────┤
+│ notification-   │ → RabbitMQ (5672) - Queue notifications      │
+│ service         │ → Kafka (9092) - Consume events               │
+├─────────────────┼───────────────────────────────────────────────┤
+│ audit-service   │ → Kafka (9092) - Consume all events          │
+│                 │ → Database - Store audit logs                 │
+├─────────────────┼───────────────────────────────────────────────┤
+│ kafka-service   │ → Kafka Broker (9092) - Manage topics        │
+├─────────────────┼───────────────────────────────────────────────┤
+│ rabbitmq-service│ → RabbitMQ Broker (5672) - Manage queues     │
+└─────────────────┴───────────────────────────────────────────────┘
+```
+
+---
+
+## 6. Event-Driven Flow (Kafka Integration)
+
+```
+                    ┌──────────────────────────┐
+                    │   Apache Kafka Broker    │
+                    │      (Port 9092)         │
+                    └────────────┬─────────────┘
+                                 │
+        ┌────────────────────────┼────────────────────────┐
+        │                        │                        │
+        ↓                        ↓                        ↓
+┌───────────────┐        ┌───────────────┐       ┌───────────────┐
+│ Topic:        │        │ Topic:        │       │ Topic:        │
+│ user-events   │        │ auth-events   │       │ account-events│
+└───┬───────────┘        └───┬───────────┘       └───┬───────────┘
+    │                        │                       │
+    │ Publish                │ Publish               │ Publish
+    │                        │                       │
+┌───┴────────┐          ┌────┴───────┐          ┌────┴──────┐
+│user-service│          │auth-service│          │account-   │
+│  (8089)    │          │  (8083)    │          │service    │
+└────────────┘          └────────────┘          │ (8082)    │
+                                                 └───────────┘
+    ↓                        ↓                       ↓
+    │ Subscribe              │ Subscribe             │ Subscribe
+    │                        │                       │
+┌───┴────────────────────────┴───────────────────────┴───┐
+│            audit-service (8086)                        │
+│         notification-service (8087)                    │
+│  - Log all events                                      │
+│  - Send notifications                                  │
+│  - Track audit trail                                   │
+└────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 7. Port Allocation Map
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                    Port Range: 8080-8090                     │
+├──────────────┬───────────┬────────────────┬─────────────────┤
+│   Service    │   Port    │     Type       │    Database     │
+├──────────────┼───────────┼────────────────┼─────────────────┤
+│   Gateway    │   8080    │   Gateway      │       -         │
+│   Main       │ 3081/8081 │   Aggregator   │   H2 (testdb)   │
+│   Account    │   8082    │ Microservice   │  H2 (accountdb) │
+│   Auth       │   8083    │ Microservice   │   H2 (authdb)   │
+│   Kafka      │   8084    │ Event Service  │       H2        │
+│   RabbitMQ   │   8085    │ Event Service  │       H2        │
+│   Audit      │   8086    │ Microservice   │       -         │
+│ Notification │   8087    │ Microservice   │       -         │
+│ Transaction  │   8088    │ Microservice   │       -         │
+│   User       │   8089    │ Microservice   │   H2 (userdb)   │
+│   MCP        │   8090    │  MCP Server    │       -         │
+│   Config     │   8888    │ Config Server  │       -         │
+└──────────────┴───────────┴────────────────┴─────────────────┘
+```
+
+---
+
+## 8. Gateway Routing Table
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│                  Gateway Routes (Port 8080)                    │
+├──────────────────────┬─────────────────────────────────────────┤
+│   Path Pattern       │        Target Service                   │
+├──────────────────────┼─────────────────────────────────────────┤
+│ /api/users/**        │ → main-service (http://localhost:3081)  │
+│ /api/auth/**         │ → main-service (http://localhost:3081)  │
+│ /api/accounts/**     │ → main-service (http://localhost:3081)  │
+│ /config/**           │ → config-service (http://localhost:8888)│
+│ /**                  │ → main-service (http://localhost:3081)  │
+└──────────────────────┴─────────────────────────────────────────┘
+
+Note: All business API requests go through main-service for aggregation
+```
+
+---
+
+## 9. Database Isolation Pattern
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│           Database per Service Pattern (H2 In-Memory)           │
+└─────────────────────────────────────────────────────────────────┘
+
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│ user-service │     │ auth-service │     │account-service│
+│   (8089)     │     │   (8083)     │     │   (8082)     │
+└──────┬───────┘     └──────┬───────┘     └──────┬───────┘
+       │                    │                    │
+       ↓                    ↓                    ↓
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│  H2: userdb  │     │  H2: authdb  │     │H2: accountdb │
+├──────────────┤     ├──────────────┤     ├──────────────┤
+│ - users      │     │ - auth_tokens│     │ - accounts   │
+│ - profiles   │     │ - sessions   │     │ - balances   │
+│              │     │ - credentials│     │ - transactions│
+└──────────────┘     └──────────────┘     └──────────────┘
+
+       ↓                    ↓                    ↓
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│   Console:   │     │   Console:   │     │   Console:   │
+│   :8089/h2-  │     │   :8083/h2-  │     │   :8082/h2-  │
+│   console    │     │   console    │     │   console    │
+└──────────────┘     └──────────────┘     └──────────────┘
+```
+
+---
+
+## 10. Complete Request-Response Flow
+
+```
+Step 1: Client Request
+┌────────────────────────────────────────────────────────────┐
+│ GET http://localhost:8080/api/user/dashboard/123          │
+│ Headers: Authorization: Bearer eyJhbGc...                 │
+└────────────────────────────────────────────────────────────┘
+                            ↓
+Step 2: Gateway Processing
+┌────────────────────────────────────────────────────────────┐
+│ - Receives request on port 8080                           │
+│ - Matches route pattern /api/user/**                      │
+│ - Forwards to main-service                                │
+└────────────────────────────────────────────────────────────┘
+                            ↓
+Step 3: main-service Orchestration
+┌────────────────────────────────────────────────────────────┐
+│ main-service (3081) initiates parallel calls:             │
+│                                                            │
+│  ┌──────────────────────────────────────────────────┐    │
+│  │ 3a. auth-service → Validate JWT token            │    │
+│  │     Response: { valid: true, userId: 123 }       │    │
+│  └──────────────────────────────────────────────────┘    │
+│                                                            │
+│  ┌──────────────────────────────────────────────────┐    │
+│  │ 3b. user-service → Get user profile              │    │
+│  │     Response: { id: 123, name: "John", ... }     │    │
+│  └──────────────────────────────────────────────────┘    │
+│                                                            │
+│  ┌──────────────────────────────────────────────────┐    │
+│  │ 3c. account-service → Get accounts               │    │
+│  │     Response: [ {id: 1, balance: 5000}, ... ]    │    │
+│  └──────────────────────────────────────────────────┘    │
+└────────────────────────────────────────────────────────────┘
+                            ↓
+Step 4: Data Aggregation
+┌────────────────────────────────────────────────────────────┐
+│ main-service combines all responses:                      │
+│ {                                                          │
+│   "user": {                                               │
+│     "id": 123,                                            │
+│     "name": "John Doe",                                   │
+│     "email": "john@example.com"                           │
+│   },                                                       │
+│   "accounts": [                                           │
+│     { "id": 1, "type": "checking", "balance": 5000 },     │
+│     { "id": 2, "type": "savings", "balance": 10000 }      │
+│   ],                                                       │
+│   "totalBalance": 15000,                                  │
+│   "lastLogin": "2026-02-20T10:30:00Z"                     │
+│ }                                                          │
+└────────────────────────────────────────────────────────────┘
+                            ↓
+Step 5: Response to Client
+┌────────────────────────────────────────────────────────────┐
+│ Gateway forwards aggregated response to client             │
+│ Status: 200 OK                                            │
+│ Content-Type: application/json                            │
+└────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 11. Failure Handling Flow
+
+```
+┌────────────────────────────────────────────────────────────┐
+│              Circuit Breaker Pattern (Future)              │
+└────────────────────────────────────────────────────────────┘
+
+Normal Flow:
+Client → Gateway → main-service → user-service ✓
+                                → auth-service ✓
+                                → account-service ✓
+
+Service Failure Scenario:
+Client → Gateway → main-service → user-service ✓
+                                → auth-service ✗ (Timeout/Error)
+                                → account-service ✓
+
+main-service Response:
+{
+  "user": { ... },           // From user-service
+  "accounts": [ ... ],        // From account-service
+  "auth": {                   // Fallback data
+    "status": "unavailable",
+    "message": "Auth service temporarily unavailable"
+  }
+}
+
+With Circuit Breaker (Recommended):
+- After multiple failures, circuit opens
+- Fast fail without calling failed service
+- Return cached/fallback data
+- Periodically retry (half-open state)
+```
+
+---
+
+## Legend
+
+```
+Symbols Used:
+→  Synchronous HTTP call
+↓  Flow direction
+├  Branch/Fork
+└  End/Merge
+┌─┐ Box/Container
+│  │ Vertical border
+```
+
+---
+
+## Quick Reference URLs
+
+| Service | URL | Purpose |
+|---------|-----|---------|
+| Gateway | http://localhost:8080 | Main entry point |
+| Main Service (dev) | http://localhost:3081 | Aggregator |
+| User Service | http://localhost:8089 | User management |
+| Auth Service | http://localhost:8083 | Authentication |
+| Account Service | http://localhost:8082 | Account management |
+| Config Service | http://localhost:8888 | Configuration |
+
+---
+
+## Related Documentation
+- [REQUEST_FLOW_ARCHITECTURE.md](./REQUEST_FLOW_ARCHITECTURE.md) - Detailed architecture
+- [PORT_CONFIGURATION_SUMMARY.md](./PORT_CONFIGURATION_SUMMARY.md) - Port details
+
+
+
+
+
+
+
+
+
+

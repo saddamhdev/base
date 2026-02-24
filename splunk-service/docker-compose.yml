@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  splunk:
+    image: splunk/splunk:latest
+    container_name: splunk
+    hostname: splunk
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=Admin@123456
+      - SPLUNK_HEC_TOKEN=7d477aa1-628f-431d-871c-5c654da1610a
+    ports:
+      - "8000:8000"    # Splunk Web UI
+      - "8088:8088"    # HEC (HTTP Event Collector)
+      - "8089:8089"    # Splunk Management Port
+      - "9997:9997"    # Splunk Forwarder
+    volumes:
+      - splunk-var:/opt/splunk/var
+      - splunk-etc:/opt/splunk/etc
+    restart: unless-stopped
+
+volumes:
+  splunk-var:
+  splunk-etc:
+

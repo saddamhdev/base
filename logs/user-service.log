@@ -1,0 +1,11 @@
+{"timestamp":"2026-02-24T11:46:20.379",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h26s8ms230µs700ns).",
+ "exception":""}

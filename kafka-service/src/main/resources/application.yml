@@ -1,0 +1,104 @@
+spring:
+  application:
+    name: kafka-service
+
+  # Database Configuration
+  datasource:
+    url: jdbc:h2:mem:kafkadb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  # Kafka Configuration
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kafka-event-group
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 3
+
+# Custom Configuration
+kafka:
+  topic:
+    name: kafka-event-topic
+
+# Server Configuration
+server:
+  port: 8097
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    snvn.kafkaservice: DEBUG
+    org.springframework.kafka: INFO
+    org.apache.kafka: WARN
+
+  file:
+    name: logs/${spring.application.name}.log
+
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 30
+      total-size-cap: 2GB
+
+  pattern:
+    console: >
+      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
+       "level":"%level",
+       "service":"${spring.application.name}",
+       "thread":"%thread",
+       "traceId":"%X{traceId:-}",
+       "spanId":"%X{spanId:-}",
+       "correlationId":"%X{correlationId:-}",
+       "jobId":"%X{jobId:-}",
+       "logger":"%logger{36}",
+       "message":"%msg",
+       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
+
+    file: >
+      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
+       "level":"%level",
+       "service":"${spring.application.name}",
+       "thread":"%thread",
+       "traceId":"%X{traceId:-}",
+       "spanId":"%X{spanId:-}",
+       "correlationId":"%X{correlationId:-}",
+       "jobId":"%X{jobId:-}",
+       "logger":"%logger{36}",
+       "message":"%msg",
+       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
+

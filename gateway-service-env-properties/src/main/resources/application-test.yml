@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: user-service-route
+          uri: http://localhost:8094
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - RewritePath=/api/users/(?<segment>.*), /api/$\{segment}
+            - AddRequestHeader=X-Service, user-service
+
+        - id: config-service-route
+          uri: http://localhost:8092
+          predicates:
+            - Path=/config/**
+          filters:
+            - AddRequestHeader=X-Service, config-service
+
+        - id: main-service-route
+          uri: http://localhost:8094
+          predicates:
+            - Path=/**
+          filters:
+            - AddRequestHeader=X-Service, main-service
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "localhost,127.0.0.1"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+            maxAge: 3600
+
+server:
+  port: 8093
+  servlet:
+    context-path: /gateway
+
+eureka:
+  client:
+    enabled: false
+
+# Environment: Test
+logging:
+  level:
+    root: DEBUG
+    snvn: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

@@ -1,0 +1,90 @@
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: user-service-route
+          uri: https://user-service.yourdomain.com
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - RewritePath=/api/users/(?<segment>.*), /api/$\{segment}
+            - AddRequestHeader=X-Service, user-service
+            - CircuitBreaker=user-service-cb
+
+        - id: config-service-route
+          uri: https://config-service.yourdomain.com
+          predicates:
+            - Path=/config/**
+          filters:
+            - AddRequestHeader=X-Service, config-service
+            - CircuitBreaker=config-service-cb
+
+        - id: main-service-route
+          uri: https://main-service.yourdomain.com
+          predicates:
+            - Path=/**
+          filters:
+            - AddRequestHeader=X-Service, main-service
+            - CircuitBreaker=main-service-cb
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "https://yourdomain.com,https://www.yourdomain.com"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+            maxAge: 86400
+
+server:
+  port: 8093
+  servlet:
+    context-path: /gateway
+  compression:
+    enabled: true
+    min-response-size: 1024
+  ssl:
+    enabled: true
+    key-store: ${SSL_KEYSTORE_PATH}
+    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+    key-store-type: PKCS12
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://eureka-cluster:8761/eureka/
+  instance:
+    prefer-ip-address: false
+    hostname: gateway-service.yourdomain.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+# Environment: Production
+logging:
+  level:
+    root: ERROR
+    snvn: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: /var/log/gateway-service/application.log
+    max-size: 100MB
+    max-history: 30
+
