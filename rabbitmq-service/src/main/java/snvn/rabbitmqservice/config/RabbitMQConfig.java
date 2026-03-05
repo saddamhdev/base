@@ -32,6 +32,19 @@ public class RabbitMQConfig {
     @Value("${rabbitmq.dlq.routing.key:rabbitmq-event-dlq-routing-key}")
     private String dlqRoutingKey;
 
+    // Fanout Exchange Configuration
+    @Value("${rabbitmq.fanout.exchange.name:rabbitmq-fanout-exchange}")
+    private String fanoutExchangeName;
+
+    @Value("${rabbitmq.fanout.queue.notification:rabbitmq-fanout-notification-queue}")
+    private String fanoutNotificationQueue;
+
+    @Value("${rabbitmq.fanout.queue.audit:rabbitmq-fanout-audit-queue}")
+    private String fanoutAuditQueue;
+
+    @Value("${rabbitmq.fanout.queue.analytics:rabbitmq-fanout-analytics-queue}")
+    private String fanoutAnalyticsQueue;
+
     @Bean
     public Queue queue() {
         return QueueBuilder.durable(queueName)
@@ -69,6 +82,49 @@ public class RabbitMQConfig {
                 .bind(deadLetterQueue())
                 .to(deadLetterExchange())
                 .with(dlqRoutingKey);
+    }
+
+    // ==================== Fanout Exchange Configuration ====================
+
+    @Bean
+    public FanoutExchange fanoutExchange() {
+        return new FanoutExchange(fanoutExchangeName);
+    }
+
+    @Bean
+    public Queue fanoutNotificationQueue() {
+        return QueueBuilder.durable(fanoutNotificationQueue).build();
+    }
+
+    @Bean
+    public Queue fanoutAuditQueue() {
+        return QueueBuilder.durable(fanoutAuditQueue).build();
+    }
+
+    @Bean
+    public Queue fanoutAnalyticsQueue() {
+        return QueueBuilder.durable(fanoutAnalyticsQueue).build();
+    }
+
+    @Bean
+    public Binding fanoutNotificationBinding() {
+        return BindingBuilder
+                .bind(fanoutNotificationQueue())
+                .to(fanoutExchange());
+    }
+
+    @Bean
+    public Binding fanoutAuditBinding() {
+        return BindingBuilder
+                .bind(fanoutAuditQueue())
+                .to(fanoutExchange());
+    }
+
+    @Bean
+    public Binding fanoutAnalyticsBinding() {
+        return BindingBuilder
+                .bind(fanoutAnalyticsQueue())
+                .to(fanoutExchange());
     }
 
     @Bean

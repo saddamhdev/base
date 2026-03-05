@@ -35,6 +35,9 @@ public class RabbitMQEventService {
     @Value("${rabbitmq.queue.name:rabbitmq-event-queue}")
     private String queueName;
 
+    @Value("${rabbitmq.fanout.exchange.name:rabbitmq-fanout-exchange}")
+    private String fanoutExchangeName;
+
     @Transactional
     public RabbitMQEvent publishEvent(String eventType, String payload, String source) {
         logger.info("Publishing event to RabbitMQ: {}", eventType);
@@ -76,6 +79,35 @@ public class RabbitMQEventService {
             event.setStatus(RabbitMQEvent.EventStatus.SENT);
         } catch (Exception e) {
             logger.error("Failed to publish event to RabbitMQ", e);
+            event.setStatus(RabbitMQEvent.EventStatus.FAILED);
+            throw e;
+        } finally {
+            rabbitMQEventRepository.save(event);
+        }
+
+        return event;
+    }
+
+    /**
+     * Publish event to fanout exchange — broadcasts to all bound queues
+     * (notification, audit, analytics).
+     */
+    @Transactional
+    public RabbitMQEvent publishFanoutEvent(String eventType, String payload, String source) {
+        logger.info("Broadcasting fanout event to RabbitMQ: {}", eventType);
+
+        RabbitMQEvent event = new RabbitMQEvent(eventType, payload, source);
+        event.setExchange(fanoutExchangeName);
+        event.setRoutingKey(""); // Fanout ignores routing key
+        event.setQueue("fanout-all");
+        event = rabbitMQEventRepository.save(event);
+
+        try {
+            EventMessage eventMessage = new EventMessage(eventType, payload, source);
+            rabbitMQEventProducer.sendFanoutEvent(eventMessage);
+            event.setStatus(RabbitMQEvent.EventStatus.SENT);
+        } catch (Exception e) {
+            logger.error("Failed to broadcast fanout event to RabbitMQ", e);
             event.setStatus(RabbitMQEvent.EventStatus.FAILED);
             throw e;
         } finally {

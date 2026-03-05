@@ -1,0 +1,19 @@
+
+# Splunk HEC Configuration
+splunk:
+  hec:
+    url: https://localhost:8088/services/collector
+    token: a22e99ae-51de-4bff-8567-a726b83760d6
+    index: main
+    sourcetype: _json
+    enabled: true
+    batch-size: 100
+    flush-interval: 5000
+    ssl-verify: false
+
+spring:
+  config:
+    import:
+      - "optional:classpath:splunk-hec-dev.yml"
+      - "optional:classpath:redis-shared-dev.yml"
+      - "optional:classpath:log-file-dev.yml"

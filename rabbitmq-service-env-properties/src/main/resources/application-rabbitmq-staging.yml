@@ -1,0 +1,109 @@
+spring:
+  application:
+    name: rabbitmq-service
+
+  datasource:
+    url: jdbc:postgresql://staging-db.yourdomain.com:5432/rabbitmqdb
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  h2:
+    console:
+      enabled: false
+
+  rabbitmq:
+    host: staging-rabbitmq.yourdomain.com
+    port: 5672
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+    virtual-host: /staging
+    template:
+      default-receive-queue: rabbitmq-event-queue-staging
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 5
+        retry:
+          enabled: true
+          initial-interval: 3000
+          max-attempts: 5
+          multiplier: 2.0
+          max-interval: 30000
+
+rabbitmq-service-log:
+  enabled: true
+  exchange: rabbitmq-log-exchange-staging
+  routing-key: rabbitmq-log-routing-key-staging
+  queue: rabbitmq-log-queue-staging
+  source: ${spring.application.name:rabbitmq-service}
+  index: main
+  sourcetype: _json
+
+rabbitmq:
+  queue:
+    name: rabbitmq-event-queue-staging
+  exchange:
+    name: rabbitmq-event-exchange-staging
+  routing:
+    key: rabbitmq-event-routing-key-staging
+  dlq:
+    queue:
+      name: rabbitmq-event-dlq-staging
+    exchange:
+      name: rabbitmq-event-dlq-exchange-staging
+    routing:
+      key: rabbitmq-event-dlq-routing-key-staging
+  fanout:
+    exchange:
+      name: rabbitmq-fanout-exchange-staging
+    queue:
+      notification: rabbitmq-fanout-notification-queue-staging
+      audit: rabbitmq-fanout-audit-queue-staging
+      analytics: rabbitmq-fanout-analytics-queue-staging
+
+server:
+  port: 8098
+  compression:
+    enabled: true
+    min-response-size: 1024
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: when-authorized
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+# Environment: Staging
+logging:
+  level:
+    root: WARN
+    snvn.rabbitmqservice: INFO
+    org.springframework.amqp: INFO
+    com.rabbitmq: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: /var/log/rabbitmq-service/application.log
+    max-size: 50MB
+    max-history: 15
+

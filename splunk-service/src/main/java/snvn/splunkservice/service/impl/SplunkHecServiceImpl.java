@@ -109,7 +109,7 @@ public class SplunkHecServiceImpl implements SplunkHecService {
             logger.error("Failed to serialize Splunk event: {}", e.getMessage());
             return Mono.error(e);
         }
-
+        System.out.println("Sending event to Splunk HEC: {}"+ jsonPayload);
         logger.debug("Sending event to Splunk HEC: {}", jsonPayload);
 
         return splunkWebClient.post()
@@ -118,13 +118,18 @@ public class SplunkHecServiceImpl implements SplunkHecService {
                 .bodyToMono(SplunkResponse.class)
                 .doOnSuccess(response -> {
                     if (response.isSuccess()) {
+                        System.out.println("Event sent successfully to Splunk");
                         logger.debug("Event sent successfully to Splunk");
                     } else {
+                        System.err.println("Event sent successfully to Splunk");
                         logger.warn("Splunk returned non-success response: {}", response);
                     }
                 })
-                .doOnError(error ->
-                        logger.error("Error sending event to Splunk: {}", error.getMessage()));
+                .doOnError(error ->{
+                            System.err.println("Error sending event to Splunk: {}"+ error.getMessage());
+                            logger.error("Error sending event to Splunk: {}", error.getMessage());
+                        }
+                       );
     }
 
     @Override
@@ -252,15 +257,16 @@ public class SplunkHecServiceImpl implements SplunkHecService {
 
     @Override
     public Mono<Boolean> healthCheck() {
+      //  System.out.println("health checking");
         if (!properties.isEnabled()) {
             return Mono.just(false);
         }
-        //System.out.println(properties.isEnabled());
+      //  System.out.println(properties.isEnabled());
         // Send a test event to verify connectivity
         Map<String, Object> healthEvent = new HashMap<>();
-        healthEvent.put("message", "Health check from splunk-service");
+        healthEvent.put("message", "Health check from splunk-service Good Practise");
         healthEvent.put("type", "health_check");
-        healthEvent.put("timestamp", System.currentTimeMillis());
+        healthEvent.put("timestamp", System.currentTimeMillis()/ 1000);
 
         return sendEvent(healthEvent)
                 .map(SplunkResponse::isSuccess)

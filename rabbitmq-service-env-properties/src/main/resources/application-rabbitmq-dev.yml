@@ -1,0 +1,57 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+    template:
+      default-receive-queue: rabbitmq-event-queue
+    listener:
+      simple:
+        acknowledge-mode: auto
+        prefetch: 1
+        auto-startup: false
+        missing-queues-fatal: false
+        possible-authentication-failure-fatal: false
+        retry:
+          enabled: true
+          initial-interval: 2000
+          max-attempts: 3
+          multiplier: 1.5
+
+rabbitmq-service-log:
+  enabled: true
+  auto-startup: true
+  exchange: rabbitmq-log-exchange
+  routing-key: rabbitmq-log-routing-key
+  queue: rabbitmq-log-queue
+  source: ${spring.application.name:rabbitmq-service}
+  index: main
+  sourcetype: _json
+  logfileEnabled: false
+  splunkEnabled: true
+
+
+rabbitmq:
+  queue:
+    name: rabbitmq-event-queue
+  exchange:
+    name: rabbitmq-event-exchange
+  routing:
+    key: rabbitmq-event-routing-key
+  dlq:
+    queue:
+      name: rabbitmq-event-dlq
+    exchange:
+      name: rabbitmq-event-dlq-exchange
+    routing:
+      key: rabbitmq-event-dlq-routing-key
+  fanout:
+    exchange:
+      name: rabbitmq-fanout-exchange
+    queue:
+      notification: rabbitmq-fanout-notification-queue
+      audit: rabbitmq-fanout-audit-queue
+      analytics: rabbitmq-fanout-analytics-queue
+
+

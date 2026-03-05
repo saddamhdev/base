@@ -1,6 +1,12 @@
 spring:
   application:
     name: gateway-service
+  config:
+    import:
+      - "optional:classpath:log-file-prod.yml"
+      - "optional:classpath:splunk-hec-prod.yml"
+      - "optional:classpath:application-rabbitmq-prod.yml"
+      - "optional:classpath:application-kafka-prod.yml"
 
   cloud:
     gateway:
@@ -10,9 +16,64 @@ spring:
           predicates:
             - Path=/api/users/**
           filters:
-            - RewritePath=/api/users/(?<segment>.*), /api/$\{segment}
             - AddRequestHeader=X-Service, user-service
-            - CircuitBreaker=user-service-cb
+            - CircuitBreaker=userServiceCB
+
+        - id: auth-service-route
+          uri: https://auth-service.yourdomain.com
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - AddRequestHeader=X-Service, auth-service
+            - CircuitBreaker=authServiceCB
+
+        - id: account-service-route
+          uri: https://account-service.yourdomain.com
+          predicates:
+            - Path=/api/accounts/**
+          filters:
+            - AddRequestHeader=X-Service, account-service
+            - CircuitBreaker=accountServiceCB
+
+        - id: transaction-service-route
+          uri: https://transaction-service.yourdomain.com
+          predicates:
+            - Path=/api/transactions/**
+          filters:
+            - AddRequestHeader=X-Service, transaction-service
+            - CircuitBreaker=transactionServiceCB
+
+        - id: notification-service-route
+          uri: https://notification-service.yourdomain.com
+          predicates:
+            - Path=/api/notifications/**
+          filters:
+            - AddRequestHeader=X-Service, notification-service
+            - CircuitBreaker=notificationServiceCB
+
+        - id: audit-service-route
+          uri: https://audit-service.yourdomain.com
+          predicates:
+            - Path=/api/audit/**
+          filters:
+            - AddRequestHeader=X-Service, audit-service
+            - CircuitBreaker=auditServiceCB
+
+        - id: kafka-service-route
+          uri: https://kafka-service.yourdomain.com
+          predicates:
+            - Path=/api/kafka/**
+          filters:
+            - AddRequestHeader=X-Service, kafka-service
+            - CircuitBreaker=kafkaServiceCB
+
+        - id: rabbitmq-service-route
+          uri: https://rabbitmq-service.yourdomain.com
+          predicates:
+            - Path=/api/rabbitmq/**
+          filters:
+            - AddRequestHeader=X-Service, rabbitmq-service
+            - CircuitBreaker=rabbitmqServiceCB
 
         - id: config-service-route
           uri: https://config-service.yourdomain.com
@@ -20,15 +81,7 @@ spring:
             - Path=/config/**
           filters:
             - AddRequestHeader=X-Service, config-service
-            - CircuitBreaker=config-service-cb
-
-        - id: main-service-route
-          uri: https://main-service.yourdomain.com
-          predicates:
-            - Path=/**
-          filters:
-            - AddRequestHeader=X-Service, main-service
-            - CircuitBreaker=main-service-cb
+            - CircuitBreaker=configServiceCB
 
       globalcors:
         corsConfigurations:
@@ -88,3 +141,70 @@ logging:
     max-size: 100MB
     max-history: 30
 
+# Resilience4j Configuration (must be at root level, not under spring)
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 20
+        minimumNumberOfCalls: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 10000
+        failureRateThreshold: 70
+        slowCallRateThreshold: 100
+        slowCallDurationThreshold: 30000
+    instances:
+      userServiceCB:
+        baseConfig: default
+      authServiceCB:
+        baseConfig: default
+      accountServiceCB:
+        baseConfig: default
+      transactionServiceCB:
+        baseConfig: default
+      notificationServiceCB:
+        baseConfig: default
+      auditServiceCB:
+        baseConfig: default
+      kafkaServiceCB:
+        baseConfig: default
+      rabbitmqServiceCB:
+        baseConfig: default
+      configServiceCB:
+        baseConfig: default
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 30s
+        cancelRunningFuture: true
+    instances:
+      userServiceCB:
+        baseConfig: default
+      authServiceCB:
+        baseConfig: default
+      accountServiceCB:
+        baseConfig: default
+      transactionServiceCB:
+        baseConfig: default
+      notificationServiceCB:
+        baseConfig: default
+      auditServiceCB:
+        baseConfig: default
+      kafkaServiceCB:
+        baseConfig: default
+      rabbitmqServiceCB:
+        baseConfig: default
+      configServiceCB:
+        baseConfig: default
+
+gateway-service-log:
+  logfile:
+    enabled: true
+  splunk:
+    enabled: true
+  rabbitmq:
+    enabled: true
+
+rabbitmq-service-log:
+  auto-startup: false

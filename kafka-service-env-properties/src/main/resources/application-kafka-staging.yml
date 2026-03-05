@@ -1,0 +1,42 @@
+spring:
+  kafka:
+    bootstrap-servers: staging-kafka-1.yourdomain.com:9092,staging-kafka-2.yourdomain.com:9092
+    consumer:
+      group-id: kafka-event-group-staging
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+        max.poll.records: 100
+        session.timeout.ms: 30000
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 5
+      properties:
+        max.in.flight.requests.per.connection: 5
+        enable.idempotence: true
+    properties:
+      security.protocol: SASL_SSL
+      sasl.mechanism: PLAIN
+      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="${KAFKA_USERNAME}" password="${KAFKA_PASSWORD}";
+
+kafka-service-log:
+  enabled: true
+  auto-startup: true
+  bootstrap-servers: ${spring.kafka.bootstrap-servers:localhost:9092}
+  topic: kafka-log-topic-staging
+  group-id: kafka-log-group-staging
+  source: ${spring.application.name:kafka-service}
+  index: main
+  sourcetype: _json
+  logfileEnabled: false
+  splunkEnabled: true
+
+kafka:
+  topic:
+    name: kafka-event-topic-staging
+

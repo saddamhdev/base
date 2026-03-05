@@ -1,0 +1,132 @@
+spring:
+  application:
+    name: rabbitmq-service
+
+  datasource:
+    url: jdbc:postgresql://prod-db-cluster.yourdomain.com:5432/rabbitmqdb
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
+
+  h2:
+    console:
+      enabled: false
+
+  rabbitmq:
+    host: prod-rabbitmq-cluster.yourdomain.com
+    port: 5672
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+    virtual-host: /production
+    ssl:
+      enabled: true
+    template:
+      default-receive-queue: rabbitmq-event-queue-prod
+      retry:
+        enabled: true
+        initial-interval: 1000
+        max-attempts: 3
+        multiplier: 2.0
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 10
+        retry:
+          enabled: true
+          initial-interval: 5000
+          max-attempts: 10
+          multiplier: 2.0
+          max-interval: 60000
+        default-requeue-rejected: false
+
+rabbitmq-service-log:
+  enabled: true
+  exchange: rabbitmq-log-exchange-prod
+  routing-key: rabbitmq-log-routing-key-prod
+  queue: rabbitmq-log-queue-prod
+  source: ${spring.application.name:rabbitmq-service}
+  index: main
+  sourcetype: _json
+
+rabbitmq:
+  queue:
+    name: rabbitmq-event-queue-prod
+  exchange:
+    name: rabbitmq-event-exchange-prod
+  routing:
+    key: rabbitmq-event-routing-key-prod
+  dlq:
+    queue:
+      name: rabbitmq-event-dlq-prod
+    exchange:
+      name: rabbitmq-event-dlq-exchange-prod
+    routing:
+      key: rabbitmq-event-dlq-routing-key-prod
+  fanout:
+    exchange:
+      name: rabbitmq-fanout-exchange-prod
+    queue:
+      notification: rabbitmq-fanout-notification-queue-prod
+      audit: rabbitmq-fanout-audit-queue-prod
+      analytics: rabbitmq-fanout-analytics-queue-prod
+
+server:
+  port: 8098
+  compression:
+    enabled: true
+    min-response-size: 1024
+  ssl:
+    enabled: true
+    key-store: ${SSL_KEYSTORE_PATH}
+    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+    key-store-type: PKCS12
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      show-details: never
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+
+# Environment: Production
+logging:
+  level:
+    root: ERROR
+    snvn.rabbitmqservice: WARN
+    org.springframework.amqp: WARN
+    com.rabbitmq: ERROR
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: /var/log/rabbitmq-service/application.log
+    max-size: 100MB
+    max-history: 30
+    total-size-cap: 3GB
+

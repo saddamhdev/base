@@ -4,49 +4,66 @@ spring:
   profiles:
     active: dev
 
-logging:
-  level:
-    root: INFO
-    snvn: DEBUG
-
-  file:
-    name: logs/${spring.application.name}.log
-
-  logback:
-    rollingpolicy:
-      max-file-size: 10MB
-      max-history: 30
-      total-size-cap: 2GB
-
-  pattern:
-    console: >
-      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
-       "level":"%level",
-       "service":"${spring.application.name}",
-       "thread":"%thread",
-       "traceId":"%X{traceId:-}",
-       "spanId":"%X{spanId:-}",
-       "correlationId":"%X{correlationId:-}",
-       "jobId":"%X{jobId:-}",
-       "logger":"%logger{36}",
-       "message":"%msg",
-       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
-
-    file: >
-      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
-       "level":"%level",
-       "service":"${spring.application.name}",
-       "thread":"%thread",
-       "traceId":"%X{traceId:-}",
-       "spanId":"%X{spanId:-}",
-       "correlationId":"%X{correlationId:-}",
-       "jobId":"%X{jobId:-}",
-       "logger":"%logger{36}",
-       "message":"%msg",
-       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
+#logging:
+#  level:
+#    root: INFO
+#    snvn: DEBUG
+#
+#  file:
+#    name: logs/${spring.application.name}.log
+#
+#  logback:
+#    rollingpolicy:
+#      max-file-size: 10MB
+#      max-history: 30
+#      total-size-cap: 2GB
+#
+#  pattern:
+#    console: >
+#      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
+#       "level":"%level",
+#       "service":"${spring.application.name}",
+#       "thread":"%thread",
+#       "traceId":"%X{traceId:-}",
+#       "spanId":"%X{spanId:-}",
+#       "correlationId":"%X{correlationId:-}",
+#       "jobId":"%X{jobId:-}",
+#       "logger":"%logger{36}",
+#       "message":"%msg",
+#       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
+#
+#    file: >
+#      {"timestamp":"%d{yyyy-MM-dd'T'HH:mm:ss.SSS}",
+#       "level":"%level",
+#       "service":"${spring.application.name}",
+#       "thread":"%thread",
+#       "traceId":"%X{traceId:-}",
+#       "spanId":"%X{spanId:-}",
+#       "correlationId":"%X{correlationId:-}",
+#       "jobId":"%X{jobId:-}",
+#       "logger":"%logger{36}",
+#       "message":"%msg",
+#       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
+gateway:
+  rate-limit:
+    enabled: true
+    requests-per-minute: 2
 
 server:
   port: 8093
+
+# Splunk HEC Configuration
+splunk:
+  hec:
+    url: https://localhost:8088/services/collector
+    token: a22e99ae-51de-4bff-8567-a726b83760d6             # Splunk HEC token
+    index: main                             # Splunk index name
+    source: gateway-service              # Source identifier
+    sourcetype: _json
+    enabled: true
+    batch-size: 100
+    flush-interval: 5000
+    ssl-verify: false                      # Source type
 
 management:
   tracing:

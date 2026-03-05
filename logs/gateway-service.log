@@ -1,4 +1,4 @@
-{"timestamp":"2026-02-24T00:06:04.529",
+{"timestamp":"2026-03-06T00:07:22.638",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -7,10 +7,9 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.g.GatewayServiceApplication",
- "message":"Starting GatewayServiceApplication using Java 25.0.1 with PID 19228 (D:\module project\base\gateway-service\target\classes started by 01957 in D:\module project\base)",
+ "message":"Starting GatewayServiceApplication using Java 25.0.1 with PID 5264 (D:\module project\base\gateway-service\target\classes started by 01957 in D:\module project\base)",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:04.546",
+{"timestamp":"2026-03-06T00:07:22.670",
  "level":"DEBUG",
  "service":"gateway-service",
  "thread":"main",
@@ -21,8 +20,7 @@
  "logger":"s.g.GatewayServiceApplication",
  "message":"Running with Spring Boot v3.3.2, Spring v6.1.11",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:04.547",
+{"timestamp":"2026-03-06T00:07:22.673",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -33,8 +31,7 @@
  "logger":"s.g.GatewayServiceApplication",
  "message":"The following 1 profile is active: "dev"",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:06.637",
+{"timestamp":"2026-03-06T00:07:26.562",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -45,8 +42,7 @@
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
  "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:06.642",
+{"timestamp":"2026-03-06T00:07:26.570",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -57,8 +53,7 @@
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
  "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:06.688",
+{"timestamp":"2026-03-06T00:07:26.630",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -67,10 +62,9 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.",
+ "message":"Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:07.161",
+{"timestamp":"2026-03-06T00:07:27.365",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -79,10 +73,42 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.cloud.context.scope.GenericScope",
- "message":"BeanFactory id=82aa8a94-c8eb-3a5e-897d-f3fb8d7d19ae",
+ "message":"BeanFactory id=4060a4dc-2071-3180-9fba-09b24c26687a",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.044",
+{"timestamp":"2026-03-06T00:07:29.795",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:29.958",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 3 delegate(s): [RabbitMQExternalLogServiceImplementation, SplunkExternalLogService, KafkaExternalLogServiceImplementation]",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:29.962",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.f.ApplicationDetailsGlobalFilter",
+ "message":"ApplicationDetailsGlobalFilter initialized with ExternalLogService: CompositeExternalLogService, channels: GatewayServiceLogProperties{logfile=false, splunk=false, rabbitmq=false, kafka=true}",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:32.004",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -93,8 +119,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [After]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.045",
+{"timestamp":"2026-03-06T00:07:32.005",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -105,8 +130,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Before]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.045",
+{"timestamp":"2026-03-06T00:07:32.005",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -117,8 +141,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Between]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.046",
+{"timestamp":"2026-03-06T00:07:32.006",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -129,8 +152,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Cookie]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.046",
+{"timestamp":"2026-03-06T00:07:32.006",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -141,8 +163,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Header]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.046",
+{"timestamp":"2026-03-06T00:07:32.006",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -153,8 +174,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Host]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.047",
+{"timestamp":"2026-03-06T00:07:32.006",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -165,8 +185,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Method]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.047",
+{"timestamp":"2026-03-06T00:07:32.006",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -177,8 +196,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Path]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.047",
+{"timestamp":"2026-03-06T00:07:32.007",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -189,8 +207,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Query]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.047",
+{"timestamp":"2026-03-06T00:07:32.007",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -201,8 +218,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [ReadBody]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.048",
+{"timestamp":"2026-03-06T00:07:32.007",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -213,8 +229,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [RemoteAddr]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.048",
+{"timestamp":"2026-03-06T00:07:32.007",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -225,8 +240,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [XForwardedRemoteAddr]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.048",
+{"timestamp":"2026-03-06T00:07:32.007",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -237,8 +251,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [Weight]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.048",
+{"timestamp":"2026-03-06T00:07:32.007",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -249,8 +262,7 @@
  "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
  "message":"Loaded RoutePredicateFactory [CloudFoundryRouteService]",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:11.765",
+{"timestamp":"2026-03-06T00:07:32.714",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -261,8 +273,21 @@
  "logger":"o.s.b.a.e.web.EndpointLinksResolver",
  "message":"Exposing 1 endpoint beneath base path '/actuator'",
  "exception":""}
+{"timestamp":"2026-03-06T00:07:33.456",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration",
+ "message":"
 
-{"timestamp":"2026-02-24T00:06:12.812",
+Using generated security password: 4c8cc6ce-cd27-4e9a-83c4-9adb915d1768
+",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.077",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -273,8 +298,192 @@
  "logger":"o.s.b.w.e.netty.NettyWebServer",
  "message":"Netty started on port 8093 (http)",
  "exception":""}
-
-{"timestamp":"2026-02-24T00:06:13.119",
+{"timestamp":"2026-03-06T00:07:34.225",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.consumer.ConsumerConfig",
+ "message":"ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-log-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-log-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.363",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.t.i.KafkaMetricsCollector",
+ "message":"initializing Kafka metrics collector",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.575",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.kafka.common.utils.AppInfoParser",
+ "message":"Kafka version: 3.7.1",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.575",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.kafka.common.utils.AppInfoParser",
+ "message":"Kafka commitId: e2494e6ffb89f828",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.575",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.kafka.common.utils.AppInfoParser",
+ "message":"Kafka startTimeMs: 1772734054571",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.603",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.LegacyKafkaConsumer",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Subscribed to topic(s): kafka-log-topic",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.625",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:34.893",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#4cfc0c48:0/SimpleConnection@2d91147b [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=62580]",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:35.265",
  "level":"INFO",
  "service":"gateway-service",
  "thread":"main",
@@ -283,6 +492,382 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.g.GatewayServiceApplication",
- "message":"Started GatewayServiceApplication in 9.628 seconds (process running for 33.665)",
+ "message":"Started GatewayServiceApplication in 15.637 seconds (process running for 19.289)",
  "exception":""}
-
+{"timestamp":"2026-03-06T00:07:36.221",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.apache.kafka.clients.Metadata",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Cluster ID: RZM5JUN0Tn-k2TdCZRksfQ",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:36.224",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:36.242",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] (Re-)joining group",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:36.292",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-log-group-1-6a6c2484-35ae-4aab-acb9-cdcb29e4430f",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:36.294",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] (Re-)joining group",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:39.317",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Successfully joined group with generation Generation{generationId=3, memberId='consumer-kafka-log-group-1-6a6c2484-35ae-4aab-acb9-cdcb29e4430f', protocol='range'}",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:39.326",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Finished assignment for group at generation 3: {consumer-kafka-log-group-1-6a6c2484-35ae-4aab-acb9-cdcb29e4430f=Assignment(partitions=[kafka-log-topic-0])}",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:39.347",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Successfully synced group in generation Generation{generationId=3, memberId='consumer-kafka-log-group-1-6a6c2484-35ae-4aab-acb9-cdcb29e4430f', protocol='range'}",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:39.347",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerCoordinator",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Notifying assignor about the new Assignment(partitions=[kafka-log-topic-0])",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:39.351",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.i.ConsumerRebalanceListenerInvoker",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Adding newly assigned partitions: kafka-log-topic-0",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:39.364",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.k.c.c.internals.ConsumerUtils",
+ "message":"Setting offset for partition kafka-log-topic-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}",
+ "exception":""}
+{"timestamp":"2026-03-06T00:07:39.414",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.k.l.KafkaMessageListenerContainer",
+ "message":"kafka-log-group: partitions assigned: [kafka-log-topic-0]",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:36.559",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"o.a.k.c.producer.ProducerConfig",
+ "message":"Idempotence will be disabled because acks is set to 1, not set to 'all'.",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:36.578",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"o.a.k.c.producer.ProducerConfig",
+ "message":"ProducerConfig values: 
+	acks = 1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = gateway-service-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:36.595",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"o.a.k.c.t.i.KafkaMetricsCollector",
+ "message":"initializing Kafka metrics collector",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:39.828",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"o.a.kafka.common.utils.AppInfoParser",
+ "message":"Kafka version: 3.7.1",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:39.830",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"o.a.kafka.common.utils.AppInfoParser",
+ "message":"Kafka commitId: e2494e6ffb89f828",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:39.830",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"o.a.kafka.common.utils.AppInfoParser",
+ "message":"Kafka startTimeMs: 1772734419823",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:39.974",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"kafka-producer-network-thread | gateway-service-producer-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.apache.kafka.clients.Metadata",
+ "message":"[Producer clientId=gateway-service-producer-1] Cluster ID: RZM5JUN0Tn-k2TdCZRksfQ",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:40.454",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.c.KafkaExternalLogServiceImplementation",
+ "message":"Log event sent to Kafka successfully",
+ "exception":""}
+{"timestamp":"2026-03-06T00:13:40.454",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"s.k.c.KafkaExternalLogServiceImplementation",
+ "message":"Log event sent to Kafka successfully",
+ "exception":""}
+{"timestamp":"2026-03-06T00:14:02.629",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-2",
+ "traceId":"7610f2e5cb09459ca1db647c7f25f70c",
+ "spanId":"09aa212413144775",
+ "correlationId":"b9e98dad-b854-4f68-ae8c-4b778953e818",
+ "jobId":"",
+ "logger":"s.k.c.KafkaExternalLogServiceImplementation",
+ "message":"Log event sent to Kafka successfully",
+ "exception":""}
+{"timestamp":"2026-03-06T00:16:36.462",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.apache.kafka.clients.NetworkClient",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Node -1 disconnected.",
+ "exception":""}
+{"timestamp":"2026-03-06T00:22:40.039",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"kafka-producer-network-thread | gateway-service-producer-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.apache.kafka.clients.NetworkClient",
+ "message":"[Producer clientId=gateway-service-producer-1] Node -1 disconnected.",
+ "exception":""}
+{"timestamp":"2026-03-06T00:26:36.604",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.apache.kafka.clients.NetworkClient",
+ "message":"[Consumer clientId=consumer-kafka-log-group-1, groupId=kafka-log-group] Node -1 disconnected.",
+ "exception":""}
+{"timestamp":"2026-03-06T00:32:40.064",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"kafka-producer-network-thread | gateway-service-producer-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.apache.kafka.clients.NetworkClient",
+ "message":"[Producer clientId=gateway-service-producer-1] Node -1 disconnected.",
+ "exception":""}

@@ -1,0 +1,48 @@
+spring:
+  kafka:
+    bootstrap-servers: prod-kafka-1.yourdomain.com:9092,prod-kafka-2.yourdomain.com:9092,prod-kafka-3.yourdomain.com:9092
+    consumer:
+      group-id: kafka-event-group-prod
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+        max.poll.records: 500
+        max.poll.interval.ms: 300000
+        session.timeout.ms: 45000
+        heartbeat.interval.ms: 15000
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 10
+      properties:
+        max.in.flight.requests.per.connection: 5
+        enable.idempotence: true
+        compression.type: snappy
+        linger.ms: 10
+        batch.size: 32768
+    properties:
+      security.protocol: SASL_SSL
+      sasl.mechanism: PLAIN
+      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="${KAFKA_USERNAME}" password="${KAFKA_PASSWORD}";
+      ssl.endpoint.identification.algorithm: https
+
+kafka-service-log:
+  enabled: true
+  auto-startup: true
+  bootstrap-servers: ${spring.kafka.bootstrap-servers:localhost:9092}
+  topic: kafka-log-topic-prod
+  group-id: kafka-log-group-prod
+  source: ${spring.application.name:kafka-service}
+  index: main
+  sourcetype: _json
+  logfileEnabled: false
+  splunkEnabled: true
+
+kafka:
+  topic:
+    name: kafka-event-topic-prod
+

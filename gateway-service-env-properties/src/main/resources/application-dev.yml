@@ -1,26 +1,31 @@
 spring:
   application:
     name: gateway-service
+  config:
+    import:
+      - "optional:classpath:splunk-hec-dev.yml"
+      - "optional:classpath:redis-shared-dev.yml"
+      - "optional:classpath:log-file-dev.yml"
+      - "optional:classpath:application-rabbitmq-dev.yml"
+      - "optional:classpath:application-kafka-dev.yml"
+
 
   cloud:
     gateway:
       routes:
-        - id: main-service-users
-          uri: http://localhost:8094
+        - id: user-service
+          uri: http://localhost:8102
           predicates:
             - Path=/api/users/**
           filters:
             - name: CircuitBreaker
               args:
-                name: mainServiceCB
+                name: userServiceCB
                 fallbackUri: forward:/fallback
-            - name: RequestRateLimiter
-              args:
-                key-resolver: "#{@ipAddressKeyResolver}"
-                redis-rate-limiter.replenishRate: 10
-                redis-rate-limiter.burstCapacity: 20
-        - id: main-service-auth
-          uri: http://localhost:8094
+
+
+        - id: auth-service
+          uri: http://localhost:8096
           predicates:
             - Path=/api/auth/**
           filters:
@@ -30,24 +35,66 @@ spring:
                 value: "true"
             - name: CircuitBreaker
               args:
-                name: mainServiceCB
+                name: authServiceCB
                 fallbackUri: forward:/fallback
-        - id: main-service-accounts
-          uri: http://localhost:8094
+        - id: account-service
+          uri: http://localhost:8095
           predicates:
             - Path=/api/accounts/**
-        - id: main-service-transactions
-          uri: http://localhost:8094
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: accountServiceCB
+                fallbackUri: forward:/fallback
+        - id: transaction-service
+          uri: http://localhost:8101
           predicates:
             - Path=/api/transactions/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: transactionServiceCB
+                fallbackUri: forward:/fallback
+        - id: notification-service
+          uri: http://localhost:8100
+          predicates:
+            - Path=/api/notifications/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: notificationServiceCB
+                fallbackUri: forward:/fallback
+        - id: audit-service
+          uri: http://localhost:8099
+          predicates:
+            - Path=/api/audit/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: auditServiceCB
+                fallbackUri: forward:/fallback
+        - id: kafka-service
+          uri: http://localhost:8097
+          predicates:
+            - Path=/api/kafka/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: kafkaServiceCB
+                fallbackUri: forward:/fallback
+        - id: rabbitmq-service
+          uri: http://localhost:8098
+          predicates:
+            - Path=/api/rabbitmq/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: rabbitmqServiceCB
+                fallbackUri: forward:/fallback
         - id: config-service
           uri: http://localhost:8092
           predicates:
             - Path=/config/**
-        - id: main-service-default
-          uri: http://localhost:8094
-          predicates:
-            - Path=/**
 
       globalcors:
         corsConfigurations:
@@ -76,22 +123,58 @@ spring:
       port: 6379
       password: '@#12345678'
 
-  # Resilience4j Configuration for Circuit Breaker
-  resilience4j:
-    circuitbreaker:
-      configs:
-        default:
-          registerHealthIndicator: true
-          slidingWindowSize: 20
-          minimumNumberOfCalls: 10
-          automaticTransitionFromOpenToHalfOpenEnabled: true
-          waitDurationInOpenState: 10000
-          failureRateThreshold: 70
-          slowCallRateThreshold: 100
-          slowCallDurationThreshold: 5000
-      instances:
-        mainServiceCB:
-          baseConfig: default
+# Resilience4j Configuration (must be at root level, not under spring)
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 20
+        minimumNumberOfCalls: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 10000
+        failureRateThreshold: 70
+        slowCallRateThreshold: 100
+        slowCallDurationThreshold: 30000
+    instances:
+      userServiceCB:
+        baseConfig: default
+      authServiceCB:
+        baseConfig: default
+      accountServiceCB:
+        baseConfig: default
+      transactionServiceCB:
+        baseConfig: default
+      notificationServiceCB:
+        baseConfig: default
+      auditServiceCB:
+        baseConfig: default
+      kafkaServiceCB:
+        baseConfig: default
+      rabbitmqServiceCB:
+        baseConfig: default
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 30s
+        cancelRunningFuture: true
+    instances:
+      userServiceCB:
+        baseConfig: default
+      authServiceCB:
+        baseConfig: default
+      accountServiceCB:
+        baseConfig: default
+      transactionServiceCB:
+        baseConfig: default
+      notificationServiceCB:
+        baseConfig: default
+      auditServiceCB:
+        baseConfig: default
+      kafkaServiceCB:
+        baseConfig: default
+      rabbitmqServiceCB:
+        baseConfig: default
 
 server:
   port: 8093
@@ -101,4 +184,17 @@ server:
 eureka:
   client:
     enabled: false
+
+gateway-service-log:
+  logfile:
+    enabled: false
+  splunk:
+    enabled: false
+  rabbitmq:
+    enabled: false
+  kafka:
+    enabled: true
+
+rabbitmq-service-log:
+  auto-startup: false
 

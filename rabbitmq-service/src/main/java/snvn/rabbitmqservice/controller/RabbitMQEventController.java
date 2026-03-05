@@ -47,6 +47,21 @@ public class RabbitMQEventController {
     }
 
     /**
+     * Broadcast event to all consumers via fanout exchange.
+     * The message is delivered to every queue bound to the fanout exchange
+     * (notification, audit, analytics).
+     */
+    @PostMapping("/fanout")
+    public ResponseEntity<RabbitMQEvent> publishFanoutEvent(@RequestBody Map<String, String> request) {
+        String eventType = request.get("eventType");
+        String payload = request.get("payload");
+        String source = request.getOrDefault("source", "rabbitmq-service");
+
+        RabbitMQEvent event = rabbitMQEventService.publishFanoutEvent(eventType, payload, source);
+        return ResponseEntity.status(HttpStatus.CREATED).body(event);
+    }
+
+    /**
      * Get all events
      */
     @GetMapping

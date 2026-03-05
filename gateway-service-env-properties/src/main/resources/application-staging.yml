@@ -1,17 +1,71 @@
 spring:
   application:
     name: gateway-service
+  config:
+    import:
+      - "optional:classpath:log-file-staging.yml"
+      - "optional:classpath:splunk-hec-staging.yml"
+      - "optional:classpath:application-rabbitmq-staging.yml"
+      - "optional:classpath:application-kafka-staging.yml"
 
   cloud:
     gateway:
       routes:
         - id: user-service-route
-          uri: http://staging-user-service:8081
+          uri: http://staging-user-service:8102
           predicates:
             - Path=/api/users/**
           filters:
-            - RewritePath=/api/users/(?<segment>.*), /api/$\{segment}
             - AddRequestHeader=X-Service, user-service
+
+        - id: auth-service-route
+          uri: http://staging-auth-service:8096
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - AddRequestHeader=X-Service, auth-service
+
+        - id: account-service-route
+          uri: http://staging-account-service:8095
+          predicates:
+            - Path=/api/accounts/**
+          filters:
+            - AddRequestHeader=X-Service, account-service
+
+        - id: transaction-service-route
+          uri: http://staging-transaction-service:8101
+          predicates:
+            - Path=/api/transactions/**
+          filters:
+            - AddRequestHeader=X-Service, transaction-service
+
+        - id: notification-service-route
+          uri: http://staging-notification-service:8100
+          predicates:
+            - Path=/api/notifications/**
+          filters:
+            - AddRequestHeader=X-Service, notification-service
+
+        - id: audit-service-route
+          uri: http://staging-audit-service:8099
+          predicates:
+            - Path=/api/audit/**
+          filters:
+            - AddRequestHeader=X-Service, audit-service
+
+        - id: kafka-service-route
+          uri: http://staging-kafka-service:8097
+          predicates:
+            - Path=/api/kafka/**
+          filters:
+            - AddRequestHeader=X-Service, kafka-service
+
+        - id: rabbitmq-service-route
+          uri: http://staging-rabbitmq-service:8098
+          predicates:
+            - Path=/api/rabbitmq/**
+          filters:
+            - AddRequestHeader=X-Service, rabbitmq-service
 
         - id: config-service-route
           uri: http://staging-config-service:8888
@@ -20,12 +74,6 @@ spring:
           filters:
             - AddRequestHeader=X-Service, config-service
 
-        - id: main-service-route
-          uri: http://staging-main-service:3081
-          predicates:
-            - Path=/**
-          filters:
-            - AddRequestHeader=X-Service, main-service
 
       globalcors:
         corsConfigurations:
@@ -63,3 +111,32 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
+# Resilience4j Configuration (must be at root level, not under spring)
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 20
+        minimumNumberOfCalls: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 10000
+        failureRateThreshold: 70
+        slowCallRateThreshold: 100
+        slowCallDurationThreshold: 30000
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 30s
+        cancelRunningFuture: true
+
+gateway-service-log:
+  logfile:
+    enabled: true
+  splunk:
+    enabled: true
+  rabbitmq:
+    enabled: true
+
+rabbitmq-service-log:
+  auto-startup: false

@@ -1,0 +1,19 @@
+spring:
+  config:
+    import:
+      - "optional:classpath:splunk-hec-staging.yml"
+      - "optional:classpath:redis-shared-staging.yml"
+      - "optional:classpath:log-file-staging.yml"
+      - "optional:classpath:application-rabbitmq-staging.yml"
+      - "optional:classpath:application-kafka-dev.yml"
+
+
+user-service-log:
+  logfile:
+    enabled: false
+  splunk:
+    enabled: false
+  rabbitmq:
+    enabled: false
+  kafka:
+    enabled: true

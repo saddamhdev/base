@@ -26,8 +26,14 @@ public class GatewayHealthController {
         response.put("service", "API Gateway");
         response.put("routes", new String[]{
                 "user-service -> /api/users/**",
-                "config-service -> /config/**",
-                "main-service -> /**"
+                "auth-service -> /api/auth/**",
+                "account-service -> /api/accounts/**",
+                "transaction-service -> /api/transactions/**",
+                "notification-service -> /api/notifications/**",
+                "audit-service -> /api/audit/**",
+                "kafka-service -> /api/kafka/**",
+                "rabbitmq-service -> /api/rabbitmq/**",
+                "config-service -> /config/**"
         });
         response.put("port", 8080);
         return response;

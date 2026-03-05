@@ -1,11 +1,12 @@
 package snvn.gatewayservice.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.micrometer.tracing.Tracer;
 import io.micrometer.tracing.Span;
+import io.micrometer.tracing.Tracer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
 import org.springframework.http.HttpStatus;
@@ -14,12 +15,20 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
+import snvn.common.logging.ExternalLogService;
+import snvn.common.logging.NoOpExternalLogService;
+import snvn.gatewayservice.config.GatewayServiceLogProperties;
 
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+/**
+ * Unified ApplicationDetails GlobalFilter.
+ * Generates traceId/spanId/correlationId ONCE per request,
+ * then sends logs only to channels enabled via GatewayServiceLogProperties.
+ */
 @Component
 public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
 
@@ -28,11 +37,20 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
 
     private final ObjectMapper objectMapper;
     private final Tracer tracer;
+    private final ExternalLogService externalLogService;
+    private final GatewayServiceLogProperties logProperties;
 
+    @Autowired
     public ApplicationDetailsGlobalFilter(ObjectMapper objectMapper,
-                                          Tracer tracer) {
+                                          Tracer tracer,
+                                          GatewayServiceLogProperties logProperties,
+                                          @Autowired(required = false) ExternalLogService externalLogService) {
         this.objectMapper = objectMapper;
         this.tracer = tracer;
+        this.logProperties = logProperties;
+        this.externalLogService = externalLogService != null ? externalLogService : new NoOpExternalLogService();
+        log.info("ApplicationDetailsGlobalFilter initialized with ExternalLogService: {}, channels: {}",
+                this.externalLogService.getClass().getSimpleName(), logProperties);
     }
 
     @Override
@@ -60,7 +78,6 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
         // First, try to get from incoming headers
         traceId = exchange.getRequest().getHeaders().getFirst("X-B3-TraceId");
         if (traceId == null || traceId.isBlank()) {
-            // Try traceparent header (W3C format: version-traceId-parentId-flags)
             String traceparent = exchange.getRequest().getHeaders().getFirst("traceparent");
             if (traceparent != null && !traceparent.isBlank()) {
                 String[] parts = traceparent.split("-");
@@ -79,7 +96,7 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
             }
         }
 
-        // If still no trace ID, generate a new one (UUID format without dashes for 32-char hex)
+        // If still no trace ID, generate a new one
         if (traceId == null || traceId.isBlank()) {
             traceId = UUID.randomUUID().toString().replace("-", "");
         }
@@ -135,12 +152,24 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
         exchange.getResponse().getHeaders()
                 .add("X-Span-Id", resolvedSpanId);
 
-        log.info("Incoming request method={} path={} correlationId={} traceId={} spanId={}",
-                mutatedRequest.getMethod(),
-                mutatedRequest.getURI().getPath(),
-                correlationId,
-                resolvedTraceId,
-                resolvedSpanId);
+//        log.info("Incoming request method={} path={} correlationId={} traceId={} spanId={}",
+//                mutatedRequest.getMethod(),
+//                mutatedRequest.getURI().getPath(),
+//                correlationId,
+//                resolvedTraceId,
+//                resolvedSpanId);
+
+        // Send incoming request log to ALL enabled channels
+        Map<String, Object> incomingContext = new HashMap<>();
+        incomingContext.put("traceId", resolvedTraceId);
+        incomingContext.put("spanId", resolvedSpanId);
+        incomingContext.put("correlationId", correlationId);
+        incomingContext.put("method", mutatedRequest.getMethod().name());
+        incomingContext.put("path", mutatedRequest.getURI().getPath());
+        incomingContext.put("logger", log.getName() + ".filter()");
+        incomingContext.put("service", "gateway-service");
+        incomingContext.put("eventType", "INCOMING_REQUEST");
+        sendToAllChannels("INFO", "Incoming request", incomingContext);
 
         return chain.filter(mutatedExchange)
                 .contextWrite(ctx -> ctx
@@ -148,7 +177,6 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
                         .put("spanId", resolvedSpanId)
                         .put("correlationId", correlationId))
                 .doOnEach(signal -> {
-                    // Restore MDC on each signal for proper logging context
                     if (!signal.isOnComplete() && !signal.isOnError()) {
                         MDC.put("traceId", resolvedTraceId);
                         MDC.put("spanId", resolvedSpanId);
@@ -156,24 +184,70 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
                     }
                 })
                 .doFinally(signalType -> {
-                    // Restore MDC for final log
                     MDC.put("traceId", resolvedTraceId);
                     MDC.put("spanId", resolvedSpanId);
                     MDC.put("correlationId", correlationId);
 
-                    long duration =
-                            System.currentTimeMillis() - startTime;
+                    long duration = System.currentTimeMillis() - startTime;
 
-                    log.info("Completed request path={} status={} durationMs={} correlationId={} traceId={} spanId={}",
-                            mutatedRequest.getURI().getPath(),
-                            exchange.getResponse().getStatusCode(),
-                            duration,
-                            correlationId,
-                            resolvedTraceId,
-                            resolvedSpanId);
+//                    log.info("Completed request path={} status={} durationMs={} correlationId={} traceId={} spanId={}",
+//                            mutatedRequest.getURI().getPath(),
+//                            exchange.getResponse().getStatusCode(),
+//                            duration,
+//                            correlationId,
+//                            resolvedTraceId,
+//                            resolvedSpanId);
+
+                    // Send completed request log to ALL enabled channels
+                    Map<String, Object> completedContext = new HashMap<>();
+                    completedContext.put("traceId", resolvedTraceId);
+                    completedContext.put("spanId", resolvedSpanId);
+                    completedContext.put("correlationId", correlationId);
+                    completedContext.put("logger", log.getName() + ".filter()");
+                    completedContext.put("method", mutatedRequest.getMethod().name());
+                    completedContext.put("path", mutatedRequest.getURI().getPath());
+                    completedContext.put("status", exchange.getResponse().getStatusCode() != null ?
+                            exchange.getResponse().getStatusCode().value() : 0);
+                    completedContext.put("durationMs", duration);
+                    completedContext.put("service", "gateway-service");
+                    completedContext.put("eventType", "COMPLETED_REQUEST");
+                    sendToAllChannels("INFO", "Completed request", completedContext);
 
                     MDC.clear();
                 });
+    }
+
+    /**
+     * Sends log only to channels enabled in gateway-service-log properties.
+     */
+    private void sendToAllChannels(String level, String message, Map<String, Object> context) {
+        if (logProperties.isLogfileEnabled()) {
+            externalLogService.sendLogFile(level, message, context);
+        }
+        if (logProperties.isSplunkEnabled()) {
+            externalLogService.sendLogSplunk(level, message, context);
+        }
+        if (logProperties.isRabbitmqEnabled()) {
+            externalLogService.sendLogRabbitMQ(level, message, context);
+        }
+        if (logProperties.isKafkaEnabled()) {
+            externalLogService.sendLogKafka(level, message, context);
+        }
+    }
+
+    /**
+     * Sends error log only to channels enabled in gateway-service-log properties.
+     */
+    private void sendErrorToAllChannels(String message, String throwable, Map<String, Object> context) {
+        if (logProperties.isLogfileEnabled()) {
+            externalLogService.sendErrorLogFile(message, throwable, context);
+        }
+        if (logProperties.isSplunkEnabled()) {
+            externalLogService.sendErrorLogSplunk(message, throwable, context);
+        }
+        if (logProperties.isRabbitmqEnabled()) {
+            externalLogService.sendErrorLogRabbitMQ(message, throwable, context);
+        }
     }
 
     private Mono<Void> buildErrorResponse(ServerWebExchange exchange,
@@ -190,6 +264,7 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
             body.put("message", message);
             body.put("path", exchange.getRequest().getURI().getPath());
             body.put("method", exchange.getRequest().getMethod().name());
+            body.put("logger", log.getName() + ".buildErrorResponse()");
             body.put("correlationId", correlationId);
             body.put("traceId", traceId);
             body.put("timestamp", Instant.now());
@@ -204,11 +279,24 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
             exchange.getResponse().getHeaders()
                     .add("X-Trace-Id", traceId);
 
-            log.warn("Blocked request path={} reason={} correlationId={} traceId={}",
-                    exchange.getRequest().getURI().getPath(),
-                    message,
-                    correlationId,
-                    traceId);
+//            log.error("Blocked request path={} reason={} correlationId={} traceId={}",
+//                    exchange.getRequest().getURI().getPath(),
+//                    message,
+//                    correlationId,
+//                    traceId);
+
+            // Send blocked request log to ALL enabled channels
+            Map<String, Object> blockedContext = new HashMap<>();
+            blockedContext.put("traceId", traceId);
+            blockedContext.put("correlationId", correlationId);
+            blockedContext.put("logger", log.getName() + ".buildErrorResponse()");
+            blockedContext.put("method", exchange.getRequest().getMethod().name());
+            blockedContext.put("path", exchange.getRequest().getURI().getPath());
+            blockedContext.put("status", status.value());
+            blockedContext.put("reason", message);
+            blockedContext.put("service", "gateway-service");
+            blockedContext.put("eventType", "BLOCKED_REQUEST");
+            sendErrorToAllChannels("ERROR", "Blocked request", blockedContext);
 
             return exchange.getResponse()
                     .writeWith(Mono.just(
@@ -224,6 +312,7 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
 
     @Override
     public int getOrder() {
-        return Ordered.HIGHEST_PRECEDENCE;
+        return -100; // 🔥 runs before everything
     }
 }
+

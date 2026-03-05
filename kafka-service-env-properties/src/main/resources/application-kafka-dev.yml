@@ -1,0 +1,33 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kafka-event-group-dev
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: 1
+      retries: 3
+
+kafka-service-log:
+  enabled: true
+  auto-startup: true
+  bootstrap-servers: ${spring.kafka.bootstrap-servers:localhost:9092}
+  topic: kafka-log-topic
+  group-id: kafka-log-group
+  source: ${spring.application.name:kafka-service}
+  index: main
+  sourcetype: _json
+  logfileEnabled: false
+  splunkEnabled: true
+
+kafka:
+  topic:
+    name: kafka-event-topic-dev
+

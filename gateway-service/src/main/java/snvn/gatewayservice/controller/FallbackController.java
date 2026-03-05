@@ -39,20 +39,23 @@ public class FallbackController {
             String originalPath = originalUri != null ? originalUri.getPath() : request.getURI().getPath();
             String method = request.getMethod() != null ? request.getMethod().name() : "UNKNOWN";
 
+            // Resolve which service failed from the matched route
+            String serviceName = resolveServiceName(exchange, originalPath);
+
             // Get the exception that caused the fallback (if available)
             Throwable exception = exchange.getAttribute(ServerWebExchangeUtils.CIRCUITBREAKER_EXECUTION_EXCEPTION_ATTR);
             String errorMessage = exception != null ? exception.getMessage() : "Service unavailable";
 
             // Log the fallback with full trace context in MDC
-            log.error("Fallback triggered - service=main-service, originalPath={}, method={}, error={}",
-                    originalPath, method, errorMessage);
+            log.error("Fallback triggered - service={}, originalPath={}, method={}, error={}",
+                    serviceName, originalPath, method, errorMessage);
 
             GatewayFallbackResponse response =
                     new GatewayFallbackResponse(
                             false,
-                            "main-service",
+                            serviceName,
                             HttpStatus.SERVICE_UNAVAILABLE.value(),
-                            "Main Service temporarily unavailable: " + errorMessage,
+                            serviceName + " temporarily unavailable: " + errorMessage,
                             originalPath,
                             method,
                             traceId,
@@ -69,6 +72,33 @@ public class FallbackController {
             MDC.remove("spanId");
             MDC.remove("correlationId");
         }
+    }
+
+    /**
+     * Resolve the service name from the gateway route or request path
+     */
+    private String resolveServiceName(ServerWebExchange exchange, String path) {
+        // Try to get the route ID from gateway attributes
+        org.springframework.cloud.gateway.route.Route route =
+                exchange.getAttribute(ServerWebExchangeUtils.GATEWAY_ROUTE_ATTR);
+        if (route != null) {
+            return route.getId();
+        }
+
+        // Fallback: resolve from path prefix
+        if (path != null) {
+            if (path.startsWith("/api/users")) return "user-service";
+            if (path.startsWith("/api/auth")) return "auth-service";
+            if (path.startsWith("/api/accounts")) return "account-service";
+            if (path.startsWith("/api/transactions")) return "transaction-service";
+            if (path.startsWith("/api/notifications")) return "notification-service";
+            if (path.startsWith("/api/audit")) return "audit-service";
+            if (path.startsWith("/api/kafka")) return "kafka-service";
+            if (path.startsWith("/api/rabbitmq")) return "rabbitmq-service";
+            if (path.startsWith("/config")) return "config-service";
+        }
+
+        return "unknown-service";
     }
 
     /**

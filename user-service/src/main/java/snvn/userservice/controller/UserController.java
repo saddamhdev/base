@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import snvn.model.User;
 import snvn.userservice.service.UserService;
 
-
 import java.util.Optional;
 
 @RestController
@@ -89,4 +88,3 @@ public class UserController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 }
-

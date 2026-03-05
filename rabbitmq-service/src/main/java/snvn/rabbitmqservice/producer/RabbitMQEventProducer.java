@@ -22,6 +22,9 @@ public class RabbitMQEventProducer {
     @Value("${rabbitmq.routing.key:rabbitmq-event-routing-key}")
     private String routingKey;
 
+    @Value("${rabbitmq.fanout.exchange.name:rabbitmq-fanout-exchange}")
+    private String fanoutExchangeName;
+
     public void sendEvent(EventMessage eventMessage) {
         logger.info("Sending event to RabbitMQ exchange {}: {}", exchangeName, eventMessage);
 
@@ -51,6 +54,28 @@ public class RabbitMQEventProducer {
             logger.error("Failed to send event to RabbitMQ: {}", eventMessage.getEventType(), e);
             throw e;
         }
+    }
+
+    /**
+     * Send event to fanout exchange — broadcasts to ALL bound queues.
+     * Routing key is ignored by FanoutExchange, so we pass empty string.
+     */
+    public void sendFanoutEvent(EventMessage eventMessage) {
+        logger.info("Broadcasting fanout event to exchange {}: {}", fanoutExchangeName, eventMessage);
+
+        try {
+            rabbitTemplate.convertAndSend(fanoutExchangeName, "", eventMessage);
+            logger.info("Fanout event broadcast successfully: {} via exchange: {}",
+                    eventMessage.getEventType(), fanoutExchangeName);
+        } catch (Exception e) {
+            logger.error("Failed to broadcast fanout event: {}", eventMessage.getEventType(), e);
+            throw e;
+        }
+    }
+
+    public void sendFanoutEvent(String eventType, String payload, String source) {
+        EventMessage eventMessage = new EventMessage(eventType, payload, source);
+        sendFanoutEvent(eventMessage);
     }
 }
 

@@ -14,8 +14,6 @@
     <modules>
         <module>model</module>
         <module>core-common</module>
-        <module>main-env-properties</module>
-        <module>main</module>
         <module>mcp-server</module>
         <module>user-service</module>
         <module>auth-service</module>
@@ -31,6 +29,10 @@
         <module>rabbitmq-service-env-properties</module>
         <module>rabbitmq-service</module>
         <module>splunk-service</module>
+        <module>splunk-hec-env-properties</module>
+        <module>user-service-env-properties</module>
+        <module>redis-service-env-properties</module>
+        <module>log-env-properties</module>
     </modules>
 
     <properties>
