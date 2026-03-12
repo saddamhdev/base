@@ -1,16 +1,4 @@
-{"timestamp":"2026-03-12T00:02:27.375",
- "level":"WARN",
- "service":"auth-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s122ms234µs200ns).",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:03:20.997",
+{"timestamp":"2026-03-13T00:44:59.390",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -19,10 +7,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.authservice.AuthServiceApplication",
- "message":"Starting AuthServiceApplication using Java 25.0.1 with PID 12580 (D:\module project\base\auth-service\target\classes started by 01957 in D:\module project\base)",
+ "message":"Starting AuthServiceApplication using Java 25.0.1 with PID 13200 (D:\module project\base\auth-service\target\classes started by 01957 in D:\module project\base)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:03:21.004",
+{"timestamp":"2026-03-13T00:44:59.397",
  "level":"DEBUG",
  "service":"auth-service",
  "thread":"main",
@@ -34,7 +22,7 @@
  "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:03:21.006",
+{"timestamp":"2026-03-13T00:44:59.399",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -46,155 +34,7 @@
  "message":"No active profile set, falling back to 1 default profile: "default"",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:03:22.938",
- "level":"WARN",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext",
- "message":"Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:03:22.963",
- "level":"INFO",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
- "message":"
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:03:23.005",
- "level":"ERROR",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.SpringApplication",
- "message":"Application run failed",
- "exception":"java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:172)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:145)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:454)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:306)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)\\n	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:784)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)\\n	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at snvn.authservice.AuthServiceApplication.main(AuthServiceApplication.java:11)\\nCaused by: java.lang.IllegalArgumentException: Could not find class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration]\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:353)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:451)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:384)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:273)\\n	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:191)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:143)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:110)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:168)\\n	... 15 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	at java.base/java.lang.Class.forName0(Native Method)\\n	at java.base/java.lang.Class.forName(Class.java:547)\\n	at org.springframework.util.ClassUtils.forName(ClassUtils.java:302)\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:343)\\n	... 22 common frames omitted\\n"}
-
-{"timestamp":"2026-03-12T16:11:22.567",
- "level":"INFO",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.authservice.AuthServiceApplication",
- "message":"Starting AuthServiceApplication using Java 25.0.1 with PID 13948 (D:\module project\base\auth-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:11:22.572",
- "level":"DEBUG",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.authservice.AuthServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:11:22.574",
- "level":"INFO",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.authservice.AuthServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:11:24.007",
- "level":"WARN",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext",
- "message":"Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:11:24.021",
- "level":"INFO",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
- "message":"
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:11:24.044",
- "level":"ERROR",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.SpringApplication",
- "message":"Application run failed",
- "exception":"java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:172)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:145)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:454)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:306)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)\\n	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:784)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)\\n	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at snvn.authservice.AuthServiceApplication.main(AuthServiceApplication.java:11)\\nCaused by: java.lang.IllegalArgumentException: Could not find class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration]\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:353)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:451)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:384)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:273)\\n	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:191)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:143)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:110)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:168)\\n	... 15 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	at java.base/java.lang.Class.forName0(Native Method)\\n	at java.base/java.lang.Class.forName(Class.java:547)\\n	at org.springframework.util.ClassUtils.forName(ClassUtils.java:302)\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:343)\\n	... 22 common frames omitted\\n"}
-
-{"timestamp":"2026-03-12T16:20:44.301",
- "level":"INFO",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.authservice.AuthServiceApplication",
- "message":"Starting AuthServiceApplication using Java 25.0.1 with PID 18316 (D:\module project\base\auth-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:44.307",
- "level":"DEBUG",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.authservice.AuthServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:44.308",
- "level":"INFO",
- "service":"auth-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.authservice.AuthServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:46.216",
+{"timestamp":"2026-03-13T00:45:01.399",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -206,7 +46,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:46.304",
+{"timestamp":"2026-03-13T00:45:01.465",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -215,10 +55,10 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.",
+ "message":"Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:47.077",
+{"timestamp":"2026-03-13T00:45:02.867",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -230,7 +70,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Tomcat initialized with port 8096 (http)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:47.092",
+{"timestamp":"2026-03-13T00:45:02.891",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -242,7 +82,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Starting service [Tomcat]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:47.092",
+{"timestamp":"2026-03-13T00:45:02.892",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -254,7 +94,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:47.170",
+{"timestamp":"2026-03-13T00:45:03.037",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -263,10 +103,10 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 2743 ms",
+ "message":"Root WebApplicationContext: initialization completed in 3488 ms",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:47.482",
+{"timestamp":"2026-03-13T00:45:03.498",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -278,7 +118,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:47.553",
+{"timestamp":"2026-03-13T00:45:03.608",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -290,7 +130,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:48.190",
+{"timestamp":"2026-03-13T00:45:04.773",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -302,7 +142,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:48.227",
+{"timestamp":"2026-03-13T00:45:04.874",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -314,7 +154,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Starting...",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:48.424",
+{"timestamp":"2026-03-13T00:45:05.559",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -326,7 +166,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:authdb user=SA",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:48.426",
+{"timestamp":"2026-03-13T00:45:05.564",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -338,7 +178,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Start completed.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:48.458",
+{"timestamp":"2026-03-13T00:45:05.650",
  "level":"WARN",
  "service":"auth-service",
  "thread":"main",
@@ -350,7 +190,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:48.492",
+{"timestamp":"2026-03-13T00:45:05.725",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -373,7 +213,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
 	Maximum pool size: undefined/unknown",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:49.565",
+{"timestamp":"2026-03-13T00:45:08.419",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -385,7 +225,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:49.642",
+{"timestamp":"2026-03-13T00:45:08.572",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -397,7 +237,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:49.738",
+{"timestamp":"2026-03-13T00:45:08.764",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -409,7 +249,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:50.027",
+{"timestamp":"2026-03-13T00:45:09.221",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -421,7 +261,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:50.029",
+{"timestamp":"2026-03-13T00:45:09.221",
  "level":"WARN",
  "service":"auth-service",
  "thread":"main",
@@ -433,7 +273,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:50.107",
+{"timestamp":"2026-03-13T00:45:09.306",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -445,7 +285,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:50.171",
+{"timestamp":"2026-03-13T00:45:09.384",
  "level":"WARN",
  "service":"auth-service",
  "thread":"main",
@@ -457,7 +297,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:50.637",
+{"timestamp":"2026-03-13T00:45:09.931",
  "level":"DEBUG",
  "service":"auth-service",
  "thread":"main",
@@ -469,7 +309,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:51.396",
+{"timestamp":"2026-03-13T00:45:10.892",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -481,7 +321,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Exposing 3 endpoints beneath base path '/actuator'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:51.532",
+{"timestamp":"2026-03-13T00:45:11.051",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -493,7 +333,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Tomcat started on port 8096 (http) with context path '/'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:51.546",
+{"timestamp":"2026-03-13T00:45:11.067",
  "level":"INFO",
  "service":"auth-service",
  "thread":"main",
@@ -502,6 +342,6 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"s.authservice.AuthServiceApplication",
- "message":"Started AuthServiceApplication in 8.4 seconds (process running for 9.783)",
+ "message":"Started AuthServiceApplication in 13.002 seconds (process running for 14.384)",
  "exception":""}
 

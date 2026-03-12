@@ -1,16 +1,4 @@
-{"timestamp":"2026-03-12T00:02:33.060",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s112ms143µs100ns).",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:02:21.166",
+{"timestamp":"2026-03-13T00:45:59.259",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -19,10 +7,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.t.TransactionServiceApplication",
- "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 6588 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
+ "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 18208 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:02:21.171",
+{"timestamp":"2026-03-13T00:45:59.265",
  "level":"DEBUG",
  "service":"transaction-service",
  "thread":"main",
@@ -34,7 +22,7 @@
  "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:02:21.173",
+{"timestamp":"2026-03-13T00:45:59.267",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -46,81 +34,7 @@
  "message":"No active profile set, falling back to 1 default profile: "default"",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:02:23.097",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext",
- "message":"Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:02:23.125",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
- "message":"
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:02:23.175",
- "level":"ERROR",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.SpringApplication",
- "message":"Application run failed",
- "exception":"java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:172)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:145)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:454)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:306)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)\\n	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:784)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)\\n	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at snvn.transactionservice.TransactionServiceApplication.main(TransactionServiceApplication.java:11)\\nCaused by: java.lang.IllegalArgumentException: Could not find class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration]\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:353)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:451)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:384)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:273)\\n	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:191)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:143)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:110)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:168)\\n	... 15 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	at java.base/java.lang.Class.forName0(Native Method)\\n	at java.base/java.lang.Class.forName(Class.java:547)\\n	at org.springframework.util.ClassUtils.forName(ClassUtils.java:302)\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:343)\\n	... 22 common frames omitted\\n"}
-
-{"timestamp":"2026-03-12T16:20:33.633",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 17580 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:33.639",
- "level":"DEBUG",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:33.641",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:35.507",
+{"timestamp":"2026-03-13T00:46:01.314",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -132,7 +46,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:35.660",
+{"timestamp":"2026-03-13T00:46:01.450",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -141,10 +55,10 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 123 ms. Found 1 JPA repository interface.",
+ "message":"Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interface.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:36.914",
+{"timestamp":"2026-03-13T00:46:03.186",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -156,7 +70,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Tomcat initialized with port 8101 (http)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:36.935",
+{"timestamp":"2026-03-13T00:46:03.230",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -168,7 +82,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Starting service [Tomcat]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:36.936",
+{"timestamp":"2026-03-13T00:46:03.231",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -180,7 +94,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:37.043",
+{"timestamp":"2026-03-13T00:46:03.420",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -189,10 +103,10 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 3254 ms",
+ "message":"Root WebApplicationContext: initialization completed in 4014 ms",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:37.557",
+{"timestamp":"2026-03-13T00:46:04.081",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -204,7 +118,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:37.665",
+{"timestamp":"2026-03-13T00:46:04.222",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -216,7 +130,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:39.187",
+{"timestamp":"2026-03-13T00:46:06.325",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -228,7 +142,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:39.309",
+{"timestamp":"2026-03-13T00:46:06.436",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -240,7 +154,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Starting...",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:39.935",
+{"timestamp":"2026-03-13T00:46:06.998",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -252,7 +166,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:transactiondb user=SA",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:39.939",
+{"timestamp":"2026-03-13T00:46:07.003",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -264,7 +178,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Start completed.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:40.019",
+{"timestamp":"2026-03-13T00:46:07.068",
  "level":"WARN",
  "service":"transaction-service",
  "thread":"main",
@@ -276,7 +190,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:40.109",
+{"timestamp":"2026-03-13T00:46:07.125",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -299,7 +213,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
 	Maximum pool size: undefined/unknown",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:43.016",
+{"timestamp":"2026-03-13T00:46:09.073",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -311,7 +225,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:43.187",
+{"timestamp":"2026-03-13T00:46:09.170",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -323,7 +237,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:43.363",
+{"timestamp":"2026-03-13T00:46:09.304",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -335,7 +249,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:43.880",
+{"timestamp":"2026-03-13T00:46:09.608",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -347,7 +261,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:43.952",
+{"timestamp":"2026-03-13T00:46:09.643",
  "level":"WARN",
  "service":"transaction-service",
  "thread":"main",
@@ -359,7 +273,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:44.996",
+{"timestamp":"2026-03-13T00:46:10.213",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -371,7 +285,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Exposing 3 endpoints beneath base path '/actuator'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:45.171",
+{"timestamp":"2026-03-13T00:46:10.311",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -383,7 +297,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Tomcat started on port 8101 (http) with context path '/'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:45.191",
+{"timestamp":"2026-03-13T00:46:10.322",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -392,6 +306,6 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"s.t.TransactionServiceApplication",
- "message":"Started TransactionServiceApplication in 12.726 seconds (process running for 14.048)",
+ "message":"Started TransactionServiceApplication in 12.181 seconds (process running for 13.417)",
  "exception":""}
 

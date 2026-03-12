@@ -1,16 +1,4 @@
-{"timestamp":"2026-03-12T00:02:32.901",
- "level":"WARN",
- "service":"notification-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s114ms966µs500ns).",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:03:27.816",
+{"timestamp":"2026-03-13T00:45:03.647",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -19,10 +7,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.n.NotificationServiceApplication",
- "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 5060 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
+ "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 18888 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:03:27.825",
+{"timestamp":"2026-03-13T00:45:03.650",
  "level":"DEBUG",
  "service":"notification-service",
  "thread":"main",
@@ -34,7 +22,7 @@
  "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:03:27.826",
+{"timestamp":"2026-03-13T00:45:03.652",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -46,81 +34,7 @@
  "message":"No active profile set, falling back to 1 default profile: "default"",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:03:29.681",
- "level":"WARN",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext",
- "message":"Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:03:29.703",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
- "message":"
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:03:29.750",
- "level":"ERROR",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.SpringApplication",
- "message":"Application run failed",
- "exception":"java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:172)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:145)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:454)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:306)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)\\n	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:784)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)\\n	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at snvn.notificationservice.NotificationServiceApplication.main(NotificationServiceApplication.java:11)\\nCaused by: java.lang.IllegalArgumentException: Could not find class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration]\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:353)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:451)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:384)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:273)\\n	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:191)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:143)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:110)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:168)\\n	... 15 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	at java.base/java.lang.Class.forName0(Native Method)\\n	at java.base/java.lang.Class.forName(Class.java:547)\\n	at org.springframework.util.ClassUtils.forName(ClassUtils.java:302)\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:343)\\n	... 22 common frames omitted\\n"}
-
-{"timestamp":"2026-03-12T16:20:25.140",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 4188 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:25.145",
- "level":"DEBUG",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:25.147",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-12T16:20:27.087",
+{"timestamp":"2026-03-13T00:45:05.684",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -132,7 +46,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:27.140",
+{"timestamp":"2026-03-13T00:45:05.753",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -141,10 +55,10 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.",
+ "message":"Finished Spring Data repository scanning in 36 ms. Found 0 JPA repository interfaces.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:28.477",
+{"timestamp":"2026-03-13T00:45:07.352",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -156,7 +70,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Tomcat initialized with port 8100 (http)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:28.501",
+{"timestamp":"2026-03-13T00:45:07.387",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -168,7 +82,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Starting service [Tomcat]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:28.502",
+{"timestamp":"2026-03-13T00:45:07.388",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -180,7 +94,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:28.622",
+{"timestamp":"2026-03-13T00:45:07.585",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -189,10 +103,10 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 3296 ms",
+ "message":"Root WebApplicationContext: initialization completed in 3854 ms",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:29.221",
+{"timestamp":"2026-03-13T00:45:08.120",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -204,7 +118,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:29.347",
+{"timestamp":"2026-03-13T00:45:08.264",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -216,7 +130,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:30.572",
+{"timestamp":"2026-03-13T00:45:09.449",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -228,7 +142,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:30.640",
+{"timestamp":"2026-03-13T00:45:09.537",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -240,7 +154,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Starting...",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:30.974",
+{"timestamp":"2026-03-13T00:45:10.025",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -252,7 +166,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:notificationdb user=SA",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:30.976",
+{"timestamp":"2026-03-13T00:45:10.034",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -264,7 +178,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HikariPool-1 - Start completed.",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:31.048",
+{"timestamp":"2026-03-13T00:45:10.099",
  "level":"WARN",
  "service":"notification-service",
  "thread":"main",
@@ -276,7 +190,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:31.121",
+{"timestamp":"2026-03-13T00:45:10.168",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -299,7 +213,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
 	Maximum pool size: undefined/unknown",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:32.719",
+{"timestamp":"2026-03-13T00:45:11.301",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -311,7 +225,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:32.742",
+{"timestamp":"2026-03-13T00:45:11.317",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -323,7 +237,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:32.840",
+{"timestamp":"2026-03-13T00:45:11.383",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -335,7 +249,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:32.918",
+{"timestamp":"2026-03-13T00:45:11.428",
  "level":"WARN",
  "service":"notification-service",
  "thread":"main",
@@ -347,7 +261,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:34.052",
+{"timestamp":"2026-03-13T00:45:12.553",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -359,7 +273,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Exposing 2 endpoints beneath base path '/actuator'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:34.262",
+{"timestamp":"2026-03-13T00:45:12.780",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -371,7 +285,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Tomcat started on port 8100 (http) with context path '/'",
  "exception":""}
 
-{"timestamp":"2026-03-12T16:20:34.282",
+{"timestamp":"2026-03-13T00:45:12.806",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -380,6 +294,6 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "correlationId":"",
  "jobId":"",
  "logger":"s.n.NotificationServiceApplication",
- "message":"Started NotificationServiceApplication in 10.316 seconds (process running for 11.661)",
+ "message":"Started NotificationServiceApplication in 10.06 seconds (process running for 11.113)",
  "exception":""}
 

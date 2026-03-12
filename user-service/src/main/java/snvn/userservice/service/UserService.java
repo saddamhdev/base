@@ -3,6 +3,8 @@ package snvn.userservice.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import snvn.model.User;
+import snvn.userservice.client.AccountClient;
+import snvn.userservice.dto.AccountResponse;
 import snvn.userservice.repository.UserRepository;
 
 import java.util.List;
@@ -13,6 +15,11 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
+    private final AccountClient accountClient;
+
+    public UserService(AccountClient accountClient) {
+        this.accountClient = accountClient;
+    }
 
     /**
      * Get all users
@@ -93,5 +100,11 @@ public class UserService {
     public boolean userExists(Long id) {
         return userRepository.existsById(id);
     }
+
+
+    public AccountResponse getUserAccount(Long userId) {
+        return accountClient.getAccount(userId);
+    }
+
 }
 
