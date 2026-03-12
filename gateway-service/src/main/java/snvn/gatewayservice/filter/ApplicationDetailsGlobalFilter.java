@@ -56,6 +56,8 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange,
                              org.springframework.cloud.gateway.filter.GatewayFilterChain chain) {
+
+
         long startTime = System.currentTimeMillis();
 
         // =========================
@@ -203,7 +205,8 @@ public class ApplicationDetailsGlobalFilter implements GlobalFilter, Ordered {
                     completedContext.put("traceId", resolvedTraceId);
                     completedContext.put("spanId", resolvedSpanId);
                     completedContext.put("correlationId", correlationId);
-                    completedContext.put("logger", log.getName() + ".filter()");
+                    completedContext.put("logger", log.getName() + "." + new Throwable().getStackTrace()[0].getMethodName() + "()");
+
                     completedContext.put("method", mutatedRequest.getMethod().name());
                     completedContext.put("path", mutatedRequest.getURI().getPath());
                     completedContext.put("status", exchange.getResponse().getStatusCode() != null ?

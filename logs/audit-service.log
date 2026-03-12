@@ -1,4 +1,4 @@
-{"timestamp":"2026-03-05T00:48:32.674",
+{"timestamp":"2026-03-12T00:02:28.178",
  "level":"WARN",
  "service":"audit-service",
  "thread":"HikariPool-1:housekeeper",
@@ -7,82 +7,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m21s30ms258µs500ns).",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s123ms595µs900ns).",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:17:23.463",
- "level":"WARN",
- "service":"audit-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57m16s487ms257µs).",
- "exception":""}
-
-{"timestamp":"2026-03-05T03:31:47.898",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-05T03:31:48.075",
- "level":"INFO",
- "service":"audit-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-05T03:31:48.127",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-05T03:31:48.157",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-05T03:31:48.177",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-05T03:32:12.054",
+{"timestamp":"2026-03-12T16:03:44.676",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -91,10 +19,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.a.AuditServiceApplication",
- "message":"Starting AuditServiceApplication using Java 25.0.1 with PID 11280 (D:\module project\base\audit-service\target\classes started by 01957 in D:\module project\base)",
+ "message":"Starting AuditServiceApplication using Java 25.0.1 with PID 13040 (D:\module project\base\audit-service\target\classes started by 01957 in D:\module project\base)",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:12.062",
+{"timestamp":"2026-03-12T16:03:44.681",
  "level":"DEBUG",
  "service":"audit-service",
  "thread":"main",
@@ -106,7 +34,7 @@
  "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:12.069",
+{"timestamp":"2026-03-12T16:03:44.682",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -118,7 +46,81 @@
  "message":"No active profile set, falling back to 1 default profile: "default"",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:14.726",
+{"timestamp":"2026-03-12T16:03:46.011",
+ "level":"WARN",
+ "service":"audit-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext",
+ "message":"Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'",
+ "exception":""}
+
+{"timestamp":"2026-03-12T16:03:46.022",
+ "level":"INFO",
+ "service":"audit-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
+ "message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
+ "exception":""}
+
+{"timestamp":"2026-03-12T16:03:46.043",
+ "level":"ERROR",
+ "service":"audit-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.SpringApplication",
+ "message":"Application run failed",
+ "exception":"java.lang.IllegalStateException: Failed to generate bean name for imported class 'org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration'\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:172)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:145)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:454)\\n	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:306)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)\\n	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)\\n	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:784)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)\\n	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at snvn.auditservice.AuditServiceApplication.main(AuditServiceApplication.java:11)\\nCaused by: java.lang.IllegalArgumentException: Could not find class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration]\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:353)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.adapt(TypeMappedAnnotation.java:451)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.getValue(TypeMappedAnnotation.java:384)\\n	at org.springframework.core.annotation.TypeMappedAnnotation.asMap(TypeMappedAnnotation.java:273)\\n	at org.springframework.core.annotation.AbstractMergedAnnotation.asAnnotationAttributes(AbstractMergedAnnotation.java:191)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.determineBeanNameFromAnnotation(AnnotationBeanNameGenerator.java:143)\\n	at org.springframework.context.annotation.AnnotationBeanNameGenerator.generateBeanName(AnnotationBeanNameGenerator.java:110)\\n	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.registerBeanDefinitionForImportedConfigurationClass(ConfigurationClassBeanDefinitionReader.java:168)\\n	... 15 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	at java.base/java.lang.Class.forName0(Native Method)\\n	at java.base/java.lang.Class.forName(Class.java:547)\\n	at org.springframework.util.ClassUtils.forName(ClassUtils.java:302)\\n	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:343)\\n	... 22 common frames omitted\\n"}
+
+{"timestamp":"2026-03-12T16:19:10.476",
+ "level":"INFO",
+ "service":"audit-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AuditServiceApplication",
+ "message":"Starting AuditServiceApplication using Java 25.0.1 with PID 17156 (D:\module project\base\audit-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-12T16:19:10.482",
+ "level":"DEBUG",
+ "service":"audit-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AuditServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-12T16:19:10.484",
+ "level":"INFO",
+ "service":"audit-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AuditServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-12T16:19:12.483",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -130,7 +132,7 @@
  "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:14.883",
+{"timestamp":"2026-03-12T16:19:12.650",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -139,10 +141,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interface.",
+ "message":"Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:16.732",
+{"timestamp":"2026-03-12T16:19:14.137",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -154,7 +156,7 @@
  "message":"Tomcat initialized with port 8099 (http)",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:16.756",
+{"timestamp":"2026-03-12T16:19:14.167",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -166,7 +168,7 @@
  "message":"Starting service [Tomcat]",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:16.757",
+{"timestamp":"2026-03-12T16:19:14.168",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -178,7 +180,7 @@
  "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:16.857",
+{"timestamp":"2026-03-12T16:19:14.297",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -187,10 +189,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 4600 ms",
+ "message":"Root WebApplicationContext: initialization completed in 3678 ms",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:17.686",
+{"timestamp":"2026-03-12T16:19:15.003",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -202,7 +204,7 @@
  "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:17.889",
+{"timestamp":"2026-03-12T16:19:15.155",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -214,7 +216,7 @@
  "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:19.265",
+{"timestamp":"2026-03-12T16:19:16.698",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -226,7 +228,7 @@
  "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:19.360",
+{"timestamp":"2026-03-12T16:19:16.781",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -238,7 +240,7 @@
  "message":"HikariPool-1 - Starting...",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:19.860",
+{"timestamp":"2026-03-12T16:19:17.113",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -250,7 +252,7 @@
  "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:auditdb user=SA",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:19.865",
+{"timestamp":"2026-03-12T16:19:17.116",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -262,7 +264,7 @@
  "message":"HikariPool-1 - Start completed.",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:19.933",
+{"timestamp":"2026-03-12T16:19:17.162",
  "level":"WARN",
  "service":"audit-service",
  "thread":"main",
@@ -274,7 +276,7 @@
  "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:19.997",
+{"timestamp":"2026-03-12T16:19:17.203",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -297,7 +299,7 @@
 	Maximum pool size: undefined/unknown",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:23.981",
+{"timestamp":"2026-03-12T16:19:19.841",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -309,7 +311,7 @@
  "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:24.343",
+{"timestamp":"2026-03-12T16:19:19.978",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -321,7 +323,7 @@
  "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:26.484",
+{"timestamp":"2026-03-12T16:19:20.146",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -333,7 +335,7 @@
  "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:29.148",
+{"timestamp":"2026-03-12T16:19:20.598",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -345,7 +347,7 @@
  "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:29.371",
+{"timestamp":"2026-03-12T16:19:20.665",
  "level":"WARN",
  "service":"audit-service",
  "thread":"main",
@@ -357,7 +359,7 @@
  "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:33.359",
+{"timestamp":"2026-03-12T16:19:21.744",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -369,7 +371,7 @@
  "message":"Exposing 3 endpoints beneath base path '/actuator'",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:33.726",
+{"timestamp":"2026-03-12T16:19:21.918",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -381,7 +383,7 @@
  "message":"Tomcat started on port 8099 (http) with context path '/'",
  "exception":""}
 
-{"timestamp":"2026-03-05T03:32:33.767",
+{"timestamp":"2026-03-12T16:19:21.936",
  "level":"INFO",
  "service":"audit-service",
  "thread":"main",
@@ -390,461 +392,6 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.a.AuditServiceApplication",
- "message":"Started AuditServiceApplication in 22.957 seconds (process running for 25.304)",
- "exception":""}
-
-{"timestamp":"2026-03-05T05:31:23.058",
- "level":"WARN",
- "service":"audit-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54m2s903ms802µs200ns).",
- "exception":""}
-
-{"timestamp":"2026-03-05T12:50:00.793",
- "level":"WARN",
- "service":"audit-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h47m41s575ms357µs400ns).",
- "exception":""}
-
-{"timestamp":"2026-03-05T14:19:15.321",
- "level":"WARN",
- "service":"audit-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m12s662ms868µs600ns).",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:15:39.360",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:15:40.796",
- "level":"INFO",
- "service":"audit-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:15:41.591",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:15:41.986",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:15:42.106",
- "level":"INFO",
- "service":"audit-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:32.565",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.a.AuditServiceApplication",
- "message":"Starting AuditServiceApplication using Java 25.0.1 with PID 19592 (D:\module project\base\audit-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:32.571",
- "level":"DEBUG",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.a.AuditServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:32.573",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.a.AuditServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:34.916",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:35.061",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:36.568",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat initialized with port 8099 (http)",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:36.601",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardService",
- "message":"Starting service [Tomcat]",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:36.603",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardEngine",
- "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:36.778",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 4078 ms",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:37.503",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.jpa.internal.util.LogHelper",
- "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:37.689",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.Version",
- "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:39.415",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
- "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:39.563",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Starting...",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:40.082",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:auditdb user=SA",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:40.088",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Start completed.",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:40.154",
- "level":"WARN",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.orm.deprecation",
- "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:40.229",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.hibernate.orm.connections.pooling",
- "message":"HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:auditdb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: AUDITDB/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:44.627",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
- "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:44.855",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:45.128",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
- "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:45.695",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.c.exception.GlobalExceptionHandler",
- "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:45.796",
- "level":"WARN",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
- "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:47.297",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.e.web.EndpointLinksResolver",
- "message":"Exposing 3 endpoints beneath base path '/actuator'",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:47.539",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat started on port 8099 (http) with context path '/'",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:47.565",
- "level":"INFO",
- "service":"audit-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.a.AuditServiceApplication",
- "message":"Started AuditServiceApplication in 17.181 seconds (process running for 19.757)",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:48.192",
- "level":"INFO",
- "service":"audit-service",
- "thread":"RMI TCP Connection(1)-192.168.0.248",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
- "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:48.194",
- "level":"INFO",
- "service":"audit-service",
- "thread":"RMI TCP Connection(1)-192.168.0.248",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.web.servlet.DispatcherServlet",
- "message":"Initializing Servlet 'dispatcherServlet'",
- "exception":""}
-
-{"timestamp":"2026-03-05T15:17:48.199",
- "level":"INFO",
- "service":"audit-service",
- "thread":"RMI TCP Connection(1)-192.168.0.248",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.web.servlet.DispatcherServlet",
- "message":"Completed initialization in 5 ms",
- "exception":""}
-
-{"timestamp":"2026-03-05T20:10:37.586",
- "level":"WARN",
- "service":"audit-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h32s255ms121µs200ns).",
+ "message":"Started AuditServiceApplication in 12.645 seconds (process running for 13.849)",
  "exception":""}
 

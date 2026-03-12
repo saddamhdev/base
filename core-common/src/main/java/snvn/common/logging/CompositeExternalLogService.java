@@ -2,6 +2,7 @@ package snvn.common.logging;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import snvn.common.config.ServiceLogProperties;
 
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,7 @@ public class CompositeExternalLogService implements ExternalLogService {
                 delegates.size(),
                 delegates.stream().map(d -> d.getClass().getSimpleName()).toList());
     }
+
 
     @Override
     public void sendLogFile(String level, String message, Map<String, Object> context) {

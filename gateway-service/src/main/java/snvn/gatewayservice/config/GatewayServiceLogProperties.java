@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * </pre>
  */
 @Component
-@ConfigurationProperties(prefix = "gateway-service-log")
+@ConfigurationProperties(prefix = "service-log")
 public class GatewayServiceLogProperties {
 
     private Channel logfile = new Channel();

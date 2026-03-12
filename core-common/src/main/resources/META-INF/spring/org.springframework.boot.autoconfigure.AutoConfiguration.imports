@@ -1,2 +1,5 @@
 snvn.common.logging.ExternalLogAutoConfiguration
+snvn.common.config.ipWhiteListing.DependencyConfig
+snvn.common.config.ipWhiteListing.RegisterOutGoingIpListConfig
+
 

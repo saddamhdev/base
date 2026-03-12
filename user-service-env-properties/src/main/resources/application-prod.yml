@@ -6,9 +6,13 @@ spring:
       - "optional:classpath:log-file-prod.yml"
       - "optional:classpath:application-rabbitmq-prod.yml"
       - "optional:classpath:application-kafka-dev.yml"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:6062/realms/snvn
 
-
-user-service-log:
+service-log:
   logfile:
     enabled: false
   splunk:
@@ -17,3 +21,52 @@ user-service-log:
     enabled: false
   kafka:
     enabled: true
+
+security:
+  provider: keycloak   # keycloak | okta | auth0 | azure | custom | ldap
+
+  keycloak:
+    enabled: true
+    issuer-uri: http://localhost:6062/realms/snvn
+
+  okta:
+    enabled: false
+    issuer-uri: https://dev-123456.okta.com/oauth2/default
+
+  auth0:
+    enabled: false
+    issuer-uri: https://your-tenant.us.auth0.com/
+
+  azure:
+    enabled: false
+    issuer-uri: https://login.microsoftonline.com/<tenant-id>/v2.0
+
+  custom:
+    enabled: false
+    issuer-uri: https://idp.example.com
+    jwk-set-uri: https://idp.example.com/.well-known/jwks.json
+
+  ldap:
+    enabled: false
+    url: ldap://localhost:389
+    base-dn: dc=example,dc=com
+    user-dn-pattern: uid={0},ou=people
+    manager-dn: cn=admin,dc=example,dc=com
+    manager-password: secret
+
+  mtls:
+    enabled: false
+    trust-store: classpath:certs/truststore.jks
+    trust-store-password: changeit
+
+  api-key:
+    enabled: true
+    header: X-API-KEY
+    value: my-secret-key
+
+  rate-limit:
+    enabled: true
+    requests-per-minute: 2
+
+  ip-filter:
+    enabled: false

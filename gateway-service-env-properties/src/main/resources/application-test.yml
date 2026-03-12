@@ -7,6 +7,11 @@ spring:
       - "optional:classpath:splunk-hec-test.yml"
       - "optional:classpath:application-rabbitmq-test.yml"
       - "optional:classpath:application-kafka-test.yml"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:6062/realms/snvn
 
   cloud:
     gateway:
@@ -125,7 +130,7 @@ resilience4j:
         timeoutDuration: 30s
         cancelRunningFuture: true
 
-gateway-service-log:
+service-log:
   logfile:
     enabled: true
   splunk:
@@ -135,3 +140,48 @@ gateway-service-log:
 
 rabbitmq-service-log:
   auto-startup: false
+
+
+security:
+  keycloak:
+    enabled: true
+
+  api-key:
+    enabled: true
+    header: X-API-KEY
+    value: my-secret-key
+
+  rate-limit:
+    enabled: true
+    requests-per-minute: 2
+
+  ip-filter:
+    enabled: false
+
+
+
+externalDependencyAccessConfiguration:
+  destinations:
+    - service: local-user-service
+      address: 127.0.0.1
+      protocol: tcp
+      portStart: 8080
+      portEnd: 8080
+
+    - service: account-service
+      address: 10.0.1.20
+      protocol: tcp
+      portStart: 8081
+      portEnd: 8081
+
+    - service: fraud-service
+      address: 10.0.1.30
+      protocol: tcp
+      portStart: 8082
+      portEnd: 8082
+
+    - service: payment-gateway
+      address: 169.117.3.24
+      protocol: tcp
+      portStart: 443
+      portEnd: 443

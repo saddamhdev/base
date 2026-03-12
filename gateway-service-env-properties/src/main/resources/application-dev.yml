@@ -8,7 +8,11 @@ spring:
       - "optional:classpath:log-file-dev.yml"
       - "optional:classpath:application-rabbitmq-dev.yml"
       - "optional:classpath:application-kafka-dev.yml"
-
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:6062/realms/snvn
 
   cloud:
     gateway:
@@ -185,7 +189,7 @@ eureka:
   client:
     enabled: false
 
-gateway-service-log:
+service-log:
   logfile:
     enabled: false
   splunk:
@@ -198,3 +202,45 @@ gateway-service-log:
 rabbitmq-service-log:
   auto-startup: false
 
+security:
+  keycloak:
+    enabled: true
+
+  api-key:
+    enabled: true
+    header: X-API-KEY
+    value: my-secret-key
+
+  rate-limit:
+    enabled: true
+    requests-per-minute: 2
+
+  ip-filter:
+    enabled: false
+
+
+incoming-ip-whitelist:
+  enabled: true
+
+  allowed-ips:
+
+    - service: gateway-service
+      enabled: true
+      address: 0:0:0:0:0:0:0:1
+      protocol: tcp
+      portStart: 0
+      portEnd: 65535
+
+    - service: account-service
+      enabled: true
+      address: 10.0.1.20
+      protocol: tcp
+      portStart: 8081
+      portEnd: 8081
+
+    - service: fraud-service
+      enabled: false   # disabled service
+      address: 10.0.1.30
+      protocol: tcp
+      portStart: 8082
+      portEnd: 8082

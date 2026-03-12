@@ -19,7 +19,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  *     enabled: true
  * </pre>
  */
-@ConfigurationProperties(prefix = "user-service-log")
+@ConfigurationProperties(prefix = "service-log")
 public class UserServiceLogProperties {
 
     private final Logfile logfile = new Logfile();

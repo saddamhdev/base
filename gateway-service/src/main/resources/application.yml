@@ -4,6 +4,7 @@ spring:
   profiles:
     active: dev
 
+
 #logging:
 #  level:
 #    root: INFO
@@ -44,10 +45,11 @@ spring:
 #       "logger":"%logger{36}",
 #       "message":"%msg",
 #       "exception":"%replace(%ex){'\n','\\\\n'}"}%n
-gateway:
-  rate-limit:
-    enabled: true
-    requests-per-minute: 2
+
+
+
+
+
 
 server:
   port: 8093
@@ -70,3 +72,6 @@ management:
     enabled: true
     sampling:
       probability: 1.0
+
+
+

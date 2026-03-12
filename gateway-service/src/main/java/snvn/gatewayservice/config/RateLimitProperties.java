@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "gateway.rate-limit")
+@ConfigurationProperties(prefix = "security.rate-limit")
 public class RateLimitProperties {
 
     private boolean enabled;
