@@ -81,3 +81,7 @@ splunk:
 user-service:
    redis-rate-limiting:
      enabled: true
+
+grpc:
+  server:
+    port: 9091

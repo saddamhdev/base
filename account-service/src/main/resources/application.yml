@@ -82,4 +82,4 @@ logging:
 
 grpc:
   server:
-    port: 9090
+    port: 9092
