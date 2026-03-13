@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import snvn.common.dto.AccountResponse;
 import snvn.model.User;
 import snvn.userservice.client.feign.AccountClient;
-import snvn.userservice.client.grpc.AccountGrpcClient;
 import snvn.userservice.repository.UserRepository;
 
 import java.util.List;
@@ -18,11 +17,9 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
     private final AccountClient accountClient;
-    private final AccountGrpcClient accountGrpcClient;
 
-    public UserService(@Lazy AccountClient accountClient, AccountGrpcClient accountGrpcClient) {
+    public UserService(@Lazy AccountClient accountClient) {
         this.accountClient = accountClient;
-        this.accountGrpcClient = accountGrpcClient;
     }
 
     /**
@@ -109,12 +106,6 @@ public class UserService {
     public AccountResponse getUserAccount(Long userId) {
         return accountClient.getAccount(userId);
     }
-    public void test() {
-
-        AccountResponse response =
-                accountGrpcClient.getAccount(10L);
-
-        System.out.println(response.getStatus());
-    }
+    
 }
 
