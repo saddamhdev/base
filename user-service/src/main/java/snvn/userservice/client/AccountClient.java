@@ -7,6 +7,7 @@ import snvn.userservice.dto.AccountResponse;
 
 @FeignClient(
         name = "account-service",
+        url = "${services.account-service.url:http://localhost:8095}",
         path = "/api/accounts"
 )
 public interface AccountClient {

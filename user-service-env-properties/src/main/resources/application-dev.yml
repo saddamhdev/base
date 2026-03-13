@@ -48,18 +48,18 @@ service-log:
   logfile:
     enabled: false
   splunk:
-    enabled: false
+    enabled: true
   rabbitmq:
     enabled: false
   kafka:
-    enabled: true
+    enabled: false
 
 
 security:
   provider: keycloak   # keycloak | okta | auth0 | azure | custom | ldap
 
   keycloak:
-    enabled: true
+    enabled: false
     issuer-uri: http://localhost:6062/realms/snvn
 
   okta:
@@ -107,7 +107,7 @@ security:
 
 
 incoming-ip-whitelist:
-  enabled: true
+  enabled: false
 
   allowed-ips:
 
@@ -134,7 +134,7 @@ incoming-ip-whitelist:
 
 
 outgoing-ip-whitelist:
-  enabled: true
+  enabled: false
 
   allowed-targets:
 
@@ -151,3 +151,7 @@ outgoing-ip-whitelist:
       protocol: http
       portStart: 8082
       portEnd: 8082
+
+services:
+  account-service:
+    url: http://localhost:8095

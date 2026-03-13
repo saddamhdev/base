@@ -193,18 +193,18 @@ service-log:
   logfile:
     enabled: false
   splunk:
-    enabled: false
+    enabled: true
   rabbitmq:
     enabled: false
   kafka:
-    enabled: true
+    enabled: false
 
 rabbitmq-service-log:
   auto-startup: false
 
 security:
   keycloak:
-    enabled: true
+    enabled: false
 
   api-key:
     enabled: true
@@ -220,7 +220,7 @@ security:
 
 
 incoming-ip-whitelist:
-  enabled: true
+  enabled: false
 
   allowed-ips:
 

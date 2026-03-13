@@ -16,7 +16,7 @@ spring:
       retries: 3
 
 kafka-service-log:
-  enabled: true
+  enabled: false
   auto-startup: true
   bootstrap-servers: ${spring.kafka.bootstrap-servers:localhost:9092}
   topic: kafka-log-topic

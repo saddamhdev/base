@@ -321,3 +321,733 @@
  "message":"Started KafkaServiceApplication in 8.759 seconds (process running for 10.076)",
  "exception":""}
 
+{"timestamp":"2026-03-13T02:54:03.549",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"Starting KafkaServiceApplication using Java 25.0.1 with PID 8196 (D:\module project\base\kafka-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:03.556",
+ "level":"DEBUG",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:03.558",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:05.955",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:06.126",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:08.191",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8097 (http)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:08.247",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:08.251",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:08.475",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 4686 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:09.232",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:09.418",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:11.314",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:11.440",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:12.169",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kafkadb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:12.173",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:12.254",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:12.345",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:kafkadb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: KAFKADB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:15.881",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:16.084",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.t.s.i.ExceptionHandlerLoggedImpl",
+ "message":"GenerationTarget encountered exception accepting command : Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]",
+ "exception":"org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:93)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:573)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:513)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:313)\\n	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:230)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:109)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:267)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:142)\\n	at java.base/java.util.HashMap.forEach(HashMap.java:1430)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:139)\\n	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)\\n	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)\\n	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:350)\\n	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:436)\\n	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1459)\\n	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:433)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:409)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:966)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620)\\n	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at snvn.kafkaservice.KafkaServiceApplication.main(KafkaServiceApplication.java:11)\\nCaused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier"; SQL statement:\\ncreate table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id)) [42001-240]\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)\\n	at org.h2.message.DbException.getSyntaxError(DbException.java:261)\\n	at org.h2.command.Parser.readIdentifier(Parser.java:5568)\\n	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8978)\\n	at org.h2.command.Parser.parseCreateTable(Parser.java:8926)\\n	at org.h2.command.Parser.parseCreate(Parser.java:6483)\\n	at org.h2.command.Parser.parsePrepared(Parser.java:648)\\n	at org.h2.command.Parser.parse(Parser.java:584)\\n	at org.h2.command.Parser.parse(Parser.java:559)\\n	at org.h2.command.Parser.prepareCommand(Parser.java:487)\\n	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)\\n	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)\\n	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)\\n	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)\\n	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)\\n	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)\\n	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79)\\n	... 37 common frames omitted\\n"}
+
+{"timestamp":"2026-03-13T02:54:16.115",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:16.448",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:17.233",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:17.625",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:19.378",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:19.639",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8097 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T02:54:19.668",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"Started KafkaServiceApplication in 17.424 seconds (process running for 18.89)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T06:14:12.114",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h29s655ms305µs500ns).",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:42:07.482",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h28m238ms846µs800ns).",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:51:35.932",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:51:36.043",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:51:36.127",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:51:36.204",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:51:36.220",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:19.181",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"Starting KafkaServiceApplication using Java 25.0.1 with PID 23364 (D:\module project\base\kafka-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:19.187",
+ "level":"DEBUG",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:19.189",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:21.112",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:21.274",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 134 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:23.518",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8097 (http)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:23.561",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:23.563",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:23.855",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 4546 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:24.519",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:24.648",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:25.955",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:26.059",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:26.494",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kafkadb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:26.497",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:26.560",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:26.640",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:kafkadb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: KAFKADB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:29.654",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:29.836",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.t.s.i.ExceptionHandlerLoggedImpl",
+ "message":"GenerationTarget encountered exception accepting command : Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]",
+ "exception":"org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:93)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:573)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:513)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:313)\\n	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:230)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:109)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:267)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:142)\\n	at java.base/java.util.HashMap.forEach(HashMap.java:1430)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:139)\\n	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)\\n	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)\\n	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:350)\\n	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:436)\\n	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1459)\\n	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:433)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:409)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:966)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620)\\n	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at snvn.kafkaservice.KafkaServiceApplication.main(KafkaServiceApplication.java:11)\\nCaused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier"; SQL statement:\\ncreate table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id)) [42001-240]\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)\\n	at org.h2.message.DbException.getSyntaxError(DbException.java:261)\\n	at org.h2.command.Parser.readIdentifier(Parser.java:5568)\\n	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8978)\\n	at org.h2.command.Parser.parseCreateTable(Parser.java:8926)\\n	at org.h2.command.Parser.parseCreate(Parser.java:6483)\\n	at org.h2.command.Parser.parsePrepared(Parser.java:648)\\n	at org.h2.command.Parser.parse(Parser.java:584)\\n	at org.h2.command.Parser.parse(Parser.java:559)\\n	at org.h2.command.Parser.prepareCommand(Parser.java:487)\\n	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)\\n	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)\\n	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)\\n	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)\\n	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)\\n	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)\\n	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79)\\n	... 37 common frames omitted\\n"}
+
+{"timestamp":"2026-03-13T21:52:29.856",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:30.160",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:31.012",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:31.438",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:32.644",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:32.845",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8097 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T21:52:32.869",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplication",
+ "message":"Started KafkaServiceApplication in 15.081 seconds (process running for 16.62)",
+ "exception":""}
+

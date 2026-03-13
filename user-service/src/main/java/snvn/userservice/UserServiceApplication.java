@@ -9,7 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EntityScan(basePackages = {"snvn.model", "snvn.rabbitmqservice.model"})
 @ComponentScan(basePackages = {"snvn.userservice", "snvn.common", "snvn.rabbitmqservice.config", "snvn.splunk", "snvn.rabbitmq", "snvn.log"})
-@EnableFeignClients
+@EnableFeignClients(basePackages = "snvn.userservice.client")
+
 public class UserServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserServiceApplication.class, args);

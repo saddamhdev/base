@@ -1,6 +1,7 @@
 package snvn.userservice.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import snvn.model.User;
 import snvn.userservice.client.AccountClient;
@@ -17,7 +18,7 @@ public class UserService {
     private UserRepository userRepository;
     private final AccountClient accountClient;
 
-    public UserService(AccountClient accountClient) {
+    public UserService(@Lazy AccountClient accountClient) {
         this.accountClient = accountClient;
     }
 
