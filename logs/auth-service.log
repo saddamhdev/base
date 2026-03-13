@@ -417,3 +417,63 @@
  "message":"Started AuthServiceApplication in 14.861 seconds (process running for 15.718)",
  "exception":""}
 
+{"timestamp":"2026-03-14T02:47:18.299",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+
+{"timestamp":"2026-03-14T02:47:18.453",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+
+{"timestamp":"2026-03-14T02:47:18.539",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T02:47:18.652",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T02:47:18.768",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+

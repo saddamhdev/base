@@ -166,5 +166,5 @@ services:
 grpc:
   client:
     account-service:
-      address: static://localhost:9092
+      address: static://localhost:9093
       negotiationType: plaintext
