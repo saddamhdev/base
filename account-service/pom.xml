@@ -13,6 +13,17 @@
     <artifactId>account-service</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
+            <version>2.15.0.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-client-spring-boot-starter</artifactId>
+            <version>2.15.0.RELEASE</version>
+        </dependency>
         <!-- Model Dependency -->
         <dependency>
             <groupId>snvn</groupId>
