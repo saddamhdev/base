@@ -154,4 +154,17 @@ outgoing-ip-whitelist:
 
 services:
   account-service:
-    url: http://localhost:8095
+    name: account-service
+    base-url: http://localhost:8095
+
+    endpoints:
+      account: /api/accounts
+      transaction: /api/transactions
+      balance: /api/balances
+
+
+grpc:
+  client:
+    account-service:
+      address: static://localhost:9090
+      negotiationType: plaintext

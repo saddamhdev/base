@@ -80,3 +80,6 @@ logging:
        "message":"%msg",
        "exception":"%replace(%ex){'\n','\\\\n'}"}%n
 
+grpc:
+  server:
+    port: 9090
