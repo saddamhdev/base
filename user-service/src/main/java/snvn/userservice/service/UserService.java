@@ -106,6 +106,6 @@ public class UserService {
     public AccountResponse getUserAccount(Long userId) {
         return accountClient.getAccount(userId);
     }
-    
+
 }
 
