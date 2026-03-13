@@ -3899,3 +3899,39 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "message":"Started AccountServiceApplication in 16.901 seconds (process running for 17.983)",
  "exception":""}
 
+{"timestamp":"2026-03-14T03:06:31.056",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T03:06:31.066",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T03:06:31.117",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 48 ms",
+ "exception":""}
+

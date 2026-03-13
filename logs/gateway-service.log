@@ -486,3 +486,1382 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "logger":"o.s.boot.SpringApplication",
  "message":"Application run failed",
  "exception":"org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 1: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)\\n	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)\\n	at snvn.gatewayservice.GatewayServiceApplication.main(GatewayServiceApplication.java:15)\\nCaused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1543)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1511)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 19 common frames omitted\\nCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 37 common frames omitted\\nCaused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.gateway.config.GrpcSslConfigurer] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@14dad5dc]\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)\\n	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:297)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:274)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:203)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:182)\\n	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574)\\n	... 47 common frames omitted\\nCaused by: java.lang.NoClassDefFoundError: io/grpc/netty/NettyChannelBuilder\\n	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)\\n	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010)\\n	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329)\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)\\n	... 55 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: io.grpc.netty.NettyChannelBuilder\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	... 59 common frames omitted\\n"}
+{"timestamp":"2026-03-14T02:53:57.800",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Starting GatewayServiceApplication using Java 25.0.1 with PID 4772 (D:\module project\base\gateway-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-14T02:53:57.804",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Running with Spring Boot v3.3.2, Spring v6.1.11",
+ "exception":""}
+{"timestamp":"2026-03-14T02:53:57.805",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-14T02:53:59.609",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-14T02:53:59.612",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-14T02:53:59.653",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:00.027",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=dfd41748-cd35-3e6f-b83b-36b14cb4b67e",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:00.437",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8093 (http)",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:00.442",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:00.449",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:00.466",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:00.467",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/10.1.26]",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:01.091",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:01.107",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [RabbitMQExternalLogServiceImplementation, SplunkExternalLogService]",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:01.245",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.f.ApplicationDetailsGlobalFilter",
+ "message":"ApplicationDetailsGlobalFilter initialized with ExternalLogService: CompositeExternalLogService, channels: GatewayServiceLogProperties{logfile=false, splunk=true, rabbitmq=false, kafka=false}",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:01.896",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.config.SecurityConfig",
+ "message":"Keycloak security DISABLED",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:02.300",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:02.378",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext",
+ "message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 1: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:02.391",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"i.o.sdk.trace.SdkTracerProvider",
+ "message":"Calling shutdown() multiple times.",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:02.411",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
+ "message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
+ "exception":""}
+{"timestamp":"2026-03-14T02:54:02.428",
+ "level":"ERROR",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.SpringApplication",
+ "message":"Application run failed",
+ "exception":"org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 1: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)\\n	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)\\n	at snvn.gatewayservice.GatewayServiceApplication.main(GatewayServiceApplication.java:15)\\nCaused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1543)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1511)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 19 common frames omitted\\nCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 37 common frames omitted\\nCaused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.gateway.config.GrpcSslConfigurer] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@14dad5dc]\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)\\n	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:297)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:274)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:203)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:182)\\n	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574)\\n	... 47 common frames omitted\\nCaused by: java.lang.NoClassDefFoundError: io/grpc/netty/NettyChannelBuilder\\n	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)\\n	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010)\\n	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329)\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)\\n	... 55 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: io.grpc.netty.NettyChannelBuilder\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	... 59 common frames omitted\\n"}
+{"timestamp":"2026-03-14T03:00:34.986",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Starting GatewayServiceApplication using Java 25.0.1 with PID 21120 (D:\module project\base\gateway-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:34.990",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Running with Spring Boot v3.3.2, Spring v6.1.11",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:34.992",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.077",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.081",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.128",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.543",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=dfd41748-cd35-3e6f-b83b-36b14cb4b67e",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.891",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8093 (http)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.895",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.901",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.911",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:37.912",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/10.1.26]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:38.432",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:38.448",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [RabbitMQExternalLogServiceImplementation, SplunkExternalLogService]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:38.568",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.f.ApplicationDetailsGlobalFilter",
+ "message":"ApplicationDetailsGlobalFilter initialized with ExternalLogService: CompositeExternalLogService, channels: GatewayServiceLogProperties{logfile=false, splunk=true, rabbitmq=false, kafka=false}",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:39.218",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.config.SecurityConfig",
+ "message":"Keycloak security DISABLED",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:39.577",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:39.701",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext",
+ "message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 1: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:39.716",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"i.o.sdk.trace.SdkTracerProvider",
+ "message":"Calling shutdown() multiple times.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:39.737",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
+ "message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:00:39.755",
+ "level":"ERROR",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.SpringApplication",
+ "message":"Application run failed",
+ "exception":"org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 1: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)\\n	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)\\n	at snvn.gatewayservice.GatewayServiceApplication.main(GatewayServiceApplication.java:15)\\nCaused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1543)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1511)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 19 common frames omitted\\nCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 37 common frames omitted\\nCaused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.gateway.config.GrpcSslConfigurer] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@14dad5dc]\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)\\n	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:297)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:274)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:203)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:182)\\n	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574)\\n	... 47 common frames omitted\\nCaused by: java.lang.NoClassDefFoundError: io/grpc/netty/NettyChannelBuilder\\n	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)\\n	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010)\\n	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329)\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)\\n	... 55 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: io.grpc.netty.NettyChannelBuilder\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	... 59 common frames omitted\\n"}
+{"timestamp":"2026-03-14T03:06:08.660",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Starting GatewayServiceApplication using Java 25.0.1 with PID 13848 (D:\module project\base\gateway-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:08.664",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Running with Spring Boot v3.3.2, Spring v6.1.11",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:08.665",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:10.574",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:10.578",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:10.633",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:11.075",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=a087e5ce-70d7-320b-8e9f-5a1880db57db",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:11.476",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8093 (http)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:11.480",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:11.487",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:11.499",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:11.499",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/10.1.26]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:12.075",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:12.090",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [RabbitMQExternalLogServiceImplementation, SplunkExternalLogService]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:12.215",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.f.ApplicationDetailsGlobalFilter",
+ "message":"ApplicationDetailsGlobalFilter initialized with ExternalLogService: CompositeExternalLogService, channels: GatewayServiceLogProperties{logfile=false, splunk=true, rabbitmq=false, kafka=false}",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:12.834",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.config.SecurityConfig",
+ "message":"Keycloak security DISABLED",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.210",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.622",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [After]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Before]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Between]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Cookie]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Header]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Host]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Method]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Path]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Query]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [ReadBody]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [RemoteAddr]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [XForwardedRemoteAddr]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.623",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Weight]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.624",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [CloudFoundryRouteService]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:13.929",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 1 endpoint beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:14.554",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8093 (http)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:14.609",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:14.801",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#4a6a6a69:0/SimpleConnection@3f919230 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=59950]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:14.979",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Started GatewayServiceApplication in 7.759 seconds (process running for 9.109)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:26.680",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"0c89db3756fa4b6899af06fc4284631a",
+ "spanId":"a1c42d2c923642b8",
+ "correlationId":"48aff0c7-3ff0-400e-bacf-f1a9f9471932",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:27.451",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:06:31.801",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"0c89db3756fa4b6899af06fc4284631a",
+ "spanId":"a1c42d2c923642b8",
+ "correlationId":"48aff0c7-3ff0-400e-bacf-f1a9f9471932",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:01.612",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:01.986",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:07.929",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Starting GatewayServiceApplication using Java 25.0.1 with PID 20952 (D:\module project\base\gateway-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:07.932",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Running with Spring Boot v3.3.2, Spring v6.1.11",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:07.935",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:10.505",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:10.508",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:10.560",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:11.016",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=a087e5ce-70d7-320b-8e9f-5a1880db57db",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:11.579",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8093 (http)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:11.584",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:11.592",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.core.AprLifecycleListener",
+ "message":"OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:11.606",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:11.607",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/10.1.26]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:12.252",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:12.270",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [RabbitMQExternalLogServiceImplementation, SplunkExternalLogService]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:12.410",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.f.ApplicationDetailsGlobalFilter",
+ "message":"ApplicationDetailsGlobalFilter initialized with ExternalLogService: CompositeExternalLogService, channels: GatewayServiceLogProperties{logfile=false, splunk=true, rabbitmq=false, kafka=false}",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.162",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.config.SecurityConfig",
+ "message":"Keycloak security DISABLED",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.559",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.922",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [After]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Before]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Between]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Cookie]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Header]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Host]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Method]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Path]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Query]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [ReadBody]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [RemoteAddr]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.923",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [XForwardedRemoteAddr]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.924",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [Weight]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:13.924",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.g.r.RouteDefinitionRouteLocator",
+ "message":"Loaded RoutePredicateFactory [CloudFoundryRouteService]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:14.192",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 1 endpoint beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:14.724",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.e.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8093 (http)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:14.759",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:14.867",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#734fbae3:0/SimpleConnection@55a2f08b [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=59975]",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:15.082",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.GatewayServiceApplication",
+ "message":"Started GatewayServiceApplication in 8.601 seconds (process running for 9.363)",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:26.883",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"4e2353bb23ec4225a70dac77c1789f1d",
+ "spanId":"4a757c45a3e5457d",
+ "correlationId":"418f49ee-47c0-4767-8d73-6742dcc7a65b",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:27.726",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:07:28.369",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"4e2353bb23ec4225a70dac77c1789f1d",
+ "spanId":"4a757c45a3e5457d",
+ "correlationId":"418f49ee-47c0-4767-8d73-6742dcc7a65b",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:15:26.198",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-2",
+ "traceId":"ab81ac94e29f49299c7fc4c079f11fa9",
+ "spanId":"98c52e804f0d46e8",
+ "correlationId":"f7bd8212-78e6-4520-b09b-b4102a4abb8b",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:15:26.198",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-3",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T03:15:30.643",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-3",
+ "traceId":"ab81ac94e29f49299c7fc4c079f11fa9",
+ "spanId":"98c52e804f0d46e8",
+ "correlationId":"f7bd8212-78e6-4520-b09b-b4102a4abb8b",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
