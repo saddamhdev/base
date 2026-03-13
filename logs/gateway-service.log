@@ -385,3 +385,104 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "logger":"o.a.catalina.core.StandardEngine",
  "message":"Starting Servlet engine: [Apache Tomcat/10.1.26]",
  "exception":""}
+{"timestamp":"2026-03-14T02:47:55.128",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:55.171",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [RabbitMQExternalLogServiceImplementation, SplunkExternalLogService]",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:55.586",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.f.ApplicationDetailsGlobalFilter",
+ "message":"ApplicationDetailsGlobalFilter initialized with ExternalLogService: CompositeExternalLogService, channels: GatewayServiceLogProperties{logfile=false, splunk=true, rabbitmq=false, kafka=false}",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:57.790",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.g.config.SecurityConfig",
+ "message":"Keycloak security DISABLED",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:58.746",
+ "level":"DEBUG",
+ "service":"gateway-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:59.262",
+ "level":"WARN",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext",
+ "message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 1: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:59.300",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"i.o.sdk.trace.SdkTracerProvider",
+ "message":"Calling shutdown() multiple times.",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:59.395",
+ "level":"INFO",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.l.ConditionEvaluationReportLogger",
+ "message":"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
+ "exception":""}
+{"timestamp":"2026-03-14T02:47:59.458",
+ "level":"ERROR",
+ "service":"gateway-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.SpringApplication",
+ "message":"Application run failed",
+ "exception":"org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 1: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)\\n	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)\\n	at snvn.gatewayservice.GatewayServiceApplication.main(GatewayServiceApplication.java:15)\\nCaused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jsonToGRPCFilterFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonToGRPCFilterFactory' parameter 0: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)\\n	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1543)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1511)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 19 common frames omitted\\nCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'grpcSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Post-processing of merged bean definition failed\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)\\n	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)\\n	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)\\n	... 37 common frames omitted\\nCaused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.gateway.config.GrpcSslConfigurer] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@14dad5dc]\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)\\n	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:297)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:274)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:203)\\n	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:182)\\n	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574)\\n	... 47 common frames omitted\\nCaused by: java.lang.NoClassDefFoundError: io/grpc/netty/NettyChannelBuilder\\n	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)\\n	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010)\\n	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329)\\n	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)\\n	... 55 common frames omitted\\nCaused by: java.lang.ClassNotFoundException: io.grpc.netty.NettyChannelBuilder\\n	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)\\n	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)\\n	... 59 common frames omitted\\n"}
