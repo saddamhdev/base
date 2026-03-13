@@ -1458,3 +1458,1643 @@
  "message":"Started AccountServiceApplication in 15.058 seconds (process running for 16.301)",
  "exception":""}
 
+{"timestamp":"2026-03-13T22:07:10.290",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:10.425",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:10.488",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:10.595",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:10.747",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:45.003",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Starting AccountServiceApplication using Java 25.0.1 with PID 5004 (D:\module project\base\account-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:45.007",
+ "level":"DEBUG",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:45.009",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:47.518",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:47.678",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:49.330",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8095 (http)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:49.367",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:49.368",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:49.556",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 4391 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:50.583",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:50.830",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:52.134",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:52.214",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:52.713",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:accountdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:52.718",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:52.798",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:52.875",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:accountdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: ACCOUNTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:55.429",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:55.595",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:55.742",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:55.842",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:56.997",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:57.538",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:57.695",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8095 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:07:57.712",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Started AccountServiceApplication in 14.083 seconds (process running for 15.808)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:17:09.354",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:17:09.355",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:17:09.359",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 4 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:17:09.462",
+ "level":"ERROR",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"7faa9b70fdc2483281732c0ede199d2a",
+ "spanId":"12dc28bac692405a",
+ "correlationId":"941e59c9-f6e6-4c2b-8f2a-d2b667c6161e",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"Invalid argument: Name for argument of type [java.lang.Long] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.",
+ "exception":"java.lang.IllegalArgumentException: Name for argument of type [java.lang.Long] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.\\n	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.updateNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:184)\\n	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.getNamedValueInfo(AbstractNamedValueMethodArgumentResolver.java:159)\\n	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:106)\\n	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:230)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)\\n	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\\n	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\\n	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\\n	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\\n	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)\\n	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)\\n	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\\n	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.IncomingIpWhitelistFilter.doFilter(IncomingIpWhitelistFilter.java:56)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.MdcLoggingFilter.doFilter(MdcLoggingFilter.java:99)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\\n	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\\n	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\n	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\\n	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\\n	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\\n	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\n	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\\n	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\n	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\\n	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)\\n	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\\n	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\\n	at java.base/java.lang.Thread.run(Thread.java:1474)\\n"}
+
+{"timestamp":"2026-03-13T22:21:25.225",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:25.265",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:25.277",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:25.282",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:25.285",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:29.870",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Starting AccountServiceApplication using Java 25.0.1 with PID 1368 (D:\module project\base\account-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:29.876",
+ "level":"DEBUG",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:29.878",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:31.843",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:31.953",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:32.716",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8095 (http)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:32.752",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:32.753",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:32.820",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 2780 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:33.103",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:33.162",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:33.756",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:33.789",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:33.982",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:accountdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:33.985",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:34.017",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:34.042",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:accountdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: ACCOUNTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:35.137",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:35.214",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:35.270",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:35.303",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:35.754",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:36.082",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:36.232",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8095 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:21:36.251",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Started AccountServiceApplication in 7.477 seconds (process running for 8.174)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:22:11.436",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:22:11.437",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:22:11.439",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 2 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:22.359",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:22.404",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:22.415",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:22.421",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:22.427",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:28.814",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Starting AccountServiceApplication using Java 25.0.1 with PID 22316 (D:\module project\base\account-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:28.818",
+ "level":"DEBUG",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:28.819",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:30.214",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:30.272",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:30.921",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8095 (http)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:30.934",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:30.935",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:31.020",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 2112 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:31.302",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:31.350",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:31.862",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:31.898",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:32.095",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:accountdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:32.097",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:32.121",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:32.145",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:accountdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: ACCOUNTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:33.160",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:33.229",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:33.277",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:33.306",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:33.737",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:33.952",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:34.029",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8095 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:34.037",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Started AccountServiceApplication in 6.223 seconds (process running for 7.511)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:49.025",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:49.026",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:31:49.031",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 4 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:24.338",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:24.379",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:24.389",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:24.395",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:24.399",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:31.418",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Starting AccountServiceApplication using Java 25.0.1 with PID 12420 (D:\module project\base\account-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:31.423",
+ "level":"DEBUG",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:31.424",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:32.719",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:32.797",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:33.428",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8095 (http)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:33.461",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:33.461",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:33.526",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 2011 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:33.792",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:33.844",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:34.345",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:34.378",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:34.561",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:accountdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:34.564",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:34.590",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:34.612",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:accountdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: ACCOUNTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:35.578",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:35.654",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:35.697",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:35.728",
+ "level":"WARN",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:36.173",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:36.410",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:36.486",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8095 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:35:36.493",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.a.AccountServiceApplication",
+ "message":"Started AccountServiceApplication in 6.182 seconds (process running for 7.574)",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:36:31.920",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:36:31.920",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-03-13T22:36:31.929",
+ "level":"INFO",
+ "service":"account-service",
+ "thread":"http-nio-8095-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 9 ms",
+ "exception":""}
+

@@ -3,7 +3,7 @@ package snvn.userservice.client;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import snvn.userservice.dto.AccountResponse;
+import snvn.common.dto.AccountResponse;
 
 @FeignClient(
         name = "account-service",
@@ -13,6 +13,5 @@ import snvn.userservice.dto.AccountResponse;
 public interface AccountClient {
 
     @GetMapping("/{userId}")
-    AccountResponse getAccount(@PathVariable Long userId);
-
+    AccountResponse getAccount(@PathVariable("userId") Long userId);
 }

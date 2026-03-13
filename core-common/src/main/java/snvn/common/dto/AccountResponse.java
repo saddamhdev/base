@@ -1,4 +1,4 @@
-package snvn.accountservice.dto;
+package snvn.common.dto;
 public class AccountResponse {
 
     private Long id;

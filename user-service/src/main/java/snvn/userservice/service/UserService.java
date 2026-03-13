@@ -3,9 +3,9 @@ package snvn.userservice.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
+import snvn.common.dto.AccountResponse;
 import snvn.model.User;
 import snvn.userservice.client.AccountClient;
-import snvn.userservice.dto.AccountResponse;
 import snvn.userservice.repository.UserRepository;
 
 import java.util.List;

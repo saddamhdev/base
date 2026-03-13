@@ -20386,3 +20386,3590 @@ Error starting ApplicationContext. To display the condition evaluation report re
  "logger":"s.c.exception.GlobalExceptionHandler",
  "message":"Unhandled exception - traceId=527160e4a14d4964931118f2d0b6847f, correlationId=cdcf4324-65ab-4218-819e-639ca88b243e",
  "exception":"org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'snvn.userservice.client.AccountClient': FactoryBean threw exception on object creation\\n	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:209)\\n	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:149)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1879)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1304)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:255)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:2015)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1971)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1716)\\n	at org.springframework.context.annotation.ContextAnnotationAutowireCandidateResolver$LazyDependencyTargetSource.getTarget(ContextAnnotationAutowireCandidateResolver.java:137)\\n	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)\\n	at jdk.proxy2/jdk.proxy2.$Proxy163.getAccount(Unknown Source)\\n	at snvn.userservice.service.UserService.getUserAccount(UserService.java:107)\\n	at snvn.userservice.controller.UserController.createUser(UserController.java:45)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)\\n	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\\n	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\\n	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\\n	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\\n	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)\\n	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)\\n	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\\n	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)\\n	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)\\n	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)\\n	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)\\n	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)\\n	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)\\n	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)\\n	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.IncomingIpWhitelistFilter.doFilter(IncomingIpWhitelistFilter.java:56)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.RateLimitingFilter.doFilterInternal(RateLimitingFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.MdcLoggingFilter.doFilter(MdcLoggingFilter.java:99)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.CorrelationFilter.doFilter(CorrelationFilter.java:38)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\\n	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\\n	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\n	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\\n	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\\n	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\\n	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\n	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\\n	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\n	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\\n	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)\\n	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\\n	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\\n	at java.base/java.lang.Thread.run(Thread.java:1474)\\nCaused by: java.lang.IllegalStateException: PathVariable annotation was empty on param 0.\\n	at feign.Util.checkState(Util.java:118)\\n	at org.springframework.cloud.openfeign.annotation.PathVariableParameterProcessor.processArgument(PathVariableParameterProcessor.java:52)\\n	at org.springframework.cloud.openfeign.support.SpringMvcContract.processAnnotationsOnParameter(SpringMvcContract.java:341)\\n	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:130)\\n	at org.springframework.cloud.openfeign.support.SpringMvcContract.parseAndValidateMetadata(SpringMvcContract.java:205)\\n	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:71)\\n	at feign.ReflectiveFeign$ParseHandlersByName.apply(ReflectiveFeign.java:140)\\n	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:59)\\n	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:51)\\n	at feign.Feign$Builder.target(Feign.java:202)\\n	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30)\\n	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:504)\\n	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:456)\\n	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:203)\\n	... 133 common frames omitted\\n"}
+{"timestamp":"2026-03-13T22:06:06.441",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-2",
+ "traceId":"fea67fc64f924047be3ab9470e0bb37b",
+ "spanId":"7943e83f05304a2d",
+ "correlationId":"ea1529b2-8b37-467d-903c-c40c0ec7394e",
+ "jobId":"",
+ "logger":"snvn.common.filter.MdcLoggingFilter",
+ "message":"MDC context set - traceId=fea67fc64f924047be3ab9470e0bb37b, spanId=7943e83f05304a2d, correlationId=ea1529b2-8b37-467d-903c-c40c0ec7394e [fromHeaders: trace=true, span=true, correlation=true]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:06.584",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-2",
+ "traceId":"fea67fc64f924047be3ab9470e0bb37b",
+ "spanId":"7943e83f05304a2d",
+ "correlationId":"ea1529b2-8b37-467d-903c-c40c0ec7394e",
+ "jobId":"",
+ "logger":"org.hibernate.orm.jdbc.error",
+ "message":"HHH000247: ErrorCode: 23505, SQLState: 23505",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:06.585",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-2",
+ "traceId":"fea67fc64f924047be3ab9470e0bb37b",
+ "spanId":"7943e83f05304a2d",
+ "correlationId":"ea1529b2-8b37-467d-903c-c40c0ec7394e",
+ "jobId":"",
+ "logger":"org.hibernate.orm.jdbc.error",
+ "message":"Unique index or primary key violation: "PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7 INDEX PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7_INDEX_4 ON PUBLIC.USERS(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'johnbhljhjjfkhdncnhj@exsample.com' )"; SQL statement:
+insert into users (email,first_name,last_name,password,role,username,id) values (?,?,?,?,?,?,default) [23505-240]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:06.609",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-2",
+ "traceId":"fea67fc64f924047be3ab9470e0bb37b",
+ "spanId":"7943e83f05304a2d",
+ "correlationId":"ea1529b2-8b37-467d-903c-c40c0ec7394e",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:06.693",
+ "level":"ERROR",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-2",
+ "traceId":"fea67fc64f924047be3ab9470e0bb37b",
+ "spanId":"7943e83f05304a2d",
+ "correlationId":"ea1529b2-8b37-467d-903c-c40c0ec7394e",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"Unhandled exception - traceId=fea67fc64f924047be3ab9470e0bb37b, correlationId=ea1529b2-8b37-467d-903c-c40c0ec7394e",
+ "exception":"org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7 INDEX PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7_INDEX_4 ON PUBLIC.USERS(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'johnbhljhjjfkhdncnhj@exsample.com' )"; SQL statement:\\ninsert into users (email,first_name,last_name,password,role,username,id) values (?,?,?,?,?,?,default) [23505-240]] [insert into users (email,first_name,last_name,password,role,username,id) values (?,?,?,?,?,?,default)]; SQL [insert into users (email,first_name,last_name,password,role,username,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7 INDEX PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7_INDEX_4]\\n	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:169)\\n	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:131)\\n	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.translateExceptionIfPossible(HibernateExceptionTranslator.java:105)\\n	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:199)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:556)\\n	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)\\n	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:346)\\n	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:157)\\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166)\\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)\\n	at jdk.proxy2/jdk.proxy2.$Proxy167.save(Unknown Source)\\n	at snvn.userservice.service.UserService.createUser(UserService.java:43)\\n	at snvn.userservice.controller.UserController.createUser(UserController.java:44)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)\\n	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\\n	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\\n	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\\n	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\\n	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)\\n	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)\\n	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\\n	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)\\n	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)\\n	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)\\n	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)\\n	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)\\n	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)\\n	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)\\n	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.IncomingIpWhitelistFilter.doFilter(IncomingIpWhitelistFilter.java:56)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.RateLimitingFilter.doFilterInternal(RateLimitingFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.MdcLoggingFilter.doFilter(MdcLoggingFilter.java:99)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.CorrelationFilter.doFilter(CorrelationFilter.java:38)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\\n	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\\n	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\n	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\\n	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\\n	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\\n	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\n	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\\n	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\n	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\\n	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)\\n	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\\n	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\\n	at java.base/java.lang.Thread.run(Thread.java:1474)\\nCaused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7 INDEX PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7_INDEX_4 ON PUBLIC.USERS(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'johnbhljhjjfkhdncnhj@exsample.com' )"; SQL statement:\\ninsert into users (email,first_name,last_name,password,role,username,id) values (?,?,?,?,?,?,default) [23505-240]] [insert into users (email,first_name,last_name,password,role,username,id) values (?,?,?,?,?,?,default)]\\n	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$1(H2Dialect.java:845)\\n	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)\\n	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)\\n	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:193)\\n	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:103)\\n	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45)\\n	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66)\\n	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)\\n	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:191)\\n	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:129)\\n	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:92)\\n	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:90)\\n	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:684)\\n	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)\\n	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)\\n	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)\\n	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:376)\\n	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:290)\\n	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:220)\\n	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:138)\\n	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:148)\\n	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:92)\\n	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:76)\\n	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:52)\\n	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:140)\\n	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:692)\\n	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:676)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)\\n	at jdk.proxy2/jdk.proxy2.$Proxy157.persist(Unknown Source)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:317)\\n	at jdk.proxy2/jdk.proxy2.$Proxy157.persist(Unknown Source)\\n	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:663)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)\\n	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278)\\n	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169)\\n	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)\\n	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545)\\n	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290)\\n	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:708)\\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171)\\n	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146)\\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)\\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:370)\\n	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)\\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)\\n	... 126 common frames omitted\\nCaused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7 INDEX PUBLIC.UK6DOTKOTT2KJSP8VW4D0M25FB7_INDEX_4 ON PUBLIC.USERS(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'johnbhljhjjfkhdncnhj@exsample.com' )"; SQL statement:\\ninsert into users (email,first_name,last_name,password,role,username,id) values (?,?,?,?,?,?,default) [23505-240]\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)\\n	at org.h2.message.DbException.get(DbException.java:223)\\n	at org.h2.message.DbException.get(DbException.java:199)\\n	at org.h2.index.Index.getDuplicateKeyException(Index.java:535)\\n	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)\\n	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)\\n	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:520)\\n	at org.h2.command.dml.Insert.insertRows(Insert.java:174)\\n	at org.h2.command.dml.Insert.update(Insert.java:135)\\n	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212)\\n	at org.h2.command.CommandContainer.update(CommandContainer.java:133)\\n	at org.h2.command.Command.executeUpdate(Command.java:306)\\n	at org.h2.command.Command.executeUpdate(Command.java:250)\\n	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)\\n	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)\\n	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)\\n	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)\\n	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:190)\\n	... 177 common frames omitted\\n"}
+{"timestamp":"2026-03-13T22:06:35.930",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:36.291",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:36.293",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:36.321",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:36.367",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:36.371",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:36.376",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:56.383",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Starting UserServiceApplication using Java 25.0.1 with PID 10704 (D:\module project\base\user-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:56.387",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:56.387",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:57.959",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:57.961",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.116",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interface.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.139",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.141",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.166",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport",
+ "message":"Spring Data Redis - Could not safely identify store assignment for repository candidate interface snvn.userservice.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.167",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.640",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=e9ddec3a-ff9d-36a1-861d-902dbf5a0367",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.816",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:58.975",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:59.328",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8102 (http)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:59.350",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:59.350",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:06:59.431",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 2980 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:00.474",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:00.706",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [SplunkExternalLogService, RabbitMQExternalLogServiceImplementation]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:00.784",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.u.filter.RateLimitingFilter",
+ "message":"Filter 'rateLimitingFilter' configured for use",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:00.949",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:01.101",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:02.154",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:02.224",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:02.506",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:02.509",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:02.560",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:02.599",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:userdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: USERDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:04.186",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:04.313",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:04.430",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:04.710",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: CompositeExternalLogService",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:04.736",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:04.946",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.config.SecurityConfig",
+ "message":"Security DISABLED for user-service",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:05.382",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:05.821",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger",
+ "message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:05.844",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:05.970",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8102 (http) with context path '/'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:05.996",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:06.142",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#3a225534:0/SimpleConnection@6ddb5117 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=58026]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:06.301",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Started UserServiceApplication in 10.664 seconds (process running for 27.413)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:10.248",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:10.287",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:10.288",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:10.569",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:10.871",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:10.886",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:10.962",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:23.525",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Starting UserServiceApplication using Java 25.0.1 with PID 16396 (D:\module project\base\user-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:23.531",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:23.533",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:27.820",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:27.833",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:28.453",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 527 ms. Found 1 JPA repository interface.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:28.519",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:28.523",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:28.603",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport",
+ "message":"Spring Data Redis - Could not safely identify store assignment for repository candidate interface snvn.userservice.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:28.604",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:29.616",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=e9ddec3a-ff9d-36a1-861d-902dbf5a0367",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:29.992",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:30.445",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:31.162",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8102 (http)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:31.190",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:31.190",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:31.327",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 7637 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:33.689",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:34.437",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [SplunkExternalLogService, RabbitMQExternalLogServiceImplementation]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:34.652",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.u.filter.RateLimitingFilter",
+ "message":"Filter 'rateLimitingFilter' configured for use",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:35.313",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:35.764",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:38.364",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:38.517",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:38.906",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:38.911",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:38.978",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:39.043",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:userdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: USERDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:43.527",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:43.778",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:44.117",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:44.720",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: CompositeExternalLogService",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:44.802",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:45.496",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.config.SecurityConfig",
+ "message":"Security DISABLED for user-service",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:46.348",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:47.816",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger",
+ "message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:47.888",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:48.226",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8102 (http) with context path '/'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:48.256",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:48.528",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#3a225534:0/SimpleConnection@aa9b6a8 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=58054]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:07:48.735",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Started UserServiceApplication in 26.862 seconds (process running for 29.546)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:10:11.360",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:10:11.361",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:10:11.367",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 5 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:10:11.374",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"e9f3eeead15f4ca3874f1b0700d6c912",
+ "spanId":"5c6564b466d7477e",
+ "correlationId":"e67ad85e-01fc-4376-bc80-a2774c9f315f",
+ "jobId":"",
+ "logger":"snvn.common.filter.MdcLoggingFilter",
+ "message":"MDC context set - traceId=e9f3eeead15f4ca3874f1b0700d6c912, spanId=5c6564b466d7477e, correlationId=e67ad85e-01fc-4376-bc80-a2774c9f315f [fromHeaders: trace=true, span=true, correlation=true]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:10:13.421",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-2",
+ "traceId":"e9f3eeead15f4ca3874f1b0700d6c912",
+ "spanId":"5c6564b466d7477e",
+ "correlationId":"e67ad85e-01fc-4376-bc80-a2774c9f315f",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:10:14.173",
+ "level":"ERROR",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"e9f3eeead15f4ca3874f1b0700d6c912",
+ "spanId":"5c6564b466d7477e",
+ "correlationId":"e67ad85e-01fc-4376-bc80-a2774c9f315f",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"Unhandled exception - traceId=e9f3eeead15f4ca3874f1b0700d6c912, correlationId=e67ad85e-01fc-4376-bc80-a2774c9f315f",
+ "exception":"org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'snvn.userservice.client.AccountClient': FactoryBean threw exception on object creation\\n	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:209)\\n	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:149)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1879)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1304)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:255)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)\\n	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:2015)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1971)\\n	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1716)\\n	at org.springframework.context.annotation.ContextAnnotationAutowireCandidateResolver$LazyDependencyTargetSource.getTarget(ContextAnnotationAutowireCandidateResolver.java:137)\\n	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)\\n	at jdk.proxy2/jdk.proxy2.$Proxy163.getAccount(Unknown Source)\\n	at snvn.userservice.service.UserService.getUserAccount(UserService.java:107)\\n	at snvn.userservice.controller.UserController.createUser(UserController.java:45)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)\\n	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\\n	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\\n	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\\n	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\\n	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)\\n	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)\\n	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\\n	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)\\n	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)\\n	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)\\n	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)\\n	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)\\n	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)\\n	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)\\n	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.IncomingIpWhitelistFilter.doFilter(IncomingIpWhitelistFilter.java:56)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.RateLimitingFilter.doFilterInternal(RateLimitingFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.MdcLoggingFilter.doFilter(MdcLoggingFilter.java:99)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.CorrelationFilter.doFilter(CorrelationFilter.java:38)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\\n	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\\n	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\n	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\\n	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\\n	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\\n	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\n	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\\n	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\n	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\\n	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)\\n	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\\n	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\\n	at java.base/java.lang.Thread.run(Thread.java:1474)\\nCaused by: java.lang.IllegalStateException: PathVariable annotation was empty on param 0.\\n	at feign.Util.checkState(Util.java:118)\\n	at org.springframework.cloud.openfeign.annotation.PathVariableParameterProcessor.processArgument(PathVariableParameterProcessor.java:52)\\n	at org.springframework.cloud.openfeign.support.SpringMvcContract.processAnnotationsOnParameter(SpringMvcContract.java:341)\\n	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:130)\\n	at org.springframework.cloud.openfeign.support.SpringMvcContract.parseAndValidateMetadata(SpringMvcContract.java:205)\\n	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:71)\\n	at feign.ReflectiveFeign$ParseHandlersByName.apply(ReflectiveFeign.java:140)\\n	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:59)\\n	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:51)\\n	at feign.Feign$Builder.target(Feign.java:202)\\n	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30)\\n	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:504)\\n	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:456)\\n	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:203)\\n	... 133 common frames omitted\\n"}
+{"timestamp":"2026-03-13T22:16:37.905",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:38.171",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:38.175",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:38.209",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:38.247",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:38.250",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:38.252",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:46.143",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Starting UserServiceApplication using Java 25.0.1 with PID 16808 (D:\module project\base\user-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:46.146",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:46.147",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:47.515",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:47.518",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:47.669",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:47.704",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:47.708",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:47.743",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport",
+ "message":"Spring Data Redis - Could not safely identify store assignment for repository candidate interface snvn.userservice.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:47.744",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:48.210",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=e9ddec3a-ff9d-36a1-861d-902dbf5a0367",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:48.364",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:48.516",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:48.805",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8102 (http)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:48.818",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:48.818",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:48.893",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 2675 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:49.721",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:49.889",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [SplunkExternalLogService, RabbitMQExternalLogServiceImplementation]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:49.948",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.u.filter.RateLimitingFilter",
+ "message":"Filter 'rateLimitingFilter' configured for use",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:50.123",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:50.207",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:50.965",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:51.015",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:51.205",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:51.207",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:51.240",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:51.272",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:userdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: USERDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:52.498",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:52.597",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:52.710",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:52.926",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: CompositeExternalLogService",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:52.952",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:53.177",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.config.SecurityConfig",
+ "message":"Security DISABLED for user-service",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:53.576",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:53.950",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger",
+ "message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:53.971",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:54.082",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8102 (http) with context path '/'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:54.101",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:54.267",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#3a225534:0/SimpleConnection@6ddb5117 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=58577]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:16:54.387",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Started UserServiceApplication in 9.422 seconds (process running for 10.946)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:17:06.565",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:17:06.565",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:17:06.570",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 4 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:17:06.575",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"7fcda641b5c74ba885eebc57fe3dc555",
+ "spanId":"d72cb0ac85394862",
+ "correlationId":"8b38ff97-99dc-4de3-a1eb-7bcefd112a8a",
+ "jobId":"",
+ "logger":"snvn.common.filter.MdcLoggingFilter",
+ "message":"MDC context set - traceId=7fcda641b5c74ba885eebc57fe3dc555, spanId=d72cb0ac85394862, correlationId=8b38ff97-99dc-4de3-a1eb-7bcefd112a8a [fromHeaders: trace=true, span=true, correlation=true]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:17:08.083",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"7fcda641b5c74ba885eebc57fe3dc555",
+ "spanId":"d72cb0ac85394862",
+ "correlationId":"8b38ff97-99dc-4de3-a1eb-7bcefd112a8a",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:17:09.620",
+ "level":"ERROR",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"7fcda641b5c74ba885eebc57fe3dc555",
+ "spanId":"d72cb0ac85394862",
+ "correlationId":"8b38ff97-99dc-4de3-a1eb-7bcefd112a8a",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"Unhandled exception - traceId=7fcda641b5c74ba885eebc57fe3dc555, correlationId=8b38ff97-99dc-4de3-a1eb-7bcefd112a8a",
+ "exception":"feign.FeignException$BadRequest: [400] during [GET] to [http://localhost:8095/api/accounts/10] [AccountClient#getAccount(Long)]: [{"traceId":"7faa9b70fdc2483281732c0ede199d2a","spanId":"12dc28bac692405a","jobId":null,"logger":"snvn.common.exception.GlobalExceptionHandler.buildErrorResponse()","correlationId":"941e59c9-f6e6-4c2b-... (488 bytes)]\\n	at feign.FeignException.clientErrorStatus(FeignException.java:243)\\n	at feign.FeignException.errorStatus(FeignException.java:223)\\n	at feign.FeignException.errorStatus(FeignException.java:213)\\n	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103)\\n	at feign.InvocationContext.decodeError(InvocationContext.java:133)\\n	at feign.InvocationContext.proceed(InvocationContext.java:80)\\n	at feign.ResponseHandler.handleResponse(ResponseHandler.java:69)\\n	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:109)\\n	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:53)\\n	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:104)\\n	at jdk.proxy2/jdk.proxy2.$Proxy202.getAccount(Unknown Source)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)\\n	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)\\n	at jdk.proxy2/jdk.proxy2.$Proxy163.getAccount(Unknown Source)\\n	at snvn.userservice.service.UserService.getUserAccount(UserService.java:107)\\n	at snvn.userservice.controller.UserController.createUser(UserController.java:45)\\n	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\\n	at java.base/java.lang.reflect.Method.invoke(Method.java:565)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)\\n	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)\\n	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)\\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)\\n	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)\\n	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\\n	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\\n	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)\\n	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)\\n	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\\n	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)\\n	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)\\n	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)\\n	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)\\n	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)\\n	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)\\n	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)\\n	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.IncomingIpWhitelistFilter.doFilter(IncomingIpWhitelistFilter.java:56)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.RateLimitingFilter.doFilterInternal(RateLimitingFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.MdcLoggingFilter.doFilter(MdcLoggingFilter.java:99)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.userservice.filter.CorrelationFilter.doFilter(CorrelationFilter.java:38)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\\n	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\\n	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\n	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\\n	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\\n	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\\n	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\n	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\\n	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\n	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\\n	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)\\n	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\\n	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\\n	at java.base/java.lang.Thread.run(Thread.java:1474)\\n"}
+{"timestamp":"2026-03-13T22:21:45.090",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:45.784",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:45.789",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:45.864",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:45.992",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:46.005",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:46.015",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:51.276",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Starting UserServiceApplication using Java 25.0.1 with PID 17632 (D:\module project\base\user-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:51.280",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:51.280",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.105",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.109",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.283",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interface.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.310",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.311",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.337",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport",
+ "message":"Spring Data Redis - Could not safely identify store assignment for repository candidate interface snvn.userservice.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.337",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:53.811",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=e9ddec3a-ff9d-36a1-861d-902dbf5a0367",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:54.004",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:54.167",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:54.449",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8102 (http)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:54.465",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:54.465",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:54.579",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 3206 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:55.339",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:55.496",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [SplunkExternalLogService, RabbitMQExternalLogServiceImplementation]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:55.540",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.u.filter.RateLimitingFilter",
+ "message":"Filter 'rateLimitingFilter' configured for use",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:55.678",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:55.778",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:56.529",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:56.580",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:56.802",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:56.804",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:56.839",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:56.900",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:userdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: USERDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:58.153",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:58.245",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:58.362",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:58.575",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: CompositeExternalLogService",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:58.607",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:58.816",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.config.SecurityConfig",
+ "message":"Security DISABLED for user-service",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:59.248",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:59.594",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger",
+ "message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:59.615",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:59.773",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8102 (http) with context path '/'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:59.799",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:21:59.973",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#3a225534:0/SimpleConnection@6ddb5117 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=55179]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:22:00.132",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Started UserServiceApplication in 10.42 seconds (process running for 12.352)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:22:08.929",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:22:08.929",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:22:08.933",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 3 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:22:08.940",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"ada31b945d3840d9858b96cebde9a4be",
+ "spanId":"a4762534e99d45d5",
+ "correlationId":"7eb8c3a4-7c14-454e-85c3-fadceee6f228",
+ "jobId":"",
+ "logger":"snvn.common.filter.MdcLoggingFilter",
+ "message":"MDC context set - traceId=ada31b945d3840d9858b96cebde9a4be, spanId=a4762534e99d45d5, correlationId=7eb8c3a4-7c14-454e-85c3-fadceee6f228 [fromHeaders: trace=true, span=true, correlation=true]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:22:10.305",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"ada31b945d3840d9858b96cebde9a4be",
+ "spanId":"a4762534e99d45d5",
+ "correlationId":"7eb8c3a4-7c14-454e-85c3-fadceee6f228",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:30:31.061",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:30:31.359",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:30:31.361",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:30:31.390",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:30:31.424",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:30:31.428",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:30:31.431",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:06.538",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Starting UserServiceApplication using Java 25.0.1 with PID 14128 (D:\module project\base\user-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:06.542",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:06.543",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:08.337",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:08.340",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:08.595",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 238 ms. Found 1 JPA repository interface.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:08.631",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:08.635",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:08.668",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport",
+ "message":"Spring Data Redis - Could not safely identify store assignment for repository candidate interface snvn.userservice.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:08.669",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:09.154",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=e9ddec3a-ff9d-36a1-861d-902dbf5a0367",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:09.323",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:09.508",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:09.900",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8102 (http)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:09.921",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:09.922",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:10.032",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 3358 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:10.871",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:11.070",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [SplunkExternalLogService, RabbitMQExternalLogServiceImplementation]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:11.138",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.u.filter.RateLimitingFilter",
+ "message":"Filter 'rateLimitingFilter' configured for use",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:11.301",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:11.471",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:12.388",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:12.457",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:12.751",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:12.753",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:12.793",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:12.826",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:userdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: USERDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:14.416",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:14.526",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:14.636",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:14.913",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: CompositeExternalLogService",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:14.938",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:15.134",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.config.SecurityConfig",
+ "message":"Security DISABLED for user-service",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:15.567",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:15.935",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger",
+ "message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:15.957",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:16.119",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8102 (http) with context path '/'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:16.142",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:16.305",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#7c013560:0/SimpleConnection@64e5d7e4 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=60583]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:16.403",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Started UserServiceApplication in 11.232 seconds (process running for 13.209)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:46.265",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:46.267",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:46.274",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 7 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:46.282",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"98b6f8f3bccf4f0b80bc298bf6632204",
+ "spanId":"8e20b039fe9d460c",
+ "correlationId":"ff59fe78-bf65-46bc-8c03-321e3981deb9",
+ "jobId":"",
+ "logger":"snvn.common.filter.MdcLoggingFilter",
+ "message":"MDC context set - traceId=98b6f8f3bccf4f0b80bc298bf6632204, spanId=8e20b039fe9d460c, correlationId=ff59fe78-bf65-46bc-8c03-321e3981deb9 [fromHeaders: trace=true, span=true, correlation=true]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:31:47.827",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"98b6f8f3bccf4f0b80bc298bf6632204",
+ "spanId":"8e20b039fe9d460c",
+ "correlationId":"ff59fe78-bf65-46bc-8c03-321e3981deb9",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:35:42.703",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:35:42.749",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:35:42.752",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:35:42.804",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+{"timestamp":"2026-03-13T22:35:42.848",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:35:42.851",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:35:42.854",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:08.385",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Starting UserServiceApplication using Java 25.0.1 with PID 4272 (D:\module project\base\user-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:08.388",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:08.389",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"The following 1 profile is active: "dev"",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.049",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.051",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.202",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.222",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Multiple Spring Data modules found, entering strict repository configuration mode",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.223",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data Redis repositories in DEFAULT mode.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.241",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationExtensionSupport",
+ "message":"Spring Data Redis - Could not safely identify store assignment for repository candidate interface snvn.userservice.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.242",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.726",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.cloud.context.scope.GenericScope",
+ "message":"BeanFactory id=e9ddec3a-ff9d-36a1-861d-902dbf5a0367",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:10.912",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:11.094",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:11.412",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8102 (http)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:11.429",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:11.429",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:11.515",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 3027 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:12.262",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"SplunkExternalLogService: SSL verification DISABLED (dev only)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:12.455",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.l.CompositeExternalLogService",
+ "message":"CompositeExternalLogService initialized with 2 delegate(s): [SplunkExternalLogService, RabbitMQExternalLogServiceImplementation]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:12.513",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.u.filter.RateLimitingFilter",
+ "message":"Filter 'rateLimitingFilter' configured for use",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:12.673",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:12.767",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:13.561",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:13.612",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:13.803",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:13.805",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:13.840",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:13.871",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:userdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: USERDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:15.064",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:15.155",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:15.264",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:15.489",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: CompositeExternalLogService",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:15.514",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:15.746",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.config.SecurityConfig",
+ "message":"Security DISABLED for user-service",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:16.135",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:16.579",
+ "level":"WARN",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger",
+ "message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:16.612",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 2 endpoints beneath base path '/actuator'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:16.728",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8102 (http) with context path '/'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:16.748",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:16.901",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#3a225534:0/SimpleConnection@6ddb5117 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=60899]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:17.012",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.userservice.UserServiceApplication",
+ "message":"Started UserServiceApplication in 10.117 seconds (process running for 11.901)",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:29.689",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:29.689",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:29.691",
+ "level":"INFO",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 2 ms",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:29.691",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"http-nio-8102-exec-1",
+ "traceId":"1142e4adb32449b6b995915aef633853",
+ "spanId":"14ecfee2527e4090",
+ "correlationId":"61a6c5cb-6856-4583-8b20-69f2fc1daa3c",
+ "jobId":"",
+ "logger":"snvn.common.filter.MdcLoggingFilter",
+ "message":"MDC context set - traceId=1142e4adb32449b6b995915aef633853, spanId=14ecfee2527e4090, correlationId=61a6c5cb-6856-4583-8b20-69f2fc1daa3c [fromHeaders: trace=true, span=true, correlation=true]",
+ "exception":""}
+{"timestamp":"2026-03-13T22:36:31.080",
+ "level":"DEBUG",
+ "service":"user-service",
+ "thread":"ForkJoinPool.commonPool-worker-1",
+ "traceId":"1142e4adb32449b6b995915aef633853",
+ "spanId":"14ecfee2527e4090",
+ "correlationId":"61a6c5cb-6856-4583-8b20-69f2fc1daa3c",
+ "jobId":"",
+ "logger":"s.splunk.SplunkExternalLogService",
+ "message":"Log sent to Splunk successfully",
+ "exception":""}

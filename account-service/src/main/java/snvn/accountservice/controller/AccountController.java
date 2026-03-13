@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import snvn.accountservice.dto.AccountResponse;
+import snvn.common.dto.AccountResponse;
 
 /**
  * Account Controller for handling account requests
@@ -23,8 +23,7 @@ public class AccountController {
     }
     @GetMapping("/{userId}")
 
-    public AccountResponse getAccount(@PathVariable Long userId) {
-
+    public AccountResponse getAccount(@PathVariable("userId") Long userId) {
         AccountResponse response = new AccountResponse();
         response.setId(1L);
         response.setUserId(userId);
