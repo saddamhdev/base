@@ -2,9 +2,9 @@ package snvn.accountservice.grpcController;
 
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
-import snvn.common.grpc.AccountRequest;
-import snvn.common.grpc.AccountResponse;
-import snvn.common.grpc.AccountServiceGrpc;
+import snvn.grpc.AccountServiceGrpc;
+import snvn.grpc.AccountRequest;
+import snvn.grpc.AccountResponse;
 
 @GrpcService
 public class AccountGrpcService extends AccountServiceGrpc.AccountServiceImplBase {

@@ -2,9 +2,9 @@ package snvn.userservice.client.grpc;
 
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
-import snvn.common.grpc.AccountServiceGrpc;
-import snvn.common.grpc.AccountRequest;
-import snvn.common.grpc.AccountResponse;
+import snvn.grpc.AccountServiceGrpc;
+import snvn.grpc.AccountRequest;
+import snvn.grpc.AccountResponse;
 
 @Service
 public class AccountGrpcClient {
