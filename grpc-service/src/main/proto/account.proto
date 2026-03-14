@@ -5,7 +5,8 @@ option java_package = "snvn.grpc";
 
 service AccountService {
 
-  rpc GetAccount (AccountRequest) returns (AccountResponse);
+  rpc GetAccount (AccountRequest)
+      returns (AccountResponse);
 
 }
 

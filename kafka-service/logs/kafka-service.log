@@ -620,3 +620,936 @@
  "message":"HikariPool-1 - Shutdown completed.",
  "exception":""}
 
+{"timestamp":"2026-03-14T14:28:53.784",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Starting KafkaServiceApplicationTests using Java 21.0.7 with PID 10496 (started by 01957 in D:\module project\base\kafka-service)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:28:53.790",
+ "level":"DEBUG",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:28:53.793",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:28:57.097",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:28:57.234",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:28:58.935",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:28:59.137",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:00.374",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:00.434",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:00.716",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kafkadb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:00.719",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:00.751",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:00.786",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:kafkadb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: KAFKADB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:01.908",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:02.002",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.t.s.i.ExceptionHandlerLoggedImpl",
+ "message":"GenerationTarget encountered exception accepting command : Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]",
+ "exception":"org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:93)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:573)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:513)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:313)\\n	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:230)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:109)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:267)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:142)\\n	at java.base/java.util.HashMap.forEach(HashMap.java:1429)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:139)\\n	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)\\n	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)\\n	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:350)\\n	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:436)\\n	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1459)\\n	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:433)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:409)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:966)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$2(SpringBootContextLoader.java:148)\\n	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)\\n	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)\\n	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1474)\\n	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:573)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:148)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:114)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:247)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:167)\\n	at org.springframework.test.context.cache.DefaultContextCache.put(DefaultContextCache.java:172)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:160)\\n	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128)\\n	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)\\n	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)\\n	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)\\n	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:203)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$1(ClassBasedTestDescriptor.java:423)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:428)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$0(ClassBasedTestDescriptor.java:422)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)\\n	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\\n	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)\\n	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\\n	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)\\n	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\\n	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)\\n	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\\n	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:422)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$0(ClassBasedTestDescriptor.java:334)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:333)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$1(ClassBasedTestDescriptor.java:322)\\n	at java.base/java.util.Optional.orElseGet(Optional.java:364)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$0(ClassBasedTestDescriptor.java:321)\\n	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:127)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:126)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:70)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$0(NodeTestTask.java:144)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:144)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:110)\\n	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)\\n	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)\\n	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)\\n	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)\\n	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)\\n	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:93)\\n	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48)\\n	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:41)\\n	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)\\n	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:40)\\n	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48)\\n	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)\\n	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)\\n	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\\n	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)\\n	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)\\nCaused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier"; SQL statement:\\ncreate table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id)) [42001-240]\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)\\n	at org.h2.message.DbException.getSyntaxError(DbException.java:261)\\n	at org.h2.command.Parser.readIdentifier(Parser.java:5568)\\n	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8978)\\n	at org.h2.command.Parser.parseCreateTable(Parser.java:8926)\\n	at org.h2.command.Parser.parseCreate(Parser.java:6483)\\n	at org.h2.command.Parser.parsePrepared(Parser.java:648)\\n	at org.h2.command.Parser.parse(Parser.java:584)\\n	at org.h2.command.Parser.parse(Parser.java:559)\\n	at org.h2.command.Parser.prepareCommand(Parser.java:487)\\n	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)\\n	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)\\n	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)\\n	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)\\n	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)\\n	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)\\n	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79)\\n	... 125 common frames omitted\\n"}
+
+{"timestamp":"2026-03-14T14:29:02.017",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:02.205",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:02.969",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:03.395",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:05.543",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:05.822",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Started KafkaServiceApplicationTests in 13.136 seconds (process running for 16.155)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:06.890",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.k.t.j.GlobalEmbeddedKafkaTestExecutionListener",
+ "message":"Stopped global Embedded Kafka.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:06.956",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:06.966",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:29:06.973",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:48:58.092",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Starting KafkaServiceApplicationTests using Java 21.0.7 with PID 13208 (started by 01957 in D:\module project\base\kafka-service)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:48:58.094",
+ "level":"DEBUG",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:48:58.096",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:01.013",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:01.122",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:02.696",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:02.891",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:04.585",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:04.636",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:04.898",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kafkadb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:04.901",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:04.945",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:04.976",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:kafkadb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: KAFKADB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:06.055",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:06.134",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.t.s.i.ExceptionHandlerLoggedImpl",
+ "message":"GenerationTarget encountered exception accepting command : Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]",
+ "exception":"org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:93)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:573)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:513)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:313)\\n	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:230)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:109)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:267)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:142)\\n	at java.base/java.util.HashMap.forEach(HashMap.java:1429)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:139)\\n	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)\\n	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)\\n	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:350)\\n	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:436)\\n	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1459)\\n	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:433)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:409)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:966)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$2(SpringBootContextLoader.java:148)\\n	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)\\n	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)\\n	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1474)\\n	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:573)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:148)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:114)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:247)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:167)\\n	at org.springframework.test.context.cache.DefaultContextCache.put(DefaultContextCache.java:172)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:160)\\n	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128)\\n	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)\\n	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)\\n	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)\\n	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:203)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$1(ClassBasedTestDescriptor.java:423)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:428)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$0(ClassBasedTestDescriptor.java:422)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)\\n	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\\n	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)\\n	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\\n	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)\\n	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\\n	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)\\n	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\\n	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:422)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$0(ClassBasedTestDescriptor.java:334)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:333)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$1(ClassBasedTestDescriptor.java:322)\\n	at java.base/java.util.Optional.orElseGet(Optional.java:364)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$0(ClassBasedTestDescriptor.java:321)\\n	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:127)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:126)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:70)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$0(NodeTestTask.java:144)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:144)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:110)\\n	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)\\n	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)\\n	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)\\n	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)\\n	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)\\n	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:93)\\n	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48)\\n	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:41)\\n	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)\\n	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:40)\\n	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48)\\n	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)\\n	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)\\n	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\\n	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)\\n	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)\\nCaused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier"; SQL statement:\\ncreate table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id)) [42001-240]\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)\\n	at org.h2.message.DbException.getSyntaxError(DbException.java:261)\\n	at org.h2.command.Parser.readIdentifier(Parser.java:5568)\\n	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8978)\\n	at org.h2.command.Parser.parseCreateTable(Parser.java:8926)\\n	at org.h2.command.Parser.parseCreate(Parser.java:6483)\\n	at org.h2.command.Parser.parsePrepared(Parser.java:648)\\n	at org.h2.command.Parser.parse(Parser.java:584)\\n	at org.h2.command.Parser.parse(Parser.java:559)\\n	at org.h2.command.Parser.prepareCommand(Parser.java:487)\\n	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)\\n	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)\\n	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)\\n	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)\\n	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)\\n	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)\\n	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79)\\n	... 125 common frames omitted\\n"}
+
+{"timestamp":"2026-03-14T14:49:06.158",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:06.419",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:07.171",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:07.500",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:09.181",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:09.385",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Started KafkaServiceApplicationTests in 12.143 seconds (process running for 15.121)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:10.523",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.k.t.j.GlobalEmbeddedKafkaTestExecutionListener",
+ "message":"Stopped global Embedded Kafka.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:10.565",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:10.571",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T14:49:10.580",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:48.752",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Starting KafkaServiceApplicationTests using Java 21.0.7 with PID 17464 (started by 01957 in D:\module project\base\kafka-service)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:48.756",
+ "level":"DEBUG",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:48.759",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:51.964",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:52.131",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:54.032",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:54.258",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:55.852",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:55.950",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:56.405",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kafkadb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:56.409",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:56.497",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:56.643",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:kafkadb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: KAFKADB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:58.888",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:59.095",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.t.s.i.ExceptionHandlerLoggedImpl",
+ "message":"GenerationTarget encountered exception accepting command : Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]",
+ "exception":"org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier";]\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:93)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:573)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:513)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:313)\\n	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:230)\\n	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:109)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:267)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:142)\\n	at java.base/java.util.HashMap.forEach(HashMap.java:1429)\\n	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:139)\\n	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)\\n	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)\\n	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:350)\\n	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:436)\\n	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1459)\\n	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:433)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)\\n	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)\\n	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:409)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)\\n	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)\\n	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)\\n	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)\\n	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:966)\\n	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620)\\n	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)\\n	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454)\\n	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$2(SpringBootContextLoader.java:148)\\n	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)\\n	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)\\n	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1474)\\n	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:573)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:148)\\n	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:114)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:247)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:167)\\n	at org.springframework.test.context.cache.DefaultContextCache.put(DefaultContextCache.java:172)\\n	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:160)\\n	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128)\\n	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)\\n	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)\\n	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)\\n	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:203)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$1(ClassBasedTestDescriptor.java:423)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:428)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$0(ClassBasedTestDescriptor.java:422)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)\\n	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\\n	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)\\n	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\\n	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)\\n	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\\n	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)\\n	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)\\n	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\\n	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:422)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$0(ClassBasedTestDescriptor.java:334)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:333)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$1(ClassBasedTestDescriptor.java:322)\\n	at java.base/java.util.Optional.orElseGet(Optional.java:364)\\n	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$0(ClassBasedTestDescriptor.java:321)\\n	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:127)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:126)\\n	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:70)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$0(NodeTestTask.java:144)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:144)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:110)\\n	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)\\n	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)\\n	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)\\n	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)\\n	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)\\n	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)\\n	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)\\n	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)\\n	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157)\\n	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)\\n	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:93)\\n	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48)\\n	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:41)\\n	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)\\n	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:40)\\n	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:48)\\n	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)\\n	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)\\n	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)\\n	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\\n	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)\\n	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)\\nCaused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, [*]offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id))"; expected "identifier"; SQL statement:\\ncreate table kafka_events (id bigint generated by default as identity, event_type varchar(255) not null, offset bigint, partition integer, payload varchar(2000) not null, source varchar(255) not null, status enum ('CONSUMED','FAILED','PENDING','SENT'), timestamp timestamp(6) not null, topic varchar(255), primary key (id)) [42001-240]\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)\\n	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)\\n	at org.h2.message.DbException.getSyntaxError(DbException.java:261)\\n	at org.h2.command.Parser.readIdentifier(Parser.java:5568)\\n	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8978)\\n	at org.h2.command.Parser.parseCreateTable(Parser.java:8926)\\n	at org.h2.command.Parser.parseCreate(Parser.java:6483)\\n	at org.h2.command.Parser.parsePrepared(Parser.java:648)\\n	at org.h2.command.Parser.parse(Parser.java:584)\\n	at org.h2.command.Parser.parse(Parser.java:559)\\n	at org.h2.command.Parser.prepareCommand(Parser.java:487)\\n	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)\\n	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)\\n	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)\\n	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)\\n	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)\\n	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)\\n	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)\\n	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79)\\n	... 125 common frames omitted\\n"}
+
+{"timestamp":"2026-03-14T15:17:59.130",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:17:59.497",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:00.606",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:01.309",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:04.378",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:04.696",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.k.KafkaServiceApplicationTests",
+ "message":"Started KafkaServiceApplicationTests in 17.221 seconds (process running for 21.334)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:06.470",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.k.t.j.GlobalEmbeddedKafkaTestExecutionListener",
+ "message":"Stopped global Embedded Kafka.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:06.601",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:06.608",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:18:06.616",
+ "level":"INFO",
+ "service":"kafka-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
