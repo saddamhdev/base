@@ -752,3 +752,27 @@
  "message":"Started AuditServiceApplication in 7.958 seconds (process running for 9.516)",
  "exception":""}
 
+{"timestamp":"2026-03-14T06:32:10.561",
+ "level":"WARN",
+ "service":"audit-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s97ms648µs400ns).",
+ "exception":""}
+
+{"timestamp":"2026-03-14T12:18:16.851",
+ "level":"WARN",
+ "service":"audit-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h46m10s893ms659µs).",
+ "exception":""}
+

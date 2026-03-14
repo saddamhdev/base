@@ -1088,3 +1088,27 @@
  "message":"Started RabbitMQServiceApplication in 20.24 seconds (process running for 21.665)",
  "exception":""}
 
+{"timestamp":"2026-03-14T06:32:11.674",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s85ms195µs200ns).",
+ "exception":""}
+
+{"timestamp":"2026-03-14T12:18:17.868",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h46m10s750ms529µs700ns).",
+ "exception":""}
+

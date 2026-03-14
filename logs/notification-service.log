@@ -728,3 +728,27 @@
  "message":"Started NotificationServiceApplication in 11.612 seconds (process running for 13.171)",
  "exception":""}
 
+{"timestamp":"2026-03-14T06:32:06.520",
+ "level":"WARN",
+ "service":"notification-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s104ms742µs400ns).",
+ "exception":""}
+
+{"timestamp":"2026-03-14T12:18:12.837",
+ "level":"WARN",
+ "service":"notification-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h46m11s7ms53µs900ns).",
+ "exception":""}
+

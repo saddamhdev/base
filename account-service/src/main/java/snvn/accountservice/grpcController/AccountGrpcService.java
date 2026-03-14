@@ -1,4 +1,4 @@
-package snvn.accountservice.grpc;
+package snvn.accountservice.grpcController;
 
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;

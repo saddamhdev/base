@@ -776,3 +776,27 @@
  "message":"Started KafkaServiceApplication in 17.866 seconds (process running for 18.948)",
  "exception":""}
 
+{"timestamp":"2026-03-14T06:32:06.082",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h18s968ms318µs300ns).",
+ "exception":""}
+
+{"timestamp":"2026-03-14T12:18:12.586",
+ "level":"WARN",
+ "service":"kafka-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h46m11s128ms317µs).",
+ "exception":""}
+

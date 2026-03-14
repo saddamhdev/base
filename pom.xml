@@ -32,6 +32,7 @@
         <module>user-service-env-properties</module>
         <module>redis-service-env-properties</module>
         <module>log-env-properties</module>
+        <module>grpc-service</module>
     </modules>
 
     <properties>

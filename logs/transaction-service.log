@@ -752,3 +752,15 @@
  "message":"Started TransactionServiceApplication in 15.642 seconds (process running for 17.195)",
  "exception":""}
 
+{"timestamp":"2026-03-14T12:18:04.632",
+ "level":"WARN",
+ "service":"transaction-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h46m7s709ms394µs700ns).",
+ "exception":""}
+

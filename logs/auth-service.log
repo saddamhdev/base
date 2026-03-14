@@ -824,3 +824,27 @@
  "message":"Started AuthServiceApplication in 18.398 seconds (process running for 20.048)",
  "exception":""}
 
+{"timestamp":"2026-03-14T06:32:10.396",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h17s312ms988µs300ns).",
+ "exception":""}
+
+{"timestamp":"2026-03-14T12:18:16.703",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h46m10s899ms140µs).",
+ "exception":""}
+

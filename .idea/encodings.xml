@@ -21,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/gateway-service-env-properties/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-service-env-properties/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-service-env-properties/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-service/src/main/java" charset="UTF-8" />
