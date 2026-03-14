@@ -1843,3 +1843,362 @@
  "message":"HikariPool-1 - Shutdown completed.",
  "exception":""}
 
+{"timestamp":"2026-03-14T15:22:39.538",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplication",
+ "message":"Starting RabbitMQServiceApplication using Java 25.0.1 with PID 11252 (D:\module project\base\rabbitmq-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:39.544",
+ "level":"DEBUG",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:39.550",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:42.437",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:42.639",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 169 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:43.588",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:43.995",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:44.776",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8098 (http)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:44.813",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:44.814",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:45.050",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 5282 ms",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:45.853",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:46.075",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:48.203",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:48.286",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:48.800",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:rabbitmqdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:48.810",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:48.898",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:48.974",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:rabbitmqdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: RABBITMQDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:52.921",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:53.130",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:53.372",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:54.501",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:54.634",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:56.487",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:56.962",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8098 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:56.974",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:57.426",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#4d7a4317:0/SimpleConnection@255eadf5 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=49491]",
+ "exception":""}
+
+{"timestamp":"2026-03-14T15:22:57.728",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplication",
+ "message":"Started RabbitMQServiceApplication in 20.59 seconds (process running for 22.552)",
+ "exception":""}
+

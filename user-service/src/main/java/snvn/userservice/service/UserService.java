@@ -108,7 +108,6 @@ public class UserService {
     public AccountResponse getUserAccount(Long userId) {
         return accountClient.getAccount(userId);
     }
-    // create another method for grpcController
 
     public snvn.grpc.AccountResponse getUserAccountGrpc(Long userId) {
         return accountGrpcClient.getAccount(userId);
