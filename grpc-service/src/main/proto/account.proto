@@ -8,10 +8,18 @@ service AccountService {
   rpc GetAccount (AccountRequest)
       returns (AccountResponse);
 
+  // ✅ NEW METHOD
+  rpc GetAccountByEmail (AccountByEmailRequest)
+      returns (AccountResponse);
 }
 
 message AccountRequest {
   int64 userId = 1;
+}
+
+// ✅ NEW REQUEST
+message AccountByEmailRequest {
+  string email = 1;
 }
 
 message AccountResponse {

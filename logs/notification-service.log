@@ -1,76 +1,4 @@
-{"timestamp":"2026-03-14T00:22:11.489",
- "level":"WARN",
- "service":"notification-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s811ms417µs300ns).",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.111",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.392",
- "level":"INFO",
- "service":"notification-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.604",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.751",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.817",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:23:18.006",
+{"timestamp":"2026-03-18T15:10:06.680",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -79,10 +7,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.n.NotificationServiceApplication",
- "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 19700 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
+ "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 21352 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:18.012",
+{"timestamp":"2026-03-18T15:10:06.712",
  "level":"DEBUG",
  "service":"notification-service",
  "thread":"main",
@@ -94,7 +22,7 @@
  "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:18.014",
+{"timestamp":"2026-03-18T15:10:06.717",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -106,7 +34,7 @@
  "message":"No active profile set, falling back to 1 default profile: "default"",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:19.963",
+{"timestamp":"2026-03-18T15:10:11.297",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -118,7 +46,7 @@
  "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:20.022",
+{"timestamp":"2026-03-18T15:10:11.408",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -127,10 +55,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.",
+ "message":"Finished Spring Data repository scanning in 60 ms. Found 0 JPA repository interfaces.",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:21.399",
+{"timestamp":"2026-03-18T15:10:16.733",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -142,7 +70,7 @@
  "message":"Tomcat initialized with port 8100 (http)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:21.427",
+{"timestamp":"2026-03-18T15:10:16.902",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -154,7 +82,7 @@
  "message":"Starting service [Tomcat]",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:21.428",
+{"timestamp":"2026-03-18T15:10:16.904",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -166,7 +94,7 @@
  "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:21.566",
+{"timestamp":"2026-03-18T15:10:17.345",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -175,10 +103,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 3399 ms",
+ "message":"Root WebApplicationContext: initialization completed in 10277 ms",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:22.144",
+{"timestamp":"2026-03-18T15:10:18.867",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -190,7 +118,7 @@
  "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:22.283",
+{"timestamp":"2026-03-18T15:10:19.239",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -202,7 +130,7 @@
  "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:23.729",
+{"timestamp":"2026-03-18T15:10:23.487",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -214,7 +142,7 @@
  "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:23.817",
+{"timestamp":"2026-03-18T15:10:23.757",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -226,7 +154,7 @@
  "message":"HikariPool-1 - Starting...",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:24.337",
+{"timestamp":"2026-03-18T15:10:25.151",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -238,7 +166,7 @@
  "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:notificationdb user=SA",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:24.347",
+{"timestamp":"2026-03-18T15:10:25.164",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -250,7 +178,7 @@
  "message":"HikariPool-1 - Start completed.",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:24.430",
+{"timestamp":"2026-03-18T15:10:25.504",
  "level":"WARN",
  "service":"notification-service",
  "thread":"main",
@@ -262,7 +190,7 @@
  "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:24.513",
+{"timestamp":"2026-03-18T15:10:26.659",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -285,7 +213,7 @@
 	Maximum pool size: undefined/unknown",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:26.009",
+{"timestamp":"2026-03-18T15:10:31.533",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -297,7 +225,7 @@
  "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:26.039",
+{"timestamp":"2026-03-18T15:10:31.579",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -309,7 +237,7 @@
  "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:26.173",
+{"timestamp":"2026-03-18T15:10:31.768",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -321,7 +249,7 @@
  "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:26.258",
+{"timestamp":"2026-03-18T15:10:31.896",
  "level":"WARN",
  "service":"notification-service",
  "thread":"main",
@@ -333,7 +261,7 @@
  "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:27.826",
+{"timestamp":"2026-03-18T15:10:34.494",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -345,7 +273,7 @@
  "message":"Exposing 2 endpoints beneath base path '/actuator'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:28.077",
+{"timestamp":"2026-03-18T15:10:35.075",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -357,7 +285,7 @@
  "message":"Tomcat started on port 8100 (http) with context path '/'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:23:28.102",
+{"timestamp":"2026-03-18T15:10:35.128",
  "level":"INFO",
  "service":"notification-service",
  "thread":"main",
@@ -366,10 +294,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.n.NotificationServiceApplication",
- "message":"Started NotificationServiceApplication in 11.331 seconds (process running for 12.878)",
+ "message":"Started NotificationServiceApplication in 31.04 seconds (process running for 33.735)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:18.015",
+{"timestamp":"2026-03-18T15:40:53.889",
  "level":"INFO",
  "service":"notification-service",
  "thread":"SpringApplicationShutdownHook",
@@ -381,7 +309,7 @@
  "message":"Commencing graceful shutdown. Waiting for active requests to complete",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:18.124",
+{"timestamp":"2026-03-18T15:40:54.107",
  "level":"INFO",
  "service":"notification-service",
  "thread":"tomcat-shutdown",
@@ -393,7 +321,7 @@
  "message":"Graceful shutdown complete",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:18.201",
+{"timestamp":"2026-03-18T15:40:54.306",
  "level":"INFO",
  "service":"notification-service",
  "thread":"SpringApplicationShutdownHook",
@@ -405,7 +333,7 @@
  "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:18.239",
+{"timestamp":"2026-03-18T15:40:54.392",
  "level":"INFO",
  "service":"notification-service",
  "thread":"SpringApplicationShutdownHook",
@@ -417,7 +345,7 @@
  "message":"HikariPool-1 - Shutdown initiated...",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:18.258",
+{"timestamp":"2026-03-18T15:40:54.435",
  "level":"INFO",
  "service":"notification-service",
  "thread":"SpringApplicationShutdownHook",
@@ -427,1058 +355,5 @@
  "jobId":"",
  "logger":"com.zaxxer.hikari.HikariDataSource",
  "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:31.187",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 13732 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:31.192",
- "level":"DEBUG",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:31.194",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:33.459",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:33.523",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:35.244",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat initialized with port 8100 (http)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:35.269",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardService",
- "message":"Starting service [Tomcat]",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:35.270",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardEngine",
- "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:35.433",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 4107 ms",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:36.337",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.jpa.internal.util.LogHelper",
- "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:36.560",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.Version",
- "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:38.120",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
- "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:38.215",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Starting...",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:38.801",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:notificationdb user=SA",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:38.806",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Start completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:38.874",
- "level":"WARN",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.orm.deprecation",
- "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:38.944",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.hibernate.orm.connections.pooling",
- "message":"HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:notificationdb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: NOTIFICATIONDB/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:40.260",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
- "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:40.283",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:40.380",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.c.exception.GlobalExceptionHandler",
- "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:40.432",
- "level":"WARN",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
- "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:41.159",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.e.web.EndpointLinksResolver",
- "message":"Exposing 2 endpoints beneath base path '/actuator'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:41.300",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat started on port 8100 (http) with context path '/'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:41.312",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Started NotificationServiceApplication in 11.612 seconds (process running for 13.171)",
- "exception":""}
-
-{"timestamp":"2026-03-14T06:32:06.520",
- "level":"WARN",
- "service":"notification-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s104ms742µs400ns).",
- "exception":""}
-
-{"timestamp":"2026-03-14T12:18:12.837",
- "level":"WARN",
- "service":"notification-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h46m11s7ms53µs900ns).",
- "exception":""}
-
-{"timestamp":"2026-03-14T13:55:57.160",
- "level":"WARN",
- "service":"notification-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m43s793ms699µs400ns).",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:34.275",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:34.971",
- "level":"INFO",
- "service":"notification-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:35.658",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:35.750",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:35.780",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:38.082",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 21176 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:38.088",
- "level":"DEBUG",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:38.090",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:40.019",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:40.087",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 37 ms. Found 0 JPA repository interfaces.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:41.716",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat initialized with port 8100 (http)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:41.751",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardService",
- "message":"Starting service [Tomcat]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:41.752",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardEngine",
- "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:41.920",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 3697 ms",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:42.530",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.jpa.internal.util.LogHelper",
- "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:42.622",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.Version",
- "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:43.526",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
- "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:43.581",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Starting...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:43.914",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:notificationdb user=SA",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:43.917",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Start completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:43.973",
- "level":"WARN",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.orm.deprecation",
- "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:44.029",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.hibernate.orm.connections.pooling",
- "message":"HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:notificationdb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: NOTIFICATIONDB/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:45.298",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
- "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:45.325",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:45.459",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.c.exception.GlobalExceptionHandler",
- "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:45.550",
- "level":"WARN",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
- "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:46.787",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.e.web.EndpointLinksResolver",
- "message":"Exposing 2 endpoints beneath base path '/actuator'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:46.978",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat started on port 8100 (http) with context path '/'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:46.995",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Started NotificationServiceApplication in 10.225 seconds (process running for 11.644)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:21:02.980",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:21:03.007",
- "level":"INFO",
- "service":"notification-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:21:03.016",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:21:03.020",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:21:03.023",
- "level":"INFO",
- "service":"notification-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:29.744",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Starting NotificationServiceApplication using Java 25.0.1 with PID 9396 (D:\module project\base\notification-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:29.754",
- "level":"DEBUG",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:29.757",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:32.220",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:32.290",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 37 ms. Found 0 JPA repository interfaces.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:34.004",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat initialized with port 8100 (http)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:34.094",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardService",
- "message":"Starting service [Tomcat]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:34.096",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardEngine",
- "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:34.398",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 4477 ms",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:35.462",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.jpa.internal.util.LogHelper",
- "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:35.798",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.Version",
- "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:39.023",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
- "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:39.189",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Starting...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:39.834",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:notificationdb user=SA",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:39.839",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Start completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:39.933",
- "level":"WARN",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.orm.deprecation",
- "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:40.031",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.hibernate.orm.connections.pooling",
- "message":"HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:notificationdb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: NOTIFICATIONDB/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:41.776",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
- "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:41.808",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:41.939",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.c.exception.GlobalExceptionHandler",
- "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:42.052",
- "level":"WARN",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
- "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:43.412",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.e.web.EndpointLinksResolver",
- "message":"Exposing 2 endpoints beneath base path '/actuator'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:43.581",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat started on port 8100 (http) with context path '/'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:22:43.596",
- "level":"INFO",
- "service":"notification-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.n.NotificationServiceApplication",
- "message":"Started NotificationServiceApplication in 15.4 seconds (process running for 17.553)",
  "exception":""}
 

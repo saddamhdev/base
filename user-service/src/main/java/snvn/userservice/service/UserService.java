@@ -110,6 +110,7 @@ public class UserService {
     }
 
     public snvn.grpc.AccountResponse getUserAccountGrpc(Long userId) {
+       System.out.println(accountGrpcClient.getAccountByEmail("test@gmail.com"));
         return accountGrpcClient.getAccount(userId);
     }
 

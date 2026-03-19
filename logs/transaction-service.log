@@ -1,76 +1,4 @@
-{"timestamp":"2026-03-14T00:22:20.544",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s933ms713µs900ns).",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.128",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.413",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.613",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.777",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:21:50.836",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:22:21.899",
+{"timestamp":"2026-03-18T15:10:22.419",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -79,10 +7,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.t.TransactionServiceApplication",
- "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 19584 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
+ "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 12212 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:21.907",
+{"timestamp":"2026-03-18T15:10:22.489",
  "level":"DEBUG",
  "service":"transaction-service",
  "thread":"main",
@@ -94,7 +22,7 @@
  "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:21.910",
+{"timestamp":"2026-03-18T15:10:22.552",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -106,7 +34,7 @@
  "message":"No active profile set, falling back to 1 default profile: "default"",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:24.541",
+{"timestamp":"2026-03-18T15:10:31.592",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -118,7 +46,7 @@
  "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:24.734",
+{"timestamp":"2026-03-18T15:10:31.816",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -127,10 +55,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 160 ms. Found 1 JPA repository interface.",
+ "message":"Finished Spring Data repository scanning in 182 ms. Found 1 JPA repository interface.",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:26.507",
+{"timestamp":"2026-03-18T15:10:35.376",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -142,7 +70,7 @@
  "message":"Tomcat initialized with port 8101 (http)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:26.558",
+{"timestamp":"2026-03-18T15:10:35.458",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -154,7 +82,7 @@
  "message":"Starting service [Tomcat]",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:26.562",
+{"timestamp":"2026-03-18T15:10:35.460",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -166,7 +94,7 @@
  "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:26.842",
+{"timestamp":"2026-03-18T15:10:35.772",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -175,10 +103,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 4756 ms",
+ "message":"Root WebApplicationContext: initialization completed in 12264 ms",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:27.583",
+{"timestamp":"2026-03-18T15:10:37.280",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -190,7 +118,7 @@
  "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:27.785",
+{"timestamp":"2026-03-18T15:10:37.588",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -202,7 +130,7 @@
  "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:29.210",
+{"timestamp":"2026-03-18T15:10:42.866",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -214,7 +142,7 @@
  "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:29.317",
+{"timestamp":"2026-03-18T15:10:43.210",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -226,7 +154,7 @@
  "message":"HikariPool-1 - Starting...",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:29.881",
+{"timestamp":"2026-03-18T15:10:44.147",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -238,7 +166,7 @@
  "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:transactiondb user=SA",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:29.884",
+{"timestamp":"2026-03-18T15:10:44.156",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -250,7 +178,7 @@
  "message":"HikariPool-1 - Start completed.",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:29.932",
+{"timestamp":"2026-03-18T15:10:44.270",
  "level":"WARN",
  "service":"transaction-service",
  "thread":"main",
@@ -262,7 +190,7 @@
  "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:29.973",
+{"timestamp":"2026-03-18T15:10:44.376",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -285,7 +213,7 @@
 	Maximum pool size: undefined/unknown",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:32.378",
+{"timestamp":"2026-03-18T15:10:50.368",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -297,7 +225,7 @@
  "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:32.568",
+{"timestamp":"2026-03-18T15:10:50.800",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -309,7 +237,7 @@
  "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:32.805",
+{"timestamp":"2026-03-18T15:10:51.256",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -321,7 +249,7 @@
  "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:33.351",
+{"timestamp":"2026-03-18T15:10:52.342",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -333,7 +261,7 @@
  "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:33.447",
+{"timestamp":"2026-03-18T15:10:52.486",
  "level":"WARN",
  "service":"transaction-service",
  "thread":"main",
@@ -345,7 +273,7 @@
  "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:34.686",
+{"timestamp":"2026-03-18T15:10:54.738",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -357,7 +285,7 @@
  "message":"Exposing 3 endpoints beneath base path '/actuator'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:34.904",
+{"timestamp":"2026-03-18T15:10:55.360",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -369,7 +297,7 @@
  "message":"Tomcat started on port 8101 (http) with context path '/'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:22:34.925",
+{"timestamp":"2026-03-18T15:10:55.417",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"main",
@@ -378,10 +306,10 @@
  "correlationId":"",
  "jobId":"",
  "logger":"s.t.TransactionServiceApplication",
- "message":"Started TransactionServiceApplication in 14.518 seconds (process running for 16.029)",
+ "message":"Started TransactionServiceApplication in 36.758 seconds (process running for 39.978)",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:18.399",
+{"timestamp":"2026-03-18T15:40:53.829",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"SpringApplicationShutdownHook",
@@ -393,7 +321,7 @@
  "message":"Commencing graceful shutdown. Waiting for active requests to complete",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:19.766",
+{"timestamp":"2026-03-18T15:40:54.063",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"tomcat-shutdown",
@@ -405,7 +333,7 @@
  "message":"Graceful shutdown complete",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:20.315",
+{"timestamp":"2026-03-18T15:40:54.188",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"SpringApplicationShutdownHook",
@@ -417,7 +345,7 @@
  "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:20.566",
+{"timestamp":"2026-03-18T15:40:54.287",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"SpringApplicationShutdownHook",
@@ -429,7 +357,7 @@
  "message":"HikariPool-1 - Shutdown initiated...",
  "exception":""}
 
-{"timestamp":"2026-03-14T02:47:20.626",
+{"timestamp":"2026-03-18T15:40:54.314",
  "level":"INFO",
  "service":"transaction-service",
  "thread":"SpringApplicationShutdownHook",
@@ -439,1082 +367,5 @@
  "jobId":"",
  "logger":"com.zaxxer.hikari.HikariDataSource",
  "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:22.964",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 23780 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:22.973",
- "level":"DEBUG",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:22.974",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:25.244",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:25.404",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 134 ms. Found 1 JPA repository interface.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:27.030",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat initialized with port 8101 (http)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:27.073",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardService",
- "message":"Starting service [Tomcat]",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:27.074",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardEngine",
- "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:27.310",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 4175 ms",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:28.078",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.jpa.internal.util.LogHelper",
- "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:28.321",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.Version",
- "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:30.121",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
- "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:30.250",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Starting...",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:30.888",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:transactiondb user=SA",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:30.893",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Start completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:30.951",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.orm.deprecation",
- "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:31.019",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.hibernate.orm.connections.pooling",
- "message":"HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:transactiondb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: TRANSACTIONDB/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:33.962",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
- "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:34.173",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:34.461",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
- "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:35.185",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.c.exception.GlobalExceptionHandler",
- "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:35.245",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
- "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:36.633",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.e.web.EndpointLinksResolver",
- "message":"Exposing 3 endpoints beneath base path '/actuator'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:36.880",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat started on port 8101 (http) with context path '/'",
- "exception":""}
-
-{"timestamp":"2026-03-14T02:48:36.922",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Started TransactionServiceApplication in 15.642 seconds (process running for 17.195)",
- "exception":""}
-
-{"timestamp":"2026-03-14T12:18:04.632",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h46m7s709ms394µs700ns).",
- "exception":""}
-
-{"timestamp":"2026-03-14T13:55:58.094",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"HikariPool-1:housekeeper",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m22s416ms580µs300ns).",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:34.589",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:35.602",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:35.944",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:36.180",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:17:36.264",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:22.670",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 22964 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:22.676",
- "level":"DEBUG",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:22.677",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:24.840",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:24.973",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interface.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:26.694",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat initialized with port 8101 (http)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:26.746",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardService",
- "message":"Starting service [Tomcat]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:26.747",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardEngine",
- "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:26.972",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 4132 ms",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:27.818",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.jpa.internal.util.LogHelper",
- "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:27.974",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.Version",
- "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:29.161",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
- "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:29.256",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Starting...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:29.700",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:transactiondb user=SA",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:29.704",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Start completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:29.751",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.orm.deprecation",
- "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:29.803",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.hibernate.orm.connections.pooling",
- "message":"HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:transactiondb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: TRANSACTIONDB/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:32.226",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
- "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:32.379",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:32.565",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
- "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:33.110",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.c.exception.GlobalExceptionHandler",
- "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:33.176",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
- "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:34.127",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.e.web.EndpointLinksResolver",
- "message":"Exposing 3 endpoints beneath base path '/actuator'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:34.252",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat started on port 8101 (http) with context path '/'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:19:34.268",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Started TransactionServiceApplication in 12.975 seconds (process running for 14.432)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:20:54.135",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Commencing graceful shutdown. Waiting for active requests to complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:20:54.161",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"tomcat-shutdown",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.GracefulShutdown",
- "message":"Graceful shutdown complete",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:20:54.175",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:20:54.180",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown initiated...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:20:54.182",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"SpringApplicationShutdownHook",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Shutdown completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:45.968",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Starting TransactionServiceApplication using Java 25.0.1 with PID 5000 (D:\module project\base\transaction-service\target\classes started by 01957 in D:\module project\base)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:45.974",
- "level":"DEBUG",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:45.976",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"No active profile set, falling back to 1 default profile: "default"",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:48.129",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:48.246",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
- "message":"Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:49.401",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat initialized with port 8101 (http)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:49.421",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardService",
- "message":"Starting service [Tomcat]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:49.422",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.a.catalina.core.StandardEngine",
- "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:49.528",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
- "message":"Root WebApplicationContext: initialization completed in 3393 ms",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:49.995",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.jpa.internal.util.LogHelper",
- "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:50.084",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.Version",
- "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:50.885",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
- "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:50.954",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Starting...",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:51.277",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.pool.HikariPool",
- "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:transactiondb user=SA",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:51.279",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"com.zaxxer.hikari.HikariDataSource",
- "message":"HikariPool-1 - Start completed.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:51.312",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"org.hibernate.orm.deprecation",
- "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:51.357",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.hibernate.orm.connections.pooling",
- "message":"HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:transactiondb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: TRANSACTIONDB/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:52.546",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
- "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:52.623",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
- "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:52.716",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
- "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:52.972",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.c.exception.GlobalExceptionHandler",
- "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:53.003",
- "level":"WARN",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
- "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:53.486",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.b.a.e.web.EndpointLinksResolver",
- "message":"Exposing 3 endpoints beneath base path '/actuator'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:53.570",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"o.s.boot.tomcat.TomcatWebServer",
- "message":"Tomcat started on port 8101 (http) with context path '/'",
- "exception":""}
-
-{"timestamp":"2026-03-14T15:23:53.580",
- "level":"INFO",
- "service":"transaction-service",
- "thread":"main",
- "traceId":"",
- "spanId":"",
- "correlationId":"",
- "jobId":"",
- "logger":"s.t.TransactionServiceApplication",
- "message":"Started TransactionServiceApplication in 8.989 seconds (process running for 10.531)",
  "exception":""}
 
